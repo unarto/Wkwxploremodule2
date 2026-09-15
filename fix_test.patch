@@ -1,0 +1,15 @@
+--- file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/FileRepositoryImplTest.kt
++++ file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/FileRepositoryImplTest.kt
+@@ -134,8 +134,10 @@
+         file.writeText("critical source content")
+ 
+         // Target in non-existent directory to force failure
+-        val invalidDestDir = File(tempDir, "non_existent_folder/dest.txt")
+-        val results = repository.move(StorageLocation(file.absolutePath), StorageLocation(invalidDestDir.absolutePath)).toList()
++        val parentOccupier = File(tempDir, "fake_folder")
++        parentOccupier.writeText("I am a file")
++        val invalidDestDir = File(parentOccupier, "dest.txt")
++        val results = repository.move(StorageLocation(file.absolutePath), StorageLocation(invalidDestDir.absolutePath)).toList()
+ 
+         assertTrue(results.last() is FileOperationResult.Failure)
+ 

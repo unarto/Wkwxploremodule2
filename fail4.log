@@ -1,0 +1,468 @@
+Initialized native services in: /opt/gradle/.gradle/native
+Initialized jansi services in: /opt/gradle/.gradle/native
+Removing 0 daemon stop events from registry
+Starting a Gradle Daemon, 1 busy Daemon could not be reused, use --status for details
+Starting process 'Gradle build daemon'. Working directory: /opt/gradle/.gradle/daemon/9.3.1 Command: /usr/lib/jvm/temurin-21-jdk-amd64/bin/java --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED -Xmx4g -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -cp /opt/gradle/gradle-9.3.1/lib/gradle-daemon-main-9.3.1.jar -javaagent:/opt/gradle/gradle-9.3.1/lib/agents/gradle-instrumentation-agent-9.3.1.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 9.3.1
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 1.858 secs.
+The client will now receive all logging from the daemon (pid: 260). The daemon log file: /opt/gradle/.gradle/daemon/9.3.1/daemon-260.out.log
+Starting build in new daemon [memory: 4 GiB]
+Using 4 worker leases.
+Operational build model parameters: {requiresToolingModels=false, parallelProjectExecution=true, configureOnDemand=false, configurationCache=true, configurationCacheParallelStore=false, configurationCacheParallelLoad=true, isolatedProjects=false, parallelProjectConfiguration=false, intermediateModelCache=false, parallelToolingApiActions=true, invalidateCoupledProjects=false, modelAsProjectDependency=false, resilientModelBuilding=false}
+Received JVM installation metadata from '/usr/lib/jvm/temurin-21-jdk-amd64': {JAVA_HOME=/usr/lib/jvm/temurin-21-jdk-amd64, JAVA_VERSION=21.0.12, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=21.0.12+8-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=21.0.12+8-LTS, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
+Encryption key source: default Gradle keystore (pkcs12)
+Calculating task graph as no cached configuration is available for tasks: :file-system:testDebugUnitTest --tests com.wakwau.xplore.core.storage.repository.FileRepositoryImplTest.move_failedTransfer_doesNotDeleteSourceFile
+Watching the file system is configured to be enabled if available
+Unable to list file systems to check whether they can be watched. Disabling watching. Reason: Could not query file systems: could not open mount file (errno 2: No such file or directory)
+File system watching is inactive
+Starting Build
+Resolved plugin [id: 'org.gradle.toolchains.foojay-resolver-convention', version: '1.0.0']
+Settings evaluated using settings file '/app/applet/settings.gradle.kts'.
+Using local directory build cache for the root build (location = /opt/gradle/.gradle/caches/build-cache-1, remove unused entries = after 7 days).
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/resourceHashesCache.bin
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/resourceHashesCache.bin
+Projects loaded. Root project using build file '/app/applet/build.gradle.kts'.
+Included projects: [root project 'WKW Xplore', project ':app', project ':core-storage', project ':core-storage-api', project ':core-utils', project ':core-utils-ui', project ':core-worker', project ':file-operations', project ':file-operations-bridge', project ':file-operations-ui', project ':file-system', project ':filemanager', project ':filemanager-ui', project ':search', project ':search-ui', project ':settings-ui', project ':treeview']
+
+> Configure project :
+Evaluating root project 'WKW Xplore' using build file '/app/applet/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.10', apply: false]
+Resolved plugin [id: 'com.android.application', version: '9.1.1', apply: false]
+Resolved plugin [id: 'com.android.library', version: '9.1.1', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10', apply: false]
+Resolved plugin [id: 'com.google.devtools.ksp', version: '2.3.5', apply: false]
+Resolved plugin [id: 'io.github.takahirom.roborazzi', version: '1.59.0', apply: false]
+Resolved plugin [id: 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin', version: '2.0.1', apply: false]
+Resolved plugin [id: 'com.google.gms.google-services', version: '4.5.0', apply: false]
+
+> Configure project :app
+Evaluating project ':app' using build file '/app/applet/app/build.gradle.kts'.
+Resolved plugin [id: 'com.android.application', version: '9.1.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10']
+Resolved plugin [id: 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin', version: '2.0.1']
+Build 40d924c5-c695-422c-bcd2-03acd33fc590 is started
+Using default execution profile
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/journal-1/file-access.bin
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/resourceHashesCache.bin
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+
+> Configure project :core-storage
+Evaluating project ':core-storage' using build file '/app/applet/core-storage/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Resolved plugin [id: 'com.google.devtools.ksp', version: '2.3.5']
+Using default execution profile
+
+> Configure project :core-storage-api
+Evaluating project ':core-storage-api' using build file '/app/applet/core-storage-api/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.10']
+Using Kotlin Gradle Plugin gradle813 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/kotlinDslCompileAvoidanceClasspathHashCache.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/resourceHashesCache.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/journal-1/file-access.bin
+
+> Configure project :core-utils
+Evaluating project ':core-utils' using build file '/app/applet/core-utils/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.10']
+Using Kotlin Gradle Plugin gradle813 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :core-utils-ui
+Evaluating project ':core-utils-ui' using build file '/app/applet/core-utils-ui/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10']
+Using default execution profile
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+
+> Configure project :core-worker
+Evaluating project ':core-worker' using build file '/app/applet/core-worker/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Using default execution profile
+
+> Configure project :file-operations
+Evaluating project ':file-operations' using build file '/app/applet/file-operations/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.10']
+Using Kotlin Gradle Plugin gradle813 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :file-operations-bridge
+Evaluating project ':file-operations-bridge' using build file '/app/applet/file-operations-bridge/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.10']
+Using Kotlin Gradle Plugin gradle813 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :file-operations-ui
+Evaluating project ':file-operations-ui' using build file '/app/applet/file-operations-ui/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10']
+Using default execution profile
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+
+> Configure project :file-system
+Evaluating project ':file-system' using build file '/app/applet/file-system/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Resolved plugin [id: 'com.google.devtools.ksp', version: '2.3.5']
+Using default execution profile
+
+> Configure project :filemanager
+Evaluating project ':filemanager' using build file '/app/applet/filemanager/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.10']
+Using Kotlin Gradle Plugin gradle813 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :filemanager-ui
+Evaluating project ':filemanager-ui' using build file '/app/applet/filemanager-ui/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10']
+Using default execution profile
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+
+> Configure project :search
+Evaluating project ':search' using build file '/app/applet/search/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.10']
+Using Kotlin Gradle Plugin gradle813 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :search-ui
+Evaluating project ':search-ui' using build file '/app/applet/search-ui/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10']
+Using default execution profile
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+
+> Configure project :settings-ui
+Evaluating project ':settings-ui' using build file '/app/applet/settings-ui/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10']
+Using default execution profile
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+
+> Configure project :treeview
+Evaluating project ':treeview' using build file '/app/applet/treeview/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10']
+Using default execution profile
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+All projects evaluated.
+Task path ':file-system:testDebugUnitTest' matched project ':file-system'
+Task name matched 'testDebugUnitTest'
+Selected primary task 'testDebugUnitTest' from project :file-system
+Starting process 'command '/opt/gradle/.gradle/jdks/eclipse_adoptium-11-amd64-linux.2/bin/java''. Working directory: /opt/gradle/.gradle/.tmp/tmp-jvm2270104118436879023probe Command: /opt/gradle/.gradle/jdks/eclipse_adoptium-11-amd64-linux.2/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/opt/gradle/.gradle/jdks/eclipse_adoptium-11-amd64-linux.2/bin/java''
+Received JVM installation metadata from '/opt/gradle/.gradle/jdks/eclipse_adoptium-11-amd64-linux.2': {JAVA_HOME=/opt/gradle/.gradle/jdks/eclipse_adoptium-11-amd64-linux.2, JAVA_VERSION=11.0.32.1, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.32.1+1, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.32.1+1, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
+Tasks to be executed: [task ':core-storage-api:checkKotlinGradlePluginConfigurationErrors', task ':core-storage-api:compileKotlin', task ':core-storage-api:compileJava', task ':core-storage-api:processResources', task ':core-storage-api:classes', task ':core-storage-api:jar', task ':core-utils:checkKotlinGradlePluginConfigurationErrors', task ':core-utils:compileKotlin', task ':core-utils:compileJava', task ':core-utils:processResources', task ':core-utils:classes', task ':core-utils:jar', task ':file-system:preBuild', task ':file-system:preDebugBuild', task ':file-system:compileDebugAidl', task ':file-system:generateDebugResources', task ':file-system:packageDebugResources', task ':file-system:processDebugNavigationResources', task ':file-system:parseDebugLocalResources', task ':file-system:generateDebugRFile', task ':file-system:kspDebugKotlin', task ':file-system:compileDebugKotlin', task ':file-system:javaPreCompileDebug', task ':file-system:compileDebugJavaWithJavac', task ':file-system:bundleLibRuntimeToJarDebug', task ':file-system:bundleLibCompileToJarDebug', task ':file-system:preDebugUnitTestBuild', task ':file-system:generateDebugUnitTestStubRFile', task ':file-system:kspDebugUnitTestKotlin', task ':file-system:compileDebugUnitTestKotlin', task ':file-system:javaPreCompileDebugUnitTest', task ':file-system:compileDebugUnitTestJavaWithJavac', task ':file-system:processDebugJavaRes', task ':file-system:processDebugUnitTestJavaRes', task ':file-system:testDebugUnitTest']
+Tasks that were excluded: []
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/journal-1/file-access.bin
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/resourceHashesCache.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/kotlinDslCompileAvoidanceClasspathHashCache.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/resourceHashesCache.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/journal-1/file-access.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/journal-1/file-access.bin
+Build 40d924c5-c695-422c-bcd2-03acd33fc590 is closed
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/journal-1/file-access.bin
+Using local directory build cache for the root build (location = /opt/gradle/.gradle/caches/build-cache-1, remove unused entries = after 7 days).
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/kotlinDslCompileAvoidanceClasspathHashCache.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/resourceHashesCache.bin
+Ignoring listeners of task graph ready event, as this build (:) has already executed work.
+Resolve mutations for :core-storage-api:checkKotlinGradlePluginConfigurationErrors (Thread[#85,Execution worker,5,main]) started.
+Resolve mutations for :core-storage-api:processResources (Thread[#87,Execution worker Thread 3,5,main]) started.
+work action Unknown value (Thread[#84,included builds,5,main]) started.
+Resolve mutations for :core-utils:checkKotlinGradlePluginConfigurationErrors (Thread[#86,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :core-utils:processResources (Thread[#84,included builds,5,main]) started.
+:core-storage-api:checkKotlinGradlePluginConfigurationErrors (Thread[#85,Execution worker,5,main]) started.
+:core-utils:checkKotlinGradlePluginConfigurationErrors (Thread[#86,Execution worker Thread 2,5,main]) started.
+:core-utils:processResources (Thread[#84,included builds,5,main]) started.
+:core-storage-api:processResources (Thread[#87,Execution worker Thread 3,5,main]) started.
+
+> Task :core-storage-api:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':core-storage-api:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+
+> Task :core-utils:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':core-utils:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :core-storage-api:compileKotlin (Thread[#85,Execution worker,5,main]) started.
+Resolve mutations for :core-utils:compileKotlin (Thread[#86,Execution worker Thread 2,5,main]) started.
+:core-storage-api:compileKotlin (Thread[#85,Execution worker,5,main]) started.
+:core-utils:compileKotlin (Thread[#86,Execution worker Thread 2,5,main]) started.
+
+> Task :core-utils:processResources NO-SOURCE
+Skipping task ':core-utils:processResources' as it has no source files and no previous output files.
+
+> Task :core-storage-api:processResources NO-SOURCE
+Skipping task ':core-storage-api:processResources' as it has no source files and no previous output files.
+work action Unknown value (Thread[#87,Execution worker Thread 3,5,main]) started.
+Resolve mutations for :file-system:preBuild (Thread[#84,included builds,5,main]) started.
+:file-system:preBuild (Thread[#84,included builds,5,main]) started.
+
+> Task :file-system:preBuild UP-TO-DATE
+Skipping task ':file-system:preBuild' as it has no actions.
+Resolve mutations for :file-system:preDebugBuild (Thread[#84,included builds,5,main]) started.
+Resolve mutations for :file-system:preDebugUnitTestBuild (Thread[#87,Execution worker Thread 3,5,main]) started.
+:file-system:preDebugBuild (Thread[#84,included builds,5,main]) started.
+:file-system:preDebugUnitTestBuild (Thread[#87,Execution worker Thread 3,5,main]) started.
+
+> Task :file-system:preDebugBuild UP-TO-DATE
+Skipping task ':file-system:preDebugBuild' as it has no actions.
+
+> Task :file-system:preDebugUnitTestBuild UP-TO-DATE
+Skipping task ':file-system:preDebugUnitTestBuild' as it has no actions.
+Resolve mutations for :file-system:compileDebugAidl (Thread[#84,included builds,5,main]) started.
+Resolve mutations for :file-system:generateDebugResources (Thread[#87,Execution worker Thread 3,5,main]) started.
+:file-system:compileDebugAidl (Thread[#84,included builds,5,main]) started.
+:file-system:generateDebugResources (Thread[#87,Execution worker Thread 3,5,main]) started.
+
+> Task :file-system:generateDebugResources
+Build cache key for task ':file-system:generateDebugResources' is 1baaadf56ca1b30703b5e3edd072c376
+Task ':file-system:generateDebugResources' is not up-to-date because:
+  No history is available.
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/journal-1/file-access.bin
+Stored cache entry for task ':file-system:generateDebugResources' with cache key 1baaadf56ca1b30703b5e3edd072c376
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/executionHistory/executionHistory.bin
+Invalidating in-memory cache of /app/applet/.gradle/buildOutputCleanup/outputFiles.bin
+Resolve mutations for :file-system:packageDebugResources (Thread[#87,Execution worker Thread 3,5,main]) started.
+:file-system:packageDebugResources (Thread[#87,Execution worker Thread 3,5,main]) started.
+
+> Task :file-system:packageDebugResources
+Build cache key for task ':file-system:packageDebugResources' is 3f27f61a3aceae2b44038bc89367c7e2
+Task ':file-system:packageDebugResources' is not up-to-date because:
+  No history is available.
+The input changes require a full rebuild for incremental task ':file-system:packageDebugResources'.
+[MergeResources] Inputs are non-incremental full task action.
+Stored cache entry for task ':file-system:packageDebugResources' with cache key 3f27f61a3aceae2b44038bc89367c7e2
+Resolve mutations for :file-system:processDebugNavigationResources (Thread[#87,Execution worker Thread 3,5,main]) started.
+:file-system:processDebugNavigationResources (Thread[#87,Execution worker Thread 3,5,main]) started.
+
+> Task :file-system:processDebugNavigationResources FROM-CACHE
+Build cache key for task ':file-system:processDebugNavigationResources' is 4a5dd836bcf66581a2197e7ff88dfb7e
+Task ':file-system:processDebugNavigationResources' is not up-to-date because:
+  No history is available.
+Loaded cache entry for task ':file-system:processDebugNavigationResources' with cache key 4a5dd836bcf66581a2197e7ff88dfb7e
+Resolve mutations for :file-system:parseDebugLocalResources (Thread[#87,Execution worker Thread 3,5,main]) started.
+:file-system:parseDebugLocalResources (Thread[#87,Execution worker Thread 3,5,main]) started.
+
+> Task :core-storage-api:compileKotlin
+Build cache key for BuildToolsApiClasspathEntrySnapshotTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/23.0.0/8cc20c07506ec18e0834947b84a864bfc094484e/annotations-23.0.0.jar is 0f2926c9fb5f9551f28fc4b89fa951a1
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/kotlinDslCompileAvoidanceClasspathHashCache.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/resourceHashesCache.bin
+Stored cache entry for BuildToolsApiClasspathEntrySnapshotTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/23.0.0/8cc20c07506ec18e0834947b84a864bfc094484e/annotations-23.0.0.jar with cache key 0f2926c9fb5f9551f28fc4b89fa951a1
+
+> Task :file-system:parseDebugLocalResources FROM-CACHE
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/resourceHashesCache.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/journal-1/file-access.bin
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/resourceHashesCache.bin
+Build cache key for PlatformAttrTransform: /opt/android/sdk/platforms/android-36.1/android.jar is 65572fe9793e73dbfd82a12b436f9a6c
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/journal-1/file-access.bin
+Loaded cache entry for PlatformAttrTransform: /opt/android/sdk/platforms/android-36.1/android.jar with cache key 65572fe9793e73dbfd82a12b436f9a6c
+Build cache key for task ':file-system:parseDebugLocalResources' is e78b4e5c3513a88c88cd11ebd3f8b776
+Task ':file-system:parseDebugLocalResources' is not up-to-date because:
+  No history is available.
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/journal-1/file-access.bin
+Loaded cache entry for task ':file-system:parseDebugLocalResources' with cache key e78b4e5c3513a88c88cd11ebd3f8b776
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/executionHistory/executionHistory.bin
+Invalidating in-memory cache of /app/applet/.gradle/buildOutputCleanup/outputFiles.bin
+Resolve mutations for :file-system:generateDebugRFile (Thread[#87,Execution worker Thread 3,5,main]) started.
+:file-system:generateDebugRFile (Thread[#87,Execution worker Thread 3,5,main]) started.
+
+> Task :core-storage-api:compileKotlin
+Build cache key for task ':core-storage-api:compileKotlin' is e04a45bafa607010780b34625d281261
+Task ':core-storage-api:compileKotlin' is not up-to-date because:
+  No history is available.
+The input changes require a full rebuild for incremental task ':core-storage-api:compileKotlin'.
+file or directory '/app/applet/core-storage-api/src/main/java', not found
+file or directory '/app/applet/core-storage-api/src/main/java', not found
+file or directory '/app/applet/core-storage-api/src/main/java', not found
+file or directory '/app/applet/core-storage-api/src/main/java', not found
+Kotlin source files: /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/search/FileSearchQuery.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/search/FileSearchService.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/preferences/FileSystemAccessMode.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/preferences/FileSortOrder.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/preferences/SettingsState.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/preferences/FileSortDirection.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/preferences/AppThemeMode.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/preferences/FileLayoutMode.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/preferences/AppPreferencesRepository.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/preferences/AppLanguage.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/preferences/FilePreferencesState.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/provider/ShareableUriResolverProvider.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/provider/ShareableUriResolver.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/FileSystemContract.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/LocalFileSystemContract.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/SafFileSystemContract.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/RootFileSystemContract.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/StorageBackendType.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/ShizukuFileSystemContract.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/permission/StoragePermissionType.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/permission/StoragePermissionChecker.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/permission/SafPermissionHandler.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/model/FileType.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/model/StorageSpaceInfo.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/model/FileChecksum.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/model/StorageLocation.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/model/FileIndexItem.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/model/StorageFailure.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/model/FileDetailedMetadata.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/model/StorageVolumeItem.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/model/FileItem.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/model/FileMetadata.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/model/StorageVolumeType.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/checksum/FileChecksumReader.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/operation/FileOperationResult.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/operation/FileOperationProgressDispatcher.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/operation/FileOperationComponentProvider.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/operation/BackgroundOperationType.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/operation/FileOperationProgress.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/operation/FileOperationError.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/operation/BackgroundOperationEvent.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/constant/StorageConstants.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/api/error/StorageErrorMapper.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/repository/FileRepository.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/repository/FileIndexRepository.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/repository/DirectoryRepository.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepository.kt, /app/applet/core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/metadata/DetailedMetadataReader.kt
+Java source files: 
+Script source files: 
+Script file extensions: 
+Using Kotlin/JVM incremental compilation
+[KOTLIN] Kotlin compilation 'jdkHome' argument: /opt/gradle/.gradle/jdks/eclipse_adoptium-11-amd64-linux.2
+
+> Task :file-system:compileDebugAidl FAILED
+Caching disabled for ExtractAarTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/androidx.documentfile/documentfile/1.0.1/e824bb6e7fc36ec03857da400aa31e136c73cc68/documentfile-1.0.1.aar because:
+  Caching not enabled.
+Caching disabled for AarTransform: /opt/gradle/.gradle/caches/9.3.1/transforms/7d76d10a3a2c6faff657c77f8f8b2f6d/transformed/documentfile-1.0.1 because:
+  Caching not enabled.
+Caching disabled for ExtractAarTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/androidx.versionedparcelable/versionedparcelable/1.1.1/18e18071e7715679e0593c570217edeb5ca48b9e/versionedparcelable-1.1.1.aar because:
+  Caching not enabled.
+Caching disabled for AarTransform: /opt/gradle/.gradle/caches/9.3.1/transforms/07c964ecf303166ea998e497a7bdfb2d/transformed/versionedparcelable-1.1.1 because:
+  Caching not enabled.
+Caching disabled for ExtractAarTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation-experimental/1.4.1/7851235e2a16ce50270a74b555edaf9209b42864/annotation-experimental-1.4.1.aar because:
+  Caching not enabled.
+Caching disabled for AarTransform: /opt/gradle/.gradle/caches/9.3.1/transforms/c113f121332758cc7f0e21a2385ef9ec/transformed/annotation-experimental-1.4.1 because:
+  Caching not enabled.
+Caching disabled for ExtractAarTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/androidx.core/core-viewtree/1.0.0/449ba4f495b4d10d18edd01f32f9328be40d5749/core-viewtree-1.0.0.aar because:
+  Caching not enabled.
+Caching disabled for AarTransform: /opt/gradle/.gradle/caches/9.3.1/transforms/b28dd61be434c1ee9b8d560af3bce07f/transformed/core-viewtree-1.0.0 because:
+  Caching not enabled.
+Caching disabled for ExtractAarTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/dev.rikka.shizuku/api/13.1.5/1f760c56493bdbc01462930e75bb325033b36fe2/api-13.1.5.aar because:
+  Caching not enabled.
+Caching disabled for AarTransform: /opt/gradle/.gradle/caches/9.3.1/transforms/1b15616003c99cec2a12282e1896c513/transformed/api-13.1.5 because:
+  Caching not enabled.
+Caching disabled for ExtractAarTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/dev.rikka.shizuku/provider/13.1.5/4135b99cae9362fe2f63380230d04a9bcba9be3f/provider-13.1.5.aar because:
+  Caching not enabled.
+Caching disabled for AarTransform: /opt/gradle/.gradle/caches/9.3.1/transforms/4e7ccfe185dac30c8c08648a678c8953/transformed/provider-13.1.5 because:
+  Caching not enabled.
+Caching disabled for ExtractAarTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/com.github.topjohnwu.libsu/io/6.0.0/7b78fe56f691f2ea99d52b65e34f1143f5d626c4/io-6.0.0.aar because:
+  Caching not enabled.
+Caching disabled for AarTransform: /opt/gradle/.gradle/caches/9.3.1/transforms/dce7359a874299f10a27b2060cae0a2c/transformed/io-6.0.0 because:
+  Caching not enabled.
+Caching disabled for ExtractAarTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/com.github.topjohnwu.libsu/core/6.0.0/30219460d3ef68871a2f556ce16bb14ff8d51f7/core-6.0.0.aar because:
+  Caching not enabled.
+Caching disabled for AarTransform: /opt/gradle/.gradle/caches/9.3.1/transforms/7a4df07e2daf7aa8a4e520fb9ef6c71a/transformed/core-6.0.0 because:
+  Caching not enabled.
+Caching disabled for ExtractAarTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/com.github.topjohnwu.libsu/nio/6.0.0/549efd21137dae68864ca878177958863e15f7ce/nio-6.0.0.aar because:
+  Caching not enabled.
+Caching disabled for AarTransform: /opt/gradle/.gradle/caches/9.3.1/transforms/17f2b128e6b2ace2a042ed0f50feecb2/transformed/nio-6.0.0 because:
+  Caching not enabled.
+Caching disabled for ExtractAarTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/dev.rikka.shizuku/aidl/13.1.5/457504c277d796adea698b80b4e765f98dd0799a/aidl-13.1.5.aar because:
+  Caching not enabled.
+Caching disabled for AarTransform: /opt/gradle/.gradle/caches/9.3.1/transforms/1f18b7ca13c5e28be1b954f14769eadd/transformed/aidl-13.1.5 because:
+  Caching not enabled.
+Caching disabled for ExtractAarTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/dev.rikka.shizuku/shared/13.1.5/8c4e73ce466cd27aff10565d2ec49809c258f974/shared-13.1.5.aar because:
+  Caching not enabled.
+Caching disabled for AarTransform: /opt/gradle/.gradle/caches/9.3.1/transforms/c805b820619b2b0221c55a587c7d55a2/transformed/shared-13.1.5 because:
+  Caching not enabled.
+Caching disabled for ExtractAarTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/androidx.core/core-ktx/1.18.0/d3e73ac068e614ed84893958bded6b0724717f2/core-ktx-1.18.0.aar because:
+  Caching not enabled.
+Caching disabled for AarTransform: /opt/gradle/.gradle/caches/9.3.1/transforms/5c549c2b97b605ce99b41558c61c129b/transformed/core-ktx-1.18.0 because:
+  Caching not enabled.
+Caching disabled for ExtractAarTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/androidx.core/core/1.18.0/ff046a9f2725d94c2eaaa82e08674bb761c17792/core-1.18.0.aar because:
+  Caching not enabled.
+Caching disabled for AarTransform: /opt/gradle/.gradle/caches/9.3.1/transforms/e798d60eaf2b9f5e846e0dc46e553ca0/transformed/core-1.18.0 because:
+  Caching not enabled.
+Caching disabled for ExtractAarTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-runtime/2.6.2/f0ef27053faa89b3ec06c4f118cea0a15edde35b/lifecycle-runtime-2.6.2.aar because:
+  Caching not enabled.
+Caching disabled for AarTransform: /opt/gradle/.gradle/caches/9.3.1/transforms/dd8933cf78c05332522e858ee3745608/transformed/lifecycle-runtime-2.6.2 because:
+  Caching not enabled.
+Build cache key for task ':file-system:compileDebugAidl' is d3ab182f84c429ab9a167d959564766f
+Task ':file-system:compileDebugAidl' is not up-to-date because:
+  No history is available.
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/executionHistory/executionHistory.bin
+
+> Task :file-system:generateDebugRFile
+Build cache key for task ':file-system:generateDebugRFile' is 074b5e4205f910b94491d99d447b216c
+Task ':file-system:generateDebugRFile' is not up-to-date because:
+  No history is available.
+The input changes require a full rebuild for incremental task ':file-system:generateDebugRFile'.
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/resourceHashesCache.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/journal-1/file-access.bin
+Stored cache entry for task ':file-system:generateDebugRFile' with cache key 074b5e4205f910b94491d99d447b216c
+Invalidating in-memory cache of /app/applet/.gradle/buildOutputCleanup/outputFiles.bin
+Resolve mutations for :file-system:javaPreCompileDebug (Thread[#87,Execution worker Thread 3,5,main]) started.
+:file-system:javaPreCompileDebug (Thread[#87,Execution worker Thread 3,5,main]) started.
+
+> Task :core-utils:compileKotlin
+Invalidating in-memory cache of /app/applet/.gradle/buildOutputCleanup/outputFiles.bin
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/resourceHashesCache.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/kotlinDslCompileAvoidanceClasspathHashCache.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/resourceHashesCache.bin
+Build cache key for BuildToolsApiClasspathEntrySnapshotTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.10/30de6faa127a4a012db8e71bf1b9c0a99b1402b2/kotlin-stdlib-2.2.10.jar is 64297e67fc509a4555e0ea2ae227bde8
+Build cache key for BuildToolsApiClasspathEntrySnapshotTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.10.2/4a9f78ef49483748e2c129f3d124b8fa249dafbf/kotlinx-coroutines-core-jvm-1.10.2.jar is 5223689c72c80cba4f6da9e2f22703fa
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/kotlinDslCompileAvoidanceClasspathHashCache.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/resourceHashesCache.bin
+Stored cache entry for BuildToolsApiClasspathEntrySnapshotTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.10.2/4a9f78ef49483748e2c129f3d124b8fa249dafbf/kotlinx-coroutines-core-jvm-1.10.2.jar with cache key 5223689c72c80cba4f6da9e2f22703fa
+Stored cache entry for BuildToolsApiClasspathEntrySnapshotTransform: /opt/gradle/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.2.10/30de6faa127a4a012db8e71bf1b9c0a99b1402b2/kotlin-stdlib-2.2.10.jar with cache key 64297e67fc509a4555e0ea2ae227bde8
+Build cache key for task ':core-utils:compileKotlin' is f37f9e65d268d2308abcc1f566c60bda
+Task ':core-utils:compileKotlin' is not up-to-date because:
+  No history is available.
+The input changes require a full rebuild for incremental task ':core-utils:compileKotlin'.
+file or directory '/app/applet/core-utils/src/main/kotlin', not found
+file or directory '/app/applet/core-utils/src/main/kotlin', not found
+file or directory '/app/applet/core-utils/src/main/kotlin', not found
+file or directory '/app/applet/core-utils/src/main/kotlin', not found
+file or directory '/app/applet/core-utils/src/main/kotlin', not found
+Kotlin source files: /app/applet/core-utils/src/main/java/com/wakwau/xplore/core/utils/formatter/ByteFormatter.kt, /app/applet/core-utils/src/main/java/com/wakwau/xplore/core/utils/formatter/DateFormatter.kt, /app/applet/core-utils/src/main/java/com/wakwau/xplore/core/utils/mime/MimeTypeDetector.kt
+Java source files: 
+Script source files: 
+Script file extensions: 
+Using Kotlin/JVM incremental compilation
+[KOTLIN] Kotlin compilation 'jdkHome' argument: /opt/gradle/.gradle/jdks/eclipse_adoptium-11-amd64-linux.2
+
+> Task :file-system:javaPreCompileDebug UP-TO-DATE
+Build cache key for task ':file-system:javaPreCompileDebug' is 204672e1df57eb679f72f3e174041952
+Skipping task ':file-system:javaPreCompileDebug' as it is up-to-date.
+
+> Task :core-utils:compileKotlin
+Finished executing kotlin compiler using IN_PROCESS strategy
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/resourceHashesCache.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/journal-1/file-access.bin
+Stored cache entry for task ':core-utils:compileKotlin' with cache key f37f9e65d268d2308abcc1f566c60bda
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/executionHistory/executionHistory.bin
+Invalidating in-memory cache of /app/applet/.gradle/buildOutputCleanup/outputFiles.bin
+
+> Task :core-storage-api:compileKotlin
+Finished executing kotlin compiler using IN_PROCESS strategy
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/resourceHashesCache.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/journal-1/file-access.bin
+Stored cache entry for task ':core-storage-api:compileKotlin' with cache key e04a45bafa607010780b34625d281261
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/executionHistory/executionHistory.bin
+Invalidating in-memory cache of /app/applet/.gradle/buildOutputCleanup/outputFiles.bin
+Build fb58f696-a1a8-4db7-8d04-9125b8720456 is started
+w: Detected multiple Kotlin daemon sessions at 
+Build fb58f696-a1a8-4db7-8d04-9125b8720456 is closed
+
+See the complete report at file:///app/applet/build/reports/configuration-cache/cxdsctkn977627rp93ay2okem/bxtkq37gtkv0699mqkw0kbu1g/configuration-cache-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':file-system:compileDebugAidl'.
+> java.lang.NullPointerException (no error message)
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1m 12s
+9 actionable tasks: 6 executed, 2 from cache, 1 up-to-date
+Configuration cache entry stored.
+dependencies-accessors (/opt/gradle/.gradle/caches/9.3.1/dependencies-accessors) removing files not accessed on or after Tue Sep 08 06:45:53 UTC 2026.
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/journal-1/file-access.bin
+dependencies-accessors (/opt/gradle/.gradle/caches/9.3.1/dependencies-accessors) cleanup deleted 1 files/directories.
+dependencies-accessors (/opt/gradle/.gradle/caches/9.3.1/dependencies-accessors) cleaned up in 0.229 secs.

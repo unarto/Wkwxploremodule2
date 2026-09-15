@@ -1,0 +1,75 @@
+Reusing configuration cache.
+> Task :core-utils:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core-storage-api:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core-utils:processResources NO-SOURCE
+> Task :file-system:preBuild UP-TO-DATE
+> Task :file-system:preDebugBuild UP-TO-DATE
+> Task :core-storage-api:processResources NO-SOURCE
+> Task :file-system:generateDebugResources UP-TO-DATE
+> Task :file-system:packageDebugResources UP-TO-DATE
+> Task :file-system:processDebugNavigationResources UP-TO-DATE
+> Task :file-system:parseDebugLocalResources UP-TO-DATE
+> Task :file-system:generateDebugRFile UP-TO-DATE
+> Task :core-utils:compileKotlin UP-TO-DATE
+> Task :core-utils:compileJava NO-SOURCE
+> Task :core-utils:classes UP-TO-DATE
+> Task :file-system:javaPreCompileDebug UP-TO-DATE
+> Task :file-system:preDebugUnitTestBuild UP-TO-DATE
+> Task :core-storage-api:compileKotlin UP-TO-DATE
+> Task :core-utils:jar UP-TO-DATE
+> Task :core-storage-api:compileJava NO-SOURCE
+> Task :core-storage-api:classes UP-TO-DATE
+> Task :file-system:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :core-storage-api:jar UP-TO-DATE
+> Task :file-system:compileDebugAidl UP-TO-DATE
+> Task :file-system:kspDebugKotlin SKIPPED
+> Task :file-system:generateDebugUnitTestStubRFile UP-TO-DATE
+> Task :file-system:compileDebugKotlin UP-TO-DATE
+> Task :file-system:processDebugJavaRes UP-TO-DATE
+> Task :file-system:compileDebugJavaWithJavac UP-TO-DATE
+> Task :file-system:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :file-system:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :file-system:kspDebugUnitTestKotlin SKIPPED
+
+> Task :file-system:compileDebugUnitTestKotlin
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/filesystem/local/LocalStreamTransferHelperTest.kt:82:30 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'File?'.
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:34:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:36:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:42:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:54:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:56:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:69:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:71:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:73:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:75:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:100:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:104:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+
+> Task :file-system:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :file-system:processDebugUnitTestJavaRes UP-TO-DATE
+
+> Task :file-system:testDebugUnitTest FAILED
+
+StorageVolumeRepositoryImplTest > collectorCompletion_unregistersReceiver FAILED
+    java.lang.AssertionError at StorageVolumeRepositoryImplTest.kt:49
+
+StorageVolumeRepositoryImplTest > resubscribe_doesNotAccumulateReceivers FAILED
+    java.lang.AssertionError at StorageVolumeRepositoryImplTest.kt:64
+
+StorageVolumeRepositoryImplTest > concurrentCollectors_registerReceiverOnlyOnce FAILED
+    java.lang.AssertionError at StorageVolumeRepositoryImplTest.kt:29
+
+6 tests completed, 3 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':file-system:testDebugUnitTest'.
+> There were failing tests. See the report at: file:///app/applet/file-system/build/reports/tests/testDebugUnitTest/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 14s
+21 actionable tasks: 2 executed, 19 up-to-date
+Configuration cache entry reused.

@@ -1,0 +1,44 @@
+Reusing configuration cache.
+> Task :core-storage-api:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core-storage-api:processResources NO-SOURCE
+> Task :core-utils:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :file-system:preBuild UP-TO-DATE
+> Task :file-system:preDebugBuild UP-TO-DATE
+> Task :core-utils:processResources NO-SOURCE
+> Task :file-system:generateDebugResources UP-TO-DATE
+> Task :file-system:packageDebugResources UP-TO-DATE
+> Task :core-utils:compileKotlin UP-TO-DATE
+> Task :file-system:processDebugNavigationResources UP-TO-DATE
+> Task :core-storage-api:compileKotlin UP-TO-DATE
+> Task :core-utils:compileJava NO-SOURCE
+> Task :core-utils:classes UP-TO-DATE
+> Task :file-system:parseDebugLocalResources UP-TO-DATE
+> Task :core-storage-api:compileJava NO-SOURCE
+> Task :core-storage-api:classes UP-TO-DATE
+> Task :core-utils:jar UP-TO-DATE
+> Task :core-storage-api:jar UP-TO-DATE
+> Task :file-system:generateDebugRFile UP-TO-DATE
+> Task :file-system:preDebugUnitTestBuild UP-TO-DATE
+> Task :file-system:javaPreCompileDebug UP-TO-DATE
+> Task :file-system:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :file-system:generateDebugUnitTestStubRFile UP-TO-DATE
+> Task :file-system:compileDebugAidl UP-TO-DATE
+> Task :file-system:kspDebugKotlin SKIPPED
+
+> Task :file-system:compileDebugKotlin
+w: file:///app/applet/file-system/src/main/kotlin/com/wakwau/xplore/core/storage/provider/volume/ExternalVolumeProvider.kt:21:42 'static fun getExternalFilesDirs(p0: @NonNull() Context, p1: @Nullable() String?): (@NonNull() Array<File!>..@NonNull() Array<out File!>)' is deprecated. Deprecated in Java.
+w: file:///app/applet/file-system/src/main/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImpl.kt:58:10 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+
+> Task :file-system:processDebugJavaRes UP-TO-DATE
+> Task :file-system:compileDebugJavaWithJavac UP-TO-DATE
+> Task :file-system:bundleLibRuntimeToJarDebug
+> Task :file-system:bundleLibCompileToJarDebug
+> Task :file-system:kspDebugUnitTestKotlin SKIPPED
+> Task :file-system:compileDebugUnitTestKotlin UP-TO-DATE
+> Task :file-system:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :file-system:processDebugUnitTestJavaRes UP-TO-DATE
+> Task :file-system:testDebugUnitTest
+
+BUILD SUCCESSFUL in 22s
+21 actionable tasks: 4 executed, 17 up-to-date
+Configuration cache entry reused.

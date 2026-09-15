@@ -1,0 +1,92 @@
+Starting a Gradle Daemon, 3 busy Daemons could not be reused, use --status for details
+Calculating task graph as configuration cache cannot be reused because the file system entry '.env' has been removed.
+w: Detected multiple Kotlin daemon sessions at 
+> Task :core-storage-api:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core-utils:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core-utils:processResources NO-SOURCE
+> Task :core-storage-api:processResources NO-SOURCE
+> Task :file-system:preBuild UP-TO-DATE
+> Task :file-system:preDebugBuild UP-TO-DATE
+> Task :file-system:preDebugUnitTestBuild UP-TO-DATE
+> Task :file-system:generateDebugResources UP-TO-DATE
+> Task :core-utils:compileKotlin UP-TO-DATE
+> Task :core-storage-api:compileKotlin UP-TO-DATE
+> Task :core-storage-api:compileJava NO-SOURCE
+> Task :core-storage-api:classes UP-TO-DATE
+> Task :core-utils:compileJava NO-SOURCE
+> Task :core-utils:classes UP-TO-DATE
+> Task :file-system:packageDebugResources UP-TO-DATE
+> Task :file-system:processDebugNavigationResources UP-TO-DATE
+> Task :core-utils:jar UP-TO-DATE
+> Task :core-storage-api:jar UP-TO-DATE
+> Task :file-system:parseDebugLocalResources UP-TO-DATE
+> Task :file-system:javaPreCompileDebug UP-TO-DATE
+> Task :file-system:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :file-system:generateDebugRFile UP-TO-DATE
+> Task :file-system:compileDebugAidl UP-TO-DATE
+> Task :file-system:kspDebugKotlin SKIPPED
+> Task :file-system:generateDebugUnitTestStubRFile UP-TO-DATE
+
+> Task :file-system:compileDebugKotlin
+w: file:///app/applet/file-system/src/main/kotlin/com/wakwau/xplore/core/storage/provider/volume/ExternalVolumeProvider.kt:21:42 'static fun getExternalFilesDirs(p0: @NonNull() Context, p1: @Nullable() String?): (@NonNull() Array<File!>..@NonNull() Array<out File!>)' is deprecated. Deprecated in Java.
+w: file:///app/applet/file-system/src/main/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImpl.kt:58:10 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+
+> Task :file-system:processDebugJavaRes
+> Task :file-system:compileDebugJavaWithJavac
+> Task :file-system:bundleLibRuntimeToJarDebug
+> Task :file-system:bundleLibCompileToJarDebug
+> Task :file-system:kspDebugUnitTestKotlin SKIPPED
+
+> Task :file-system:compileDebugUnitTestKotlin
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/filesystem/local/LocalStreamTransferHelperTest.kt:82:30 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'File?'.
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:34:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:37:19 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:47:55 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:48:41 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:62:50 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:63:33 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:66:41 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:67:19 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:92:30 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:96:2 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:104:2 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+
+> Task :file-system:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :file-system:processDebugUnitTestJavaRes
+
+> Task :file-system:testDebugUnitTest
+
+StorageVolumeRepositoryImplTest > collectorCompletion_unregistersReceiver FAILED
+    java.lang.AssertionError at StorageVolumeRepositoryImplTest.kt:45
+
+StorageVolumeRepositoryImplTest > resubscribe_doesNotAccumulateReceivers FAILED
+    java.lang.AssertionError at StorageVolumeRepositoryImplTest.kt:60
+
+StorageVolumeRepositoryImplTest > unregisterFailure_isPropagatedAndRegistrationStateIsRetained FAILED
+    java.lang.RuntimeException at StorageVolumeRepositoryImplTest.kt:123
+
+StorageVolumeRepositoryImplTest > close_cancelsRefreshAndUnregistersReceiver FAILED
+    kotlinx.coroutines.test.UncompletedCoroutinesError at TestBuilders.kt:353
+
+StorageVolumeRepositoryImplTest > concurrentCollectors_registerReceiverOnlyOnce FAILED
+    java.lang.AssertionError at StorageVolumeRepositoryImplTest.kt:28
+
+6 tests completed, 5 failed
+
+> Task :file-system:testDebugUnitTest FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':file-system:testDebugUnitTest'.
+> java.nio.file.NoSuchFileException: /app/applet/file-system/build/test-results/testDebugUnitTest/binary/in-progress-results-generic9520588700804192786.bin
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 2m 8s
+21 actionable tasks: 8 executed, 13 up-to-date
+Configuration cache entry stored.

@@ -1,0 +1,576 @@
+Initialized native services in: /opt/gradle/.gradle/native
+Initialized jansi services in: /opt/gradle/.gradle/native
+Removing 0 daemon stop events from registry
+Starting a Gradle Daemon, 4 busy Daemons could not be reused, use --status for details
+Starting process 'Gradle build daemon'. Working directory: /opt/gradle/.gradle/daemon/9.3.1 Command: /usr/lib/jvm/temurin-21-jdk-amd64/bin/java --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED -Xmx4g -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -cp /opt/gradle/gradle-9.3.1/lib/gradle-daemon-main-9.3.1.jar -javaagent:/opt/gradle/gradle-9.3.1/lib/agents/gradle-instrumentation-agent-9.3.1.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 9.3.1
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 2.078 secs.
+The client will now receive all logging from the daemon (pid: 1495). The daemon log file: /opt/gradle/.gradle/daemon/9.3.1/daemon-1495.out.log
+Starting build in new daemon [memory: 4 GiB]
+Using 4 worker leases.
+Operational build model parameters: {requiresToolingModels=false, parallelProjectExecution=true, configureOnDemand=false, configurationCache=true, configurationCacheParallelStore=false, configurationCacheParallelLoad=true, isolatedProjects=false, parallelProjectConfiguration=false, intermediateModelCache=false, parallelToolingApiActions=true, invalidateCoupledProjects=false, modelAsProjectDependency=false, resilientModelBuilding=false}
+Received JVM installation metadata from '/usr/lib/jvm/temurin-21-jdk-amd64': {JAVA_HOME=/usr/lib/jvm/temurin-21-jdk-amd64, JAVA_VERSION=21.0.12, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=21.0.12+8-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=21.0.12+8-LTS, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
+Encryption key source: default Gradle keystore (pkcs12)
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/journal-1/file-access.bin
+Calculating task graph as no cached configuration is available for tasks: :file-system:testDebugUnitTest --tests com.wakwau.xplore.core.storage.repository.StorageVolumeRepositoryImplTest.concurrentCollectors_registerReceiverOnlyOnce
+Watching the file system is configured to be enabled if available
+Unable to list file systems to check whether they can be watched. Disabling watching. Reason: Could not query file systems: could not open mount file (errno 2: No such file or directory)
+File system watching is inactive
+Starting Build
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/resourceHashesCache.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/kotlinDslCompileAvoidanceClasspathHashCache.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/9.3.1/fileHashes/resourceHashesCache.bin
+Invalidating in-memory cache of /opt/gradle/.gradle/caches/journal-1/file-access.bin
+Resolved plugin [id: 'org.gradle.toolchains.foojay-resolver-convention', version: '1.0.0']
+Settings evaluated using settings file '/app/applet/settings.gradle.kts'.
+Using local directory build cache for the root build (location = /opt/gradle/.gradle/caches/build-cache-1, remove unused entries = after 7 days).
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/fileHashes.bin
+Invalidating in-memory cache of /app/applet/.gradle/9.3.1/fileHashes/resourceHashesCache.bin
+Projects loaded. Root project using build file '/app/applet/build.gradle.kts'.
+Included projects: [root project 'WKW Xplore', project ':app', project ':core-storage', project ':core-storage-api', project ':core-utils', project ':core-utils-ui', project ':core-worker', project ':file-operations', project ':file-operations-bridge', project ':file-operations-ui', project ':file-system', project ':filemanager', project ':filemanager-ui', project ':search', project ':search-ui', project ':settings-ui', project ':treeview']
+
+> Configure project :
+Evaluating root project 'WKW Xplore' using build file '/app/applet/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.10', apply: false]
+Resolved plugin [id: 'com.android.application', version: '9.1.1', apply: false]
+Resolved plugin [id: 'com.android.library', version: '9.1.1', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10', apply: false]
+Resolved plugin [id: 'com.google.devtools.ksp', version: '2.3.5', apply: false]
+Resolved plugin [id: 'io.github.takahirom.roborazzi', version: '1.59.0', apply: false]
+Resolved plugin [id: 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin', version: '2.0.1', apply: false]
+Resolved plugin [id: 'com.google.gms.google-services', version: '4.5.0', apply: false]
+
+> Configure project :app
+Evaluating project ':app' using build file '/app/applet/app/build.gradle.kts'.
+Resolved plugin [id: 'com.android.application', version: '9.1.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10']
+Resolved plugin [id: 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin', version: '2.0.1']
+Build 7a97d927-4c00-44c1-9ea9-daf151bfa5a7 is started
+Using default execution profile
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+
+> Configure project :core-storage
+Evaluating project ':core-storage' using build file '/app/applet/core-storage/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Resolved plugin [id: 'com.google.devtools.ksp', version: '2.3.5']
+Using default execution profile
+
+> Configure project :core-storage-api
+Evaluating project ':core-storage-api' using build file '/app/applet/core-storage-api/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.10']
+Using Kotlin Gradle Plugin gradle813 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :core-utils
+Evaluating project ':core-utils' using build file '/app/applet/core-utils/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.10']
+Using Kotlin Gradle Plugin gradle813 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :core-utils-ui
+Evaluating project ':core-utils-ui' using build file '/app/applet/core-utils-ui/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10']
+Using default execution profile
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+
+> Configure project :core-worker
+Evaluating project ':core-worker' using build file '/app/applet/core-worker/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Using default execution profile
+
+> Configure project :file-operations
+Evaluating project ':file-operations' using build file '/app/applet/file-operations/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.10']
+Using Kotlin Gradle Plugin gradle813 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :file-operations-bridge
+Evaluating project ':file-operations-bridge' using build file '/app/applet/file-operations-bridge/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.10']
+Using Kotlin Gradle Plugin gradle813 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :file-operations-ui
+Evaluating project ':file-operations-ui' using build file '/app/applet/file-operations-ui/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10']
+Using default execution profile
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+
+> Configure project :file-system
+Evaluating project ':file-system' using build file '/app/applet/file-system/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Resolved plugin [id: 'com.google.devtools.ksp', version: '2.3.5']
+Using default execution profile
+
+> Configure project :filemanager
+Evaluating project ':filemanager' using build file '/app/applet/filemanager/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.10']
+Using Kotlin Gradle Plugin gradle813 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :filemanager-ui
+Evaluating project ':filemanager-ui' using build file '/app/applet/filemanager-ui/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10']
+Using default execution profile
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+
+> Configure project :search
+Evaluating project ':search' using build file '/app/applet/search/build.gradle.kts'.
+Resolved plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.2.10']
+Using Kotlin Gradle Plugin gradle813 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+
+> Configure project :search-ui
+Evaluating project ':search-ui' using build file '/app/applet/search-ui/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10']
+Using default execution profile
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+
+> Configure project :settings-ui
+Evaluating project ':settings-ui' using build file '/app/applet/settings-ui/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10']
+Using default execution profile
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+
+> Configure project :treeview
+Evaluating project ':treeview' using build file '/app/applet/treeview/build.gradle.kts'.
+Resolved plugin [id: 'com.android.library', version: '9.1.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10']
+Using default execution profile
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+All projects evaluated.
+Task path ':file-system:testDebugUnitTest' matched project ':file-system'
+Task name matched 'testDebugUnitTest'
+Selected primary task 'testDebugUnitTest' from project :file-system
+Starting process 'command '/opt/gradle/.gradle/jdks/eclipse_adoptium-11-amd64-linux.2/bin/java''. Working directory: /opt/gradle/.gradle/.tmp/tmp-jvm13360404604217444335probe Command: /opt/gradle/.gradle/jdks/eclipse_adoptium-11-amd64-linux.2/bin/java -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command '/opt/gradle/.gradle/jdks/eclipse_adoptium-11-amd64-linux.2/bin/java''
+Received JVM installation metadata from '/opt/gradle/.gradle/jdks/eclipse_adoptium-11-amd64-linux.2': {JAVA_HOME=/opt/gradle/.gradle/jdks/eclipse_adoptium-11-amd64-linux.2, JAVA_VERSION=11.0.32.1, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.32.1+1, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.32.1+1, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
+Tasks to be executed: [task ':core-storage-api:checkKotlinGradlePluginConfigurationErrors', task ':core-storage-api:compileKotlin', task ':core-storage-api:compileJava', task ':core-storage-api:processResources', task ':core-storage-api:classes', task ':core-storage-api:jar', task ':core-utils:checkKotlinGradlePluginConfigurationErrors', task ':core-utils:compileKotlin', task ':core-utils:compileJava', task ':core-utils:processResources', task ':core-utils:classes', task ':core-utils:jar', task ':file-system:preBuild', task ':file-system:preDebugBuild', task ':file-system:compileDebugAidl', task ':file-system:generateDebugResources', task ':file-system:packageDebugResources', task ':file-system:processDebugNavigationResources', task ':file-system:parseDebugLocalResources', task ':file-system:generateDebugRFile', task ':file-system:kspDebugKotlin', task ':file-system:compileDebugKotlin', task ':file-system:javaPreCompileDebug', task ':file-system:compileDebugJavaWithJavac', task ':file-system:bundleLibRuntimeToJarDebug', task ':file-system:bundleLibCompileToJarDebug', task ':file-system:preDebugUnitTestBuild', task ':file-system:generateDebugUnitTestStubRFile', task ':file-system:kspDebugUnitTestKotlin', task ':file-system:compileDebugUnitTestKotlin', task ':file-system:javaPreCompileDebugUnitTest', task ':file-system:compileDebugUnitTestJavaWithJavac', task ':file-system:processDebugJavaRes', task ':file-system:processDebugUnitTestJavaRes', task ':file-system:testDebugUnitTest']
+Tasks that were excluded: []
+Build 7a97d927-4c00-44c1-9ea9-daf151bfa5a7 is closed
+Using local directory build cache for the root build (location = /opt/gradle/.gradle/caches/build-cache-1, remove unused entries = after 7 days).
+Ignoring listeners of task graph ready event, as this build (:) has already executed work.
+Resolve mutations for :core-storage-api:checkKotlinGradlePluginConfigurationErrors (Thread[#85,Execution worker,5,main]) started.
+Resolve mutations for :core-storage-api:processResources (Thread[#87,Execution worker Thread 3,5,main]) started.
+work action Unknown value (Thread[#84,included builds,5,main]) started.
+Resolve mutations for :core-utils:checkKotlinGradlePluginConfigurationErrors (Thread[#86,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :core-utils:processResources (Thread[#84,included builds,5,main]) started.
+:core-utils:checkKotlinGradlePluginConfigurationErrors (Thread[#86,Execution worker Thread 2,5,main]) started.
+:core-storage-api:checkKotlinGradlePluginConfigurationErrors (Thread[#85,Execution worker,5,main]) started.
+:core-utils:processResources (Thread[#84,included builds,5,main]) started.
+:core-storage-api:processResources (Thread[#87,Execution worker Thread 3,5,main]) started.
+
+> Task :core-utils:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':core-utils:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+
+> Task :core-storage-api:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':core-storage-api:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :core-utils:compileKotlin (Thread[#86,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :core-storage-api:compileKotlin (Thread[#85,Execution worker,5,main]) started.
+:core-storage-api:compileKotlin (Thread[#85,Execution worker,5,main]) started.
+:core-utils:compileKotlin (Thread[#86,Execution worker Thread 2,5,main]) started.
+
+> Task :core-utils:processResources NO-SOURCE
+Skipping task ':core-utils:processResources' as it has no source files and no previous output files.
+
+> Task :core-storage-api:processResources NO-SOURCE
+Skipping task ':core-storage-api:processResources' as it has no source files and no previous output files.
+work action Unknown value (Thread[#84,included builds,5,main]) started.
+Resolve mutations for :file-system:preBuild (Thread[#87,Execution worker Thread 3,5,main]) started.
+:file-system:preBuild (Thread[#87,Execution worker Thread 3,5,main]) started.
+
+> Task :file-system:preBuild UP-TO-DATE
+Skipping task ':file-system:preBuild' as it has no actions.
+Resolve mutations for :file-system:preDebugBuild (Thread[#87,Execution worker Thread 3,5,main]) started.
+Resolve mutations for :file-system:preDebugUnitTestBuild (Thread[#84,included builds,5,main]) started.
+:file-system:preDebugBuild (Thread[#87,Execution worker Thread 3,5,main]) started.
+:file-system:preDebugUnitTestBuild (Thread[#84,included builds,5,main]) started.
+
+> Task :file-system:preDebugUnitTestBuild UP-TO-DATE
+Skipping task ':file-system:preDebugUnitTestBuild' as it has no actions.
+
+> Task :file-system:preDebugBuild UP-TO-DATE
+Skipping task ':file-system:preDebugBuild' as it has no actions.
+Resolve mutations for :file-system:javaPreCompileDebugUnitTest (Thread[#84,included builds,5,main]) started.
+Resolve mutations for :file-system:compileDebugAidl (Thread[#87,Execution worker Thread 3,5,main]) started.
+Resolve mutations for :file-system:generateDebugResources (Thread[#84,included builds,5,main]) started.
+:file-system:compileDebugAidl (Thread[#87,Execution worker Thread 3,5,main]) started.
+:file-system:generateDebugResources (Thread[#84,included builds,5,main]) started.
+
+> Task :file-system:generateDebugResources UP-TO-DATE
+Build cache key for task ':file-system:generateDebugResources' is 1baaadf56ca1b30703b5e3edd072c376
+Skipping task ':file-system:generateDebugResources' as it is up-to-date.
+Resolve mutations for :file-system:packageDebugResources (Thread[#84,included builds,5,main]) started.
+:file-system:packageDebugResources (Thread[#84,included builds,5,main]) started.
+
+> Task :core-storage-api:compileKotlin UP-TO-DATE
+Build cache key for task ':core-storage-api:compileKotlin' is e04a45bafa607010780b34625d281261
+Skipping task ':core-storage-api:compileKotlin' as it is up-to-date.
+Resolve mutations for :core-storage-api:compileJava (Thread[#85,Execution worker,5,main]) started.
+
+> Task :core-utils:compileKotlin UP-TO-DATE
+Build cache key for task ':core-utils:compileKotlin' is f37f9e65d268d2308abcc1f566c60bda
+Skipping task ':core-utils:compileKotlin' as it is up-to-date.
+Resolve mutations for :core-utils:compileJava (Thread[#86,Execution worker Thread 2,5,main]) started.
+:core-storage-api:compileJava (Thread[#85,Execution worker,5,main]) started.
+:core-utils:compileJava (Thread[#86,Execution worker Thread 2,5,main]) started.
+
+> Task :core-storage-api:compileJava NO-SOURCE
+Skipping task ':core-storage-api:compileJava' as it has no source files and no previous output files.
+
+> Task :core-utils:compileJava NO-SOURCE
+Skipping task ':core-utils:compileJava' as it has no source files and no previous output files.
+Resolve mutations for :core-storage-api:classes (Thread[#85,Execution worker,5,main]) started.
+Resolve mutations for :core-utils:classes (Thread[#86,Execution worker Thread 2,5,main]) started.
+:core-storage-api:classes (Thread[#85,Execution worker,5,main]) started.
+
+> Task :file-system:packageDebugResources UP-TO-DATE
+Build cache key for task ':file-system:packageDebugResources' is 3f27f61a3aceae2b44038bc89367c7e2
+Skipping task ':file-system:packageDebugResources' as it is up-to-date.
+:core-utils:classes (Thread[#86,Execution worker Thread 2,5,main]) started.
+
+> Task :core-storage-api:classes UP-TO-DATE
+Skipping task ':core-storage-api:classes' as it has no actions.
+
+> Task :core-utils:classes UP-TO-DATE
+Skipping task ':core-utils:classes' as it has no actions.
+Resolve mutations for :core-storage-api:jar (Thread[#85,Execution worker,5,main]) started.
+Resolve mutations for :file-system:processDebugNavigationResources (Thread[#84,included builds,5,main]) started.
+Resolve mutations for :core-utils:jar (Thread[#86,Execution worker Thread 2,5,main]) started.
+:core-storage-api:jar (Thread[#85,Execution worker,5,main]) started.
+:file-system:processDebugNavigationResources (Thread[#84,included builds,5,main]) started.
+:core-utils:jar (Thread[#86,Execution worker Thread 2,5,main]) started.
+
+> Task :file-system:processDebugNavigationResources UP-TO-DATE
+Build cache key for task ':file-system:processDebugNavigationResources' is 4a5dd836bcf66581a2197e7ff88dfb7e
+Skipping task ':file-system:processDebugNavigationResources' as it is up-to-date.
+Resolve mutations for :file-system:parseDebugLocalResources (Thread[#84,included builds,5,main]) started.
+:file-system:parseDebugLocalResources (Thread[#84,included builds,5,main]) started.
+
+> Task :core-utils:jar UP-TO-DATE
+Caching disabled for task ':core-utils:jar' because:
+  Not worth caching
+Skipping task ':core-utils:jar' as it is up-to-date.
+
+> Task :core-storage-api:jar UP-TO-DATE
+Caching disabled for task ':core-storage-api:jar' because:
+  Not worth caching
+Skipping task ':core-storage-api:jar' as it is up-to-date.
+work action resolve core-utils.jar (project :core-utils) (Thread[#86,Execution worker Thread 2,5,main]) started.
+work action resolve core-storage-api.jar (project :core-storage-api) (Thread[#85,Execution worker,5,main]) started.
+IdentityTransform (Thread[#86,Execution worker Thread 2,5,main]) started.
+IdentityTransform (Thread[#85,Execution worker,5,main]) started.
+
+> Task :file-system:parseDebugLocalResources UP-TO-DATE
+Build cache key for task ':file-system:parseDebugLocalResources' is e78b4e5c3513a88c88cd11ebd3f8b776
+Skipping task ':file-system:parseDebugLocalResources' as it is up-to-date.
+IdentityTransform (Thread[#84,included builds,5,main]) started.
+IdentityTransform (Thread[#84,included builds,5,main]) started.
+IdentityTransform (Thread[#86,Execution worker Thread 2,5,main]) started.
+IdentityTransform (Thread[#85,Execution worker,5,main]) started.
+Resolve mutations for :file-system:generateDebugRFile (Thread[#84,included builds,5,main]) started.
+Resolve mutations for :file-system:javaPreCompileDebug (Thread[#85,Execution worker,5,main]) started.
+:file-system:javaPreCompileDebugUnitTest (Thread[#86,Execution worker Thread 2,5,main]) started.
+:file-system:generateDebugRFile (Thread[#84,included builds,5,main]) started.
+:file-system:javaPreCompileDebug (Thread[#85,Execution worker,5,main]) started.
+
+> Task :file-system:javaPreCompileDebug UP-TO-DATE
+Build cache key for task ':file-system:javaPreCompileDebug' is 204672e1df57eb679f72f3e174041952
+Skipping task ':file-system:javaPreCompileDebug' as it is up-to-date.
+
+> Task :file-system:javaPreCompileDebugUnitTest UP-TO-DATE
+Build cache key for task ':file-system:javaPreCompileDebugUnitTest' is 204672e1df57eb679f72f3e174041952
+Skipping task ':file-system:javaPreCompileDebugUnitTest' as it is up-to-date.
+
+> Task :file-system:compileDebugAidl UP-TO-DATE
+Build cache key for task ':file-system:compileDebugAidl' is d3ab182f84c429ab9a167d959564766f
+Skipping task ':file-system:compileDebugAidl' as it is up-to-date.
+
+> Task :file-system:generateDebugRFile UP-TO-DATE
+Build cache key for task ':file-system:generateDebugRFile' is 074b5e4205f910b94491d99d447b216c
+Skipping task ':file-system:generateDebugRFile' as it is up-to-date.
+Resolve mutations for :file-system:kspDebugKotlin (Thread[#87,Execution worker Thread 3,5,main]) started.
+work action resolve package-aware-r.txt (project :file-system) (Thread[#84,included builds,5,main]) started.
+Resolve mutations for :file-system:generateDebugUnitTestStubRFile (Thread[#84,included builds,5,main]) started.
+:file-system:generateDebugUnitTestStubRFile (Thread[#84,included builds,5,main]) started.
+:file-system:kspDebugKotlin (Thread[#87,Execution worker Thread 3,5,main]) started.
+
+> Task :file-system:kspDebugKotlin SKIPPED
+Skipping task ':file-system:kspDebugKotlin' as task onlyIf 'Task satisfies onlyIf spec' is false.
+Resolve mutations for :file-system:compileDebugKotlin (Thread[#87,Execution worker Thread 3,5,main]) started.
+:file-system:compileDebugKotlin (Thread[#87,Execution worker Thread 3,5,main]) started.
+
+> Task :file-system:generateDebugUnitTestStubRFile UP-TO-DATE
+Build cache key for task ':file-system:generateDebugUnitTestStubRFile' is f813304ece9b693739e4e870603f7d5e
+Skipping task ':file-system:generateDebugUnitTestStubRFile' as it is up-to-date.
+
+> Task :file-system:compileDebugKotlin UP-TO-DATE
+file or directory '/app/applet/file-system/src/main/java', not found
+file or directory '/app/applet/file-system/src/debug/java', not found
+file or directory '/app/applet/file-system/src/debug/kotlin', not found
+file or directory '/app/applet/file-system/src/main/java', not found
+file or directory '/app/applet/file-system/src/debug/java', not found
+file or directory '/app/applet/file-system/src/main/java', not found
+file or directory '/app/applet/file-system/src/debug/java', not found
+file or directory '/app/applet/file-system/src/debug/kotlin', not found
+file or directory '/app/applet/file-system/src/main/java', not found
+file or directory '/app/applet/file-system/src/debug/java', not found
+file or directory '/app/applet/file-system/src/main/java', not found
+file or directory '/app/applet/file-system/src/debug/java', not found
+file or directory '/app/applet/file-system/src/debug/kotlin', not found
+file or directory '/app/applet/file-system/src/main/java', not found
+file or directory '/app/applet/file-system/src/debug/java', not found
+Build cache key for task ':file-system:compileDebugKotlin' is c066707ee32cc5d3e66e5084fd341640
+Skipping task ':file-system:compileDebugKotlin' as it is up-to-date.
+Resolve mutations for :file-system:compileDebugJavaWithJavac (Thread[#87,Execution worker Thread 3,5,main]) started.
+Resolve mutations for :file-system:processDebugJavaRes (Thread[#85,Execution worker,5,main]) started.
+:file-system:compileDebugJavaWithJavac (Thread[#87,Execution worker Thread 3,5,main]) started.
+:file-system:processDebugJavaRes (Thread[#85,Execution worker,5,main]) started.
+
+> Task :file-system:compileDebugJavaWithJavac UP-TO-DATE
+Build cache key for task ':file-system:compileDebugJavaWithJavac' is 90e9ecbe6e622293932575301a5bc61f
+Skipping task ':file-system:compileDebugJavaWithJavac' as it is up-to-date.
+No compile result for :file-system:compileDebugJavaWithJavac
+Resolve mutations for :file-system:bundleLibRuntimeToJarDebug (Thread[#87,Execution worker Thread 3,5,main]) started.
+
+> Task :file-system:processDebugJavaRes UP-TO-DATE
+file or directory '/app/applet/file-system/src/main/resources', not found
+file or directory '/app/applet/file-system/src/debug/resources', not found
+Caching disabled for task ':file-system:processDebugJavaRes' because:
+  Caching has been disabled for the task
+Skipping task ':file-system:processDebugJavaRes' as it is up-to-date.
+Resolve mutations for :file-system:bundleLibCompileToJarDebug (Thread[#85,Execution worker,5,main]) started.
+:file-system:bundleLibRuntimeToJarDebug (Thread[#87,Execution worker Thread 3,5,main]) started.
+:file-system:bundleLibCompileToJarDebug (Thread[#85,Execution worker,5,main]) started.
+work action resolve out (project :file-system) (Thread[#84,included builds,5,main]) started.
+
+> Task :file-system:bundleLibRuntimeToJarDebug UP-TO-DATE
+Caching disabled for task ':file-system:bundleLibRuntimeToJarDebug' because:
+  Simple merging task
+Skipping task ':file-system:bundleLibRuntimeToJarDebug' as it is up-to-date.
+work action resolve classes.jar (project :file-system) (Thread[#87,Execution worker Thread 3,5,main]) started.
+
+> Task :file-system:bundleLibCompileToJarDebug UP-TO-DATE
+Caching disabled for task ':file-system:bundleLibCompileToJarDebug' because:
+  Simple merging task
+Skipping task ':file-system:bundleLibCompileToJarDebug' as it is up-to-date.
+work action resolve classes.jar (project :file-system) (Thread[#85,Execution worker,5,main]) started.
+Resolve mutations for :file-system:kspDebugUnitTestKotlin (Thread[#85,Execution worker,5,main]) started.
+:file-system:kspDebugUnitTestKotlin (Thread[#85,Execution worker,5,main]) started.
+
+> Task :file-system:kspDebugUnitTestKotlin SKIPPED
+Skipping task ':file-system:kspDebugUnitTestKotlin' as task onlyIf 'Task satisfies onlyIf spec' is false.
+Resolve mutations for :file-system:compileDebugUnitTestKotlin (Thread[#85,Execution worker,5,main]) started.
+:file-system:compileDebugUnitTestKotlin (Thread[#85,Execution worker,5,main]) started.
+
+> Task :file-system:compileDebugUnitTestKotlin
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/src/testDebug/kotlin', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/src/testDebug/kotlin', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/src/testDebug/kotlin', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+Build cache key for task ':file-system:compileDebugUnitTestKotlin' is 26158df1d9ed2d2ae9c3b5641e7878f4
+Task ':file-system:compileDebugUnitTestKotlin' is not up-to-date because:
+  Input property 'sources' file /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt has changed.
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/src/testDebug/kotlin', not found
+file or directory '/app/applet/file-system/src/testDebug/kotlin', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/build/generated/ksp/debugUnitTest/java', not found
+file or directory '/app/applet/file-system/build/generated/ksp/debugUnitTest/kotlin', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/src/testDebug/kotlin', not found
+file or directory '/app/applet/file-system/src/testDebug/kotlin', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/build/generated/ksp/debugUnitTest/java', not found
+file or directory '/app/applet/file-system/build/generated/ksp/debugUnitTest/kotlin', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/src/testDebug/kotlin', not found
+file or directory '/app/applet/file-system/src/testDebug/kotlin', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/build/generated/ksp/debugUnitTest/java', not found
+file or directory '/app/applet/file-system/build/generated/ksp/debugUnitTest/kotlin', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/src/testDebug/kotlin', not found
+file or directory '/app/applet/file-system/src/testDebug/kotlin', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/test/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/src/testDebug/java', not found
+file or directory '/app/applet/file-system/build/generated/ksp/debugUnitTest/java', not found
+file or directory '/app/applet/file-system/build/generated/ksp/debugUnitTest/kotlin', not found
+Kotlin source files: /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/testutil/TestStorageErrorMapper.kt, /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/testutil/TestFileSystemContracts.kt, /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/filesystem/local/LocalStreamTransferHelperTest.kt, /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/filesystem/local/LocalDirectoryOperationHelperTest.kt, /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/filesystem/bridge/DirectoryManifestValidatorTest.kt, /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/filesystem/saf/SafMoveTargetValidatorTest.kt, /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/filesystem/StorageBackendClassifierTest.kt, /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/mapper/FileItemMapperTest.kt, /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt, /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/DirectoryRepositoryImplTest.kt, /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/FileRepositoryCrossBridgeTest.kt, /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/FileRepositoryImplTest.kt, /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/error/StorageErrorMapperTest.kt, /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/metadata/LocalDetailedMetadataReaderTest.kt, /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/metadata/FileMetadataReaderTest.kt, /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/shizuku/PrivilegedFileServicePathResolutionTest.kt, /app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/provider/InternalVolumeProviderTest.kt
+Java source files: 
+Script source files: 
+Script file extensions: 
+Using Kotlin/JVM incremental compilation
+[KOTLIN] Kotlin compilation 'jdkHome' argument: /usr/lib/jvm/temurin-21-jdk-amd64
+Finished executing kotlin compiler using IN_PROCESS strategy
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/filesystem/local/LocalStreamTransferHelperTest.kt:82:30 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'File?'.
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:34:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:40:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:52:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:54:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:67:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:69:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:71:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:73:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:98:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:102:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///app/applet/file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImplTest.kt:108:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+Stored cache entry for task ':file-system:compileDebugUnitTestKotlin' with cache key 26158df1d9ed2d2ae9c3b5641e7878f4
+Resolve mutations for :file-system:compileDebugUnitTestJavaWithJavac (Thread[#85,Execution worker,5,main]) started.
+Resolve mutations for :file-system:processDebugUnitTestJavaRes (Thread[#87,Execution worker Thread 3,5,main]) started.
+:file-system:processDebugUnitTestJavaRes (Thread[#87,Execution worker Thread 3,5,main]) started.
+:file-system:compileDebugUnitTestJavaWithJavac (Thread[#85,Execution worker,5,main]) started.
+
+> Task :file-system:compileDebugUnitTestJavaWithJavac NO-SOURCE
+Skipping task ':file-system:compileDebugUnitTestJavaWithJavac' as it has no source files and no previous output files.
+
+> Task :file-system:processDebugUnitTestJavaRes UP-TO-DATE
+file or directory '/app/applet/file-system/src/test/resources', not found
+file or directory '/app/applet/file-system/src/testDebug/resources', not found
+Caching disabled for task ':file-system:processDebugUnitTestJavaRes' because:
+  Caching has been disabled for the task
+Skipping task ':file-system:processDebugUnitTestJavaRes' as it is up-to-date.
+Resolve mutations for :file-system:testDebugUnitTest (Thread[#87,Execution worker Thread 3,5,main]) started.
+:file-system:testDebugUnitTest (Thread[#87,Execution worker Thread 3,5,main]) started.
+Gradle Test Executor 1 started executing tests.
+Gradle Test Executor 1 finished executing tests.
+
+> Task :file-system:testDebugUnitTest
+Deleting stale output file: /app/applet/file-system/build/test-results/testDebugUnitTest/binary
+Deleting stale output file: /app/applet/file-system/build/reports/tests/testDebugUnitTest
+Deleting stale output file: /app/applet/file-system/build/test-results/testDebugUnitTest
+Build cache key for task ':file-system:testDebugUnitTest' is 7e7e047a1ceef94537b71e53c8b98047
+Task ':file-system:testDebugUnitTest' is not up-to-date because:
+  No history is available.
+file or directory '/app/applet/file-system/build/generated/ksp/debugUnitTest/resources', not found
+file or directory '/app/applet/file-system/build/generated/ksp/debugUnitTest/classes', not found
+file or directory '/app/applet/file-system/build/intermediates/javac/debugUnitTest/compileDebugUnitTestJavaWithJavac/classes', not found
+Starting process 'Gradle Test Executor 1'. Working directory: /app/applet/file-system Command: /usr/lib/jvm/temurin-21-jdk-amd64/bin/java -Djava.awt.headless=true -Djava.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib:/app/applet/file-system/src/testDebug/jniLibs:/app/applet/file-system/src/test/jniLibs -Dorg.gradle.internal.worker.tmpdir=/app/applet/file-system/build/tmp/testDebugUnitTest/work --add-opens=java.base/java.io=ALL-UNNAMED @/opt/gradle/.gradle/.tmp/gradle-worker-classpath18376667065393836664txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 1'
+Successfully started process 'Gradle Test Executor 1'
+
+StorageVolumeRepositoryImplTest > concurrentCollectors_registerReceiverOnlyOnce STANDARD_OUT
+    Before register assert: registerCount = 0
+
+StorageVolumeRepositoryImplTest > concurrentCollectors_registerReceiverOnlyOnce FAILED
+    java.lang.AssertionError: expected:<1> but was:<0>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at com.wakwau.xplore.core.storage.repository.StorageVolumeRepositoryImplTest$concurrentCollectors_registerReceiverOnlyOnce$1.invokeSuspend(StorageVolumeRepositoryImplTest.kt:37)
+        at com.wakwau.xplore.core.storage.repository.StorageVolumeRepositoryImplTest$concurrentCollectors_registerReceiverOnlyOnce$1.invoke(StorageVolumeRepositoryImplTest.kt)
+        at com.wakwau.xplore.core.storage.repository.StorageVolumeRepositoryImplTest$concurrentCollectors_registerReceiverOnlyOnce$1.invoke(StorageVolumeRepositoryImplTest.kt)
+        at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:317)
+        at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+        at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+        at kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:24)
+        at kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:99)
+        at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:326)
+        at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+        at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+        at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)
+        at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:94)
+        at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:70)
+        at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source)
+        at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:48)
+        at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source)
+        at kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:10)
+        at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:309)
+        at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(Unknown Source)
+        at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:167)
+        at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(Unknown Source)
+        at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0$default(TestBuilders.kt:159)
+        at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0$default(Unknown Source)
+        at com.wakwau.xplore.core.storage.repository.StorageVolumeRepositoryImplTest.concurrentCollectors_registerReceiverOnlyOnce(StorageVolumeRepositoryImplTest.kt:28)
+
+1 test completed, 1 failed
+Generating HTML test report...
+Finished generating test html results (0.061 secs) into: /app/applet/file-system/build/reports/tests/testDebugUnitTest
+Finished generating test XML results (0.007 secs) into: /app/applet/file-system/build/test-results/testDebugUnitTest
+
+> Task :file-system:testDebugUnitTest FAILED
+Build e8ac91d9-0847-413a-8812-8677faa6dbe4 is started
+Build e8ac91d9-0847-413a-8812-8677faa6dbe4 is closed
+
+See the complete report at file:///app/applet/build/reports/configuration-cache/9iwjddo8g8pkthky8t5u7j4pe/a7a7s9wk4jv44o28u1ubappv9/configuration-cache-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':file-system:testDebugUnitTest'.
+> There were failing tests. See the report at: file:///app/applet/file-system/build/reports/tests/testDebugUnitTest/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 45s
+21 actionable tasks: 2 executed, 19 up-to-date
+Configuration cache entry stored.
