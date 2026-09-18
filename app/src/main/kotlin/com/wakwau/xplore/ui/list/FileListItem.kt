@@ -37,7 +37,7 @@ import com.wakwau.xplore.ui.components.fileitem.FileListItemMetadata
 import com.wakwau.xplore.ui.components.fileitem.FileListItemThumbnail
 import com.wakwau.xplore.ui.icon.StorageIconMapper
 import com.wakwau.xplore.ui.selection.FolderCheckCycleState
-import com.wakwau.xplore.component.treeScopeBorder
+import com.wakwau.xplore.treeview.component.treeScopeBorder
 import com.wakwau.xplore.treeview.model.BorderPosition
 
 object FileListItemDefaults {
