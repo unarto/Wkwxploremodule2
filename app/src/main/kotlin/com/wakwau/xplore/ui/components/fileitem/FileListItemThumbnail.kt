@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/components/fileitem/FileListItemThumbnail.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/components/fileitem/FileListItemThumbnail.kt
 // [Penjelasan]: Komponen render visual thumbnail dan ikon berkas, mendukung ikon search root khusus dan thumbnail kategori format berkas.
 package com.wakwau.xplore.ui.components.fileitem
 

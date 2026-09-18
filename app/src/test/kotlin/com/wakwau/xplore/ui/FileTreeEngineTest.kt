@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/FileTreeEngineTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/FileTreeEngineTest.kt
 // [Penjelasan]: Unit test untuk FileTreeEngine yang disesuaikan dengan kontrak DirectoryRepository, AppPreferencesRepository, dan model FileItem terkini.
 package com.wakwau.xplore.ui
 
@@ -84,7 +84,7 @@ class FileTreeEngineTest {
 
     @Test
     fun `loadRoot with empty directory has empty children and expands without placeholder`() = runTest {
-        // [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/FileTreeEngineTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/FileTreeEngineTest.kt
         // [Penjelasan]: Verifikasi bahwa direktori kosong tidak menyuntikkan node placeholder tiruan ke dalam struktur data domain tree.
         val rootLocation = StorageLocation("/emptyDir", "local")
         val rootItem = createFileItem("/emptyDir", FileType.DIRECTORY)
@@ -281,7 +281,7 @@ class FileTreeEngineTest {
         assertEquals("/storage/emulated/0", engine.selectedPath.value)
     }
 
-    // [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/FileTreeEngineTest.kt
+    // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/FileTreeEngineTest.kt
     // [Penjelasan]: Memverifikasi bahwa navigateUp ketika path tidak ditemukan pada node pohon tetap menggunakan GetParentLocationUseCase domain helper secara konsisten tanpa menghasilkan path kosong atau invalid.
     @Test
     fun `navigateUp when path not in tree resolves parent via domain usecase`() = runTest {
@@ -308,7 +308,7 @@ class FileTreeEngineTest {
     }
 }
 
-// [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/FileTreeEngineTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/FileTreeEngineTest.kt
 // [Penjelasan]: Fake repository untuk simulasi DirectoryRepository dalam unit test FileTreeEngine.
 class FakeDirectoryRepository : DirectoryRepository {
     var shouldFail = false
@@ -330,7 +330,7 @@ class FakeDirectoryRepository : DirectoryRepository {
     }
 }
 
-// [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/FileTreeEngineTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/FileTreeEngineTest.kt
 // [Penjelasan]: Fake repository untuk simulasi AppPreferencesRepository dalam unit test FileTreeEngine.
 class FakeAppPreferencesRepository(
     initialPreferences: FilePreferencesState = FilePreferencesState()

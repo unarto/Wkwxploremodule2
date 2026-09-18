@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/selection/TreeSelectionHandlerTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/selection/TreeSelectionHandlerTest.kt
 // [Penjelasan]: Pengujian unit komprehensif untuk evaluasi status seleksi X-plore: Storage node protection, Folder 3-state cycle (Single Mark, Mark All Children, Unmark All), Strict Scope Isolation guard pada sibling, dan 2-state toggle pada berkas.
 package com.wakwau.xplore.ui.selection
 
@@ -40,7 +40,7 @@ class TreeSelectionHandlerTest {
         )
     }
 
-    // [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/selection/TreeSelectionHandlerTest.kt
+    // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/selection/TreeSelectionHandlerTest.kt
     // [Penjelasan]: Memverifikasi bahwa node Storage tidak boleh berstatus CHECKED dan aksi klik hanya mengubah direct children.
     @Test
     fun `test storage node protection and direct children selection`() {
@@ -90,7 +90,7 @@ class TreeSelectionHandlerTest {
         assertEquals(FolderCheckCycleState.UNCHECKED, handler.getSelectionState(docNode, sel2))
     }
 
-    // [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/selection/TreeSelectionHandlerTest.kt
+    // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/selection/TreeSelectionHandlerTest.kt
     // [Penjelasan]: Memverifikasi siklus 3-state pada Folder: Single Mark (Klik 1), Mark All Children (Klik 2), dan Unmark All (Klik 3).
     @Test
     fun `test folder 3-state selection cycle (Single Mark, Mark All Children, Unmark All)`() {
@@ -167,7 +167,7 @@ class TreeSelectionHandlerTest {
         assertEquals(FolderCheckCycleState.CHECKED, handler.getSelectionState(androidNode, selection))
     }
 
-    // [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/selection/TreeSelectionHandlerTest.kt
+    // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/selection/TreeSelectionHandlerTest.kt
     // [Penjelasan]: Memverifikasi Strict Scope Isolation Guard di mana operasi ceklis pada satu folder auto-deselect item di luar scope jalurnya.
     @Test
     fun `test strict scope isolation guard for sibling folders and files`() {
@@ -223,7 +223,7 @@ class TreeSelectionHandlerTest {
         assertEquals(FolderCheckCycleState.UNCHECKED, handler.getSelectionState(alarmsNode, sel3))
     }
 
-    // [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/selection/TreeSelectionHandlerTest.kt
+    // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/selection/TreeSelectionHandlerTest.kt
     // [Penjelasan]: Memverifikasi siklus 2-state pada berkas tunggal (UNCHECKED <-> CHECKED).
     @Test
     fun `test file 2-state toggle between unchecked and checked`() {
@@ -244,7 +244,7 @@ class TreeSelectionHandlerTest {
         assertEquals(FolderCheckCycleState.UNCHECKED, handler.getSelectionState(fileNode, sel2))
     }
 
-    // [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/selection/TreeSelectionHandlerTest.kt
+    // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/selection/TreeSelectionHandlerTest.kt
     // [Penjelasan]: Memverifikasi Multi-Select pada berkas-berkas yang berada di bawah parent direktori yang sama, serta deselect berkas di luar parent.
     @Test
     fun `test multi-select files under same parent and deselect outside parent`() {
@@ -288,7 +288,7 @@ class TreeSelectionHandlerTest {
         assertEquals(1, selection.size)
     }
 
-    // [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/selection/TreeSelectionHandlerTest.kt
+    // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/selection/TreeSelectionHandlerTest.kt
     // [Penjelasan]: Memverifikasi toggle pada folder kosong (UNCHECKED <-> CHECKED).
     @Test
     fun `test empty folder cycle toggles between check and uncheck`() {
@@ -314,7 +314,7 @@ class TreeSelectionHandlerTest {
         assertEquals(FolderCheckCycleState.UNCHECKED, handler.getSelectionState(emptyDirNode, currentSelection))
     }
 
-    // [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/selection/TreeSelectionHandlerTest.kt
+    // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/selection/TreeSelectionHandlerTest.kt
     // [Penjelasan]: Memverifikasi Strict Scope Isolation Guard antar Storage Node berbeda (misal Internal Storage vs Kartu SD).
     @Test
     fun `test multi-storage scope isolation between internal storage and sdcard`() {

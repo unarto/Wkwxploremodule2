@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/local/LocalStreamTransferHelper.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/local/LocalStreamTransferHelper.kt
 // [Penjelasan]: Helper terisolasi untuk menangani transfer streaming byte I/O lokal (single file copy, channel transfer, buffer fallback, dan verifikasi integritas ukuran).
 package com.wakwau.xplore.core.storage.filesystem.local
 

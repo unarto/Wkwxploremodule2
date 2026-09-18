@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: search/src/main/kotlin/com/wakwau/xplore/search/matcher/SearchQueryFilterMatcher.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/search/matcher/SearchQueryFilterMatcher.kt
 // [Penjelasan]: Evaluator domain murni untuk memeriksa apakah FileItem memenuhi kriteria filter pencarian (kata kunci nama, pola wildcard regex, ekstensi, batas ukuran min/max, dan berkas tersembunyi).
 package com.wakwau.xplore.search.matcher
 

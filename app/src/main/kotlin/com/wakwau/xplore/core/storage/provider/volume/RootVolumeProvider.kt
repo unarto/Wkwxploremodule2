@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/provider/volume/RootVolumeProvider.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/provider/volume/RootVolumeProvider.kt
 // [Penjelasan]: Provider khusus untuk mendeteksi ketersediaan akses Root melalui Shizuku IPC binder dan menyediakan item root volume.
 package com.wakwau.xplore.core.storage.provider.volume
 

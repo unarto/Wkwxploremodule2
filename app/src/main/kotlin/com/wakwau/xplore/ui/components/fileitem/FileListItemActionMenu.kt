@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/components/fileitem/FileListItemActionMenu.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/components/fileitem/FileListItemActionMenu.kt
 // [Penjelasan]: Komponen tombol centang seleksi multiselect berkas (mendukung 3-state untuk folder dan 2-state untuk berkas) dan penanda aksi baris.
 package com.wakwau.xplore.ui.components.fileitem
 

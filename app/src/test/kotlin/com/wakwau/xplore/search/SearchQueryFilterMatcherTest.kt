@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: search/src/test/kotlin/com/wakwau/xplore/search/SearchQueryFilterMatcherTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/search/SearchQueryFilterMatcherTest.kt
 // [Penjelasan]: Unit test untuk SearchQueryFilterMatcher memverifikasi pencocokan kata kunci, ekstensi file, dan batas ukuran file dengan model domain terkini.
 package com.wakwau.xplore.search
 

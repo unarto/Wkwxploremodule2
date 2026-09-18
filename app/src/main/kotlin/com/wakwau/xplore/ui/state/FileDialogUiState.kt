@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/state/FileDialogUiState.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/state/FileDialogUiState.kt
 // [Penjelasan]: State representasi UI dialog input berkas (pembuatan folder baru, ganti nama, konfirmasi hapus) yang bersifat immutable dan murni MVI.
 package com.wakwau.xplore.ui.state
 

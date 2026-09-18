@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: treeview/src/main/java/com/wakwau/xplore/treeview/component/TreeNodeRow.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/treeview/component/TreeNodeRow.kt
 // [Penjelasan]: Komponen UI composable untuk me-render satu baris node dalam hierarki generik beserta garis panduan cabang dan indentasi terstruktur.
 package com.wakwau.xplore.treeview.component
 

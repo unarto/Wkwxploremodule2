@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/gesture/PanelSwipeHandler.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/gesture/PanelSwipeHandler.kt
 // [Penjelasan]: Modifier gesture deteksi swipe kiri/kanan antar panel dengan konstanta threshold terpusat.
 package com.wakwau.xplore.ui.gesture
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/permission/SafPermissionHandlerImpl.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/permission/SafPermissionHandlerImpl.kt
 // [Penjelasan]: Implementasi dari SafPermissionHandler untuk memanggil API ContentResolver serta memeriksa izin URI persistable.
 package com.wakwau.xplore.core.storage.permission
 

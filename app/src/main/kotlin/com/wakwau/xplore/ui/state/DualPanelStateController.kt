@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/state/DualPanelStateController.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/state/DualPanelStateController.kt
 // [Penjelasan]: Implementasi komponen logika & presentasi antar muka.
 package com.wakwau.xplore.ui.state
 import com.wakwau.xplore.filemanager.state.PanelId

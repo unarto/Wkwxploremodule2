@@ -1,4 +1,4 @@
-// [Modul: :core-storage-api] [Jalur Class]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/repository/FileRepository.kt
+// [Modul: :core-storage-api] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/core/storage/repository/FileRepository.kt
 // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API
 package com.wakwau.xplore.core.storage.repository
 
@@ -9,7 +9,7 @@ import com.wakwau.xplore.core.storage.operation.FileOperationResult
 import kotlinx.coroutines.flow.Flow
 
 interface FileRepository {
-    // [Modul: :core-storage-api] [Jalur Class]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/repository/FileRepository.kt
+    // [Modul: :core-storage-api] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/core/storage/repository/FileRepository.kt
     // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API
     suspend fun createDirectory(location: StorageLocation, name: String): FileOperationResult<FileItem>
     suspend fun delete(location: StorageLocation): FileOperationResult<Unit>

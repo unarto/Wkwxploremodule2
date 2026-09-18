@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/model/StorageSpaceInfo.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/model/StorageSpaceInfo.kt
 // [Penjelasan]: Model data immutable penyimpan informasi kapasitas penyimpanan (total, free, used, percentage).
 package com.wakwau.xplore.core.storage.model
 

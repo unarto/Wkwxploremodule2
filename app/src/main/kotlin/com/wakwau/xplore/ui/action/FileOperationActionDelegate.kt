@@ -1,4 +1,4 @@
-// [Modul: :filemanager-ui] [Jalur Class]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/action/FileOperationActionDelegate.kt
+// [Modul: :filemanager-ui] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/ui/action/FileOperationActionDelegate.kt
 // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API
 package com.wakwau.xplore.ui.action
 
@@ -13,7 +13,7 @@ interface FileOperationActionDelegate {
     fun requestDelete(state: DualPaneState, items: List<FileItem>)
     fun requestRename(state: DualPaneState, item: FileItem, newName: String)
     fun requestSearch(query: FileSearchQuery)
-    // [Modul: :filemanager-ui] [Jalur Class]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/action/FileOperationActionDelegate.kt
+    // [Modul: :filemanager-ui] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/ui/action/FileOperationActionDelegate.kt
     // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API
     fun dispatchEvent(event: DualPaneEvent)
 }

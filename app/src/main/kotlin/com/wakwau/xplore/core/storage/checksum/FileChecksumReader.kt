@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/checksum/FileChecksumReader.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/checksum/FileChecksumReader.kt
 // [Penjelasan]: Kontrak interface domain untuk membaca atau menghitung checksum hash kriptografis berkas.
 package com.wakwau.xplore.core.storage.checksum
 

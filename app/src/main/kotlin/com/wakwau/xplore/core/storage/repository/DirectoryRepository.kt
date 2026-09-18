@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/repository/DirectoryRepository.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/repository/DirectoryRepository.kt
 // [Penjelasan]: Antarmuka kontrak repository untuk operasi direktori (listing berkas dan pembuatan folder).
 package com.wakwau.xplore.core.storage.repository
 

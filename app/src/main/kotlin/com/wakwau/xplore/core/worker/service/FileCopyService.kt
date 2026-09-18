@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-worker/src/main/kotlin/com/wakwau/xplore/core/worker/service/FileCopyService.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/worker/service/FileCopyService.kt
 // [Penjelasan]: Foreground Service untuk mengelola dan memantau proses penyalinan/pemindahan berkas di latar belakang.
 package com.wakwau.xplore.core.worker.service
 

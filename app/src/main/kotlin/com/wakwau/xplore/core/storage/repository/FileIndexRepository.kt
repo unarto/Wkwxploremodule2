@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/repository/FileIndexRepository.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/repository/FileIndexRepository.kt
 // [Penjelasan]: Antarmuka kontrak repository indeks berkas untuk abstraksi persistensi pencarian cepat dan sinkronisasi berkas tanpa ketergantungan framework persistensi.
 package com.wakwau.xplore.core.storage.repository
 

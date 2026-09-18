@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/FileSystemContract.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/FileSystemContract.kt
 // [Penjelasan]: Kontrak interface dasar untuk seluruh backend sistem berkas (Local, SAF, Shizuku, Root) yang mendefinisikan operasi I/O dan manajemen direktori secara konsisten tanpa ketergantungan pada Android OS, libsu, atau Shizuku.
 
 package com.wakwau.xplore.core.storage.filesystem

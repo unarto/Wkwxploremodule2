@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/screen/PermissionScreen.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/screen/PermissionScreen.kt
 // [Penjelasan]: Layar Composable untuk meminta izin akses penyimpanan pengguna secara konsolidasi tanpa duplikasi modul UI.
 package com.wakwau.xplore.ui.screen
 

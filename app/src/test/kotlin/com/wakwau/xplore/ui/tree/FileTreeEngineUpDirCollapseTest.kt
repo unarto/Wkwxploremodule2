@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/tree/FileTreeEngineUpDirCollapseTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/tree/FileTreeEngineUpDirCollapseTest.kt
 // [Penjelasan]: Regression tests untuk memverifikasi bahwa navigasi Up Dir secara otomatis meng-collapse folder yang ditinggalkan sesuai perilaku X-plore, menjaga konsistensi state ekspansi pohon, tidak merusak ekspansi branch lain, dan mempertahankan independensi panel kiri dan kanan.
 package com.wakwau.xplore.ui.tree
 
@@ -61,7 +61,7 @@ class FileTreeEngineUpDirCollapseTest {
         )
     }
 
-    // [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/tree/FileTreeEngineUpDirCollapseTest.kt
+    // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/tree/FileTreeEngineUpDirCollapseTest.kt
     // [Penjelasan]: Skenario 1 - Root -> Folder A -> Folder B -> Up Dir -> Folder B di-collapse, lokasi aktif Folder A, dan fokus node pada Folder A.
     @Test
     fun `test Up Dir collapses abandoned folder B when navigating back to folder A`() = runTest {
@@ -111,7 +111,7 @@ class FileTreeEngineUpDirCollapseTest {
         assertEquals(listOf(rootItem.location.path, folderA.location.path, folderB.location.path), visiblePaths)
     }
 
-    // [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/tree/FileTreeEngineUpDirCollapseTest.kt
+    // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/tree/FileTreeEngineUpDirCollapseTest.kt
     // [Penjelasan]: Skenario 2 - Navigasi bertingkat beberapa level: Root -> A -> B -> C -> D -> Up Dir bertahap.
     @Test
     fun `test nested multiple levels Up Dir collapses each level step by step`() = runTest {
@@ -180,7 +180,7 @@ class FileTreeEngineUpDirCollapseTest {
         assertEquals(root.location.path, engine.selectedPath.value)
     }
 
-    // [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/tree/FileTreeEngineUpDirCollapseTest.kt
+    // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/tree/FileTreeEngineUpDirCollapseTest.kt
     // [Penjelasan]: Skenario 3 - Up Dir tidak merusak status ekspansi folder lain yang berdampingan (sibling).
     @Test
     fun `test Up Dir does not damage expansion of sibling folders`() = runTest {
@@ -230,7 +230,7 @@ class FileTreeEngineUpDirCollapseTest {
         assertTrue(nodeOtherChild.isExpanded)
     }
 
-    // [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/tree/FileTreeEngineUpDirCollapseTest.kt
+    // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/tree/FileTreeEngineUpDirCollapseTest.kt
     // [Penjelasan]: Skenario 4 - Panel kiri dan kanan tetap independen saat Up Dir di-trigger pada salah satu panel.
     @Test
     fun `test left and right panel tree engines are independent during Up Dir collapse`() = runTest {
@@ -287,7 +287,7 @@ class FileTreeEngineUpDirCollapseTest {
         assertTrue(rightNodeX.isExpanded)
     }
 
-    // [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/tree/FileTreeEngineUpDirCollapseTest.kt
+    // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/tree/FileTreeEngineUpDirCollapseTest.kt
     // [Penjelasan]: Skenario 5 & 6 - Memverifikasi konsistensi visibleNodes dan selectedPath setelah navigasi Up Dir.
     @Test
     fun `test selected and focused node remains parent node and visibleNodes is consistent after Up Dir`() = runTest {

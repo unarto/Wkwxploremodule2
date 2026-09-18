@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/detail/FileDetailInfoTab.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/detail/FileDetailInfoTab.kt
 // [Penjelasan]: Tab informasi berkas yang menampilkan metadata mendalam (jalur, nama, mime type, ukuran byte detail, tanggal ubah, dan pemicu buka berkas melalui system chooser).
 package com.wakwau.xplore.ui.detail
 

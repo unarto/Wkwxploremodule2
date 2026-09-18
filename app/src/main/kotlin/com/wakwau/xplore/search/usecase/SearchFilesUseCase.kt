@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: search/src/main/kotlin/com/wakwau/xplore/search/usecase/SearchFilesUseCase.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/search/usecase/SearchFilesUseCase.kt
 // [Penjelasan]: Use case untuk memicu pencarian berkas secara asinkron menggunakan FileSearchService.
 package com.wakwau.xplore.search.usecase
 

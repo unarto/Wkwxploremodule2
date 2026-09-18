@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage/src/main/kotlin/com/wakwau/xplore/core/storage/db/DatabaseProvider.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/db/DatabaseProvider.kt
 // [Penjelasan]: Provider singleton thread-safe untuk Room AppDatabase dan DAO file_index.
 package com.wakwau.xplore.core.storage.db
 

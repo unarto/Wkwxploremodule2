@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations/src/main/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCase.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCase.kt
 // [Penjelasan]: UseCase penyelesaian benturan berkas untuk mentransformasi daftar berkas sumber dan keputusan pengguna menjadi ResolvedTransferItem siap eksekusi menggunakan DetailedMetadataReader untuk deteksi tipe direktori secara akurat.
 package com.wakwau.xplore.fileoperations.conflict
 

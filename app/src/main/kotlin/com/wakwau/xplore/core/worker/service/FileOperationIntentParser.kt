@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-worker/src/main/kotlin/com/wakwau/xplore/core/worker/service/FileOperationIntentParser.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/worker/service/FileOperationIntentParser.kt
 // [Penjelasan]: Helper untuk deserialisasi JSON dari Intent untuk operasi berkas (StorageLocation dan ResolvedTransferItem).
 package com.wakwau.xplore.core.worker.service
 

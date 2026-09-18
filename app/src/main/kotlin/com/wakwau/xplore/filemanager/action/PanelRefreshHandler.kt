@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/action/PanelRefreshHandler.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/action/PanelRefreshHandler.kt
 // [Penjelasan]: Domain Action Handler pemuatan direktori panel via ListDirectoryUseCase dan dispatch event hasil muat ke state panel.
 package com.wakwau.xplore.filemanager.action
 

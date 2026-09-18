@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/bridge/CrossFilesystemTransferBridge.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/bridge/CrossFilesystemTransferBridge.kt
 // [Penjelasan]: Bridge transfer streaming I/O lintas sistem berkas (Local <-> SAF <-> Shizuku <-> Root) yang mendelegasikan manajemen direktori ke CrossFilesystemDirectoryTransferHelper (< 250 LOC).
 package com.wakwau.xplore.core.storage.filesystem.bridge
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/constant/StorageConstants.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/constant/StorageConstants.kt
 // [Penjelasan]: Menambahkan konstanta virtual node search, ID search prefix, scheme URI, ID storage root, sdcard, unknown error, dan default volume names untuk standarisasi domain node tanpa hardcoding.
 package com.wakwau.xplore.core.storage.constant
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: treeview/src/main/java/com/wakwau/xplore/treeview/model/FlattenedTreeNode.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/treeview/model/FlattenedTreeNode.kt
 // [Penjelasan]: Implementasi komponen UI / struktur data untuk TreeView yang bersifat generik dan dapat digunakan ulang tanpa keterikatan domain spesifik.
 package com.wakwau.xplore.treeview.model
 

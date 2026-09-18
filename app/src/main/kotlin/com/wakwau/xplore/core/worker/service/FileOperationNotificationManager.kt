@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-worker/src/main/kotlin/com/wakwau/xplore/core/worker/service/FileOperationNotificationManager.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/worker/service/FileOperationNotificationManager.kt
 // [Penjelasan]: Manager isolasi untuk pembuatan channel dan notifikasi progres operasi berkas, menghapus tanggungan notifikasi dari Service utama.
 package com.wakwau.xplore.core.worker.service
 

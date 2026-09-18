@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/shizuku/SafShizukuFileSystem.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/shizuku/SafShizukuFileSystem.kt
 // [Penjelasan]: Implementasi fasad sistem berkas nyata untuk akses Privileged Root/Shizuku menggunakan IPC AIDL IPrivilegedFileService yang mendelegasikan pemetaan data Bundle ke ShizukuBundleMapper dan logika transfer ke ShizukuFileTransferHandler (< 250 LOC).
 package com.wakwau.xplore.core.storage.filesystem.shizuku
 

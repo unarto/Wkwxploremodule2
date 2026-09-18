@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-utils/src/main/java/com/wakwau/xplore/core/utils/formatter/ByteFormatter.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/utils/formatter/ByteFormatter.kt
 // [Penjelasan]: Utilitas pemformat byte untuk konversi ukuran berkas ke satuan terstruktur dan format detail dengan tanda petik pemisah ribuan.
 package com.wakwau.xplore.core.utils.formatter
 

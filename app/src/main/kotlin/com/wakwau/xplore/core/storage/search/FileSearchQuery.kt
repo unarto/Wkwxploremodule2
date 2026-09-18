@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/search/FileSearchQuery.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/search/FileSearchQuery.kt
 // [Penjelasan]: Model data query parameter pencarian berkas (kata kunci, filter ekstensi, tipe file, dan ukuran).
 package com.wakwau.xplore.core.storage.search
 

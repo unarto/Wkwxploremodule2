@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/root/RootDirectoryListingHelper.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/root/RootDirectoryListingHelper.kt
 // [Penjelasan]: Helper terisolasi untuk menangani pembacaan listing, metadata berkas root, pembuatan direktori, dan sanitasi path direktori root.
 package com.wakwau.xplore.core.storage.filesystem.root
 

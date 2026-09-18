@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-worker/src/main/kotlin/com/wakwau/xplore/core/worker/client/FileCopyServiceClient.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/worker/client/FileCopyServiceClient.kt
 // [Penjelasan]: Klien eksekusi operasi berkas latar belakang di modul :core-worker yang mengimplementasikan kontrak BackgroundOperationClient dari :file-operations dan mendelegasikan ke FileCopyService melalui Android Service API tanpa pola Manager.
 package com.wakwau.xplore.core.worker.client
 

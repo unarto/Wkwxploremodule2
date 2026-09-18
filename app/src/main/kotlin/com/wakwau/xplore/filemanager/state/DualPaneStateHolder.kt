@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolder.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolder.kt
 // [Penjelasan]: Pure state holder dan domain orchestrator untuk panel ganda berbasis Coroutines dan StateFlow, bebas dari dependensi platform AndroidX Lifecycle, Uri, UI adapter, serta bebas dari coupling horizontal ke :file-operations dan :search.
 package com.wakwau.xplore.filemanager.state
 
@@ -35,7 +35,7 @@ class DualPaneStateHolder(
 ) {
     private var eventListener: ((DualPaneEvent) -> Unit)? = null
 
-    // [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolder.kt
+    // [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolder.kt
     // [Penjelasan]: Mendaftarkan listener event untuk sinkronisasi presentasi (misal TreeView) tanpa coupling ke modul UI.
     fun setEventListener(listener: (DualPaneEvent) -> Unit) {
         this.eventListener = listener
@@ -52,7 +52,7 @@ class DualPaneStateHolder(
     val preferencesState: StateFlow<FilePreferencesState> = appPreferencesRepository.preferencesState
 
     init {
-        // [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolder.kt
+        // [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolder.kt
         // [Penjelasan]: Mengamati pembaruan volume penyimpanan dan menyinkronkannya ke state panel ganda.
         scope.launch {
             getStorageVolumesUseCase.refresh()
@@ -64,7 +64,7 @@ class DualPaneStateHolder(
         checkPermission()
     }
 
-    // [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolder.kt
+    // [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolder.kt
     // [Penjelasan]: Memeriksa status izin akses penyimpanan dan memperbarui volume jika izin tersedia.
     fun checkPermission() {
         val hasPermission = checkStoragePermissionUseCase.hasPermission()
@@ -77,7 +77,7 @@ class DualPaneStateHolder(
         }
     }
 
-    // [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolder.kt
+    // [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolder.kt
     // [Penjelasan]: Mendaftarkan storage tertaut menggunakan URI string murni tanpa ketergantungan android.net.Uri.
     fun addLinkedStorage(uriString: String) {
         scope.launch {
@@ -86,7 +86,7 @@ class DualPaneStateHolder(
         }
     }
 
-    // [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolder.kt
+    // [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolder.kt
     // [Penjelasan]: Menghapus storage tertaut berdasarkan URI string murni tanpa ketergantungan android.net.Uri.
     fun removeLinkedStorage(uriString: String) {
         scope.launch {
@@ -95,7 +95,7 @@ class DualPaneStateHolder(
         }
     }
 
-    // [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolder.kt
+    // [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolder.kt
     // [Penjelasan]: Mengurangi state via pure reducer, memicu side effects, dan memberitahukan listener presentation.
     fun dispatch(event: DualPaneEvent) {
         val newState = reducer.reduce(_state.value, event)
@@ -105,7 +105,7 @@ class DualPaneStateHolder(
         eventListener?.invoke(event)
     }
 
-    // [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolder.kt
+    // [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolder.kt
     // [Penjelasan]: Menangani side effects domain (I/O, navigasi Up, dialog buat folder/rincian) di dalam CoroutineScope yang aman.
     private fun handleSideEffects(event: DualPaneEvent) {
         val stateSnapshot = _state.value

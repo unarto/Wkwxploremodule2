@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/usecase/GetParentLocationUseCase.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/usecase/GetParentLocationUseCase.kt
 // [Penjelasan]: Use case domain untuk menentukan direktori induk (parent) dari StorageLocation dengan validasi batas root volume storage tanpa manipulasi path java.io langsung di presentation layer.
 package com.wakwau.xplore.filemanager.usecase
 

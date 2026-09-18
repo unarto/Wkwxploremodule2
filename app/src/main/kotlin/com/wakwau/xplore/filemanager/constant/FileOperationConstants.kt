@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/constant/FileOperationConstants.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/constant/FileOperationConstants.kt
 // [Penjelasan]: Implementasi komponen logika & presentasi antar muka.
 package com.wakwau.xplore.filemanager.constant
 

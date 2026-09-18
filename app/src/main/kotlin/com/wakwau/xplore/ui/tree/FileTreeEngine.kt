@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/tree/FileTreeEngine.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/tree/FileTreeEngine.kt
 // [Penjelasan]: Engine pohon direktori berkas yang memuat hierarki folder secara asinkron menggunakan ListDirectoryUseCase, TreeState, FileTreeItemFactory, TreeUpDirNavigationHandler, dan TreeNodeSorter tanpa God Class.
 package com.wakwau.xplore.ui.tree
 

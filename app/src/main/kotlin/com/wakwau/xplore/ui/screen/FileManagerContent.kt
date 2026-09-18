@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/screen/FileManagerContent.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/screen/FileManagerContent.kt
 // [Penjelasan]: Menghubungkan trigger UI SideActionBar dan item long click dengan dialog CreateDirectoryDialog, RenameDialog, DeleteConfirmationDialog, serta FileDetailDialog dan FileSearchDialog secara murni MVI.
 package com.wakwau.xplore.ui.screen
 

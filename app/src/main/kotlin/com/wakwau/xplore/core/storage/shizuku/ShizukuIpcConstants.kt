@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/shizuku/ShizukuIpcConstants.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/shizuku/ShizukuIpcConstants.kt
 // [Penjelasan]: Konstanta terpusat untuk bundle keys IPC Shizuku, process name suffix, dan timeout/retry connection.
 package com.wakwau.xplore.core.storage.shizuku
 

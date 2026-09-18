@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: search/src/test/kotlin/com/wakwau/xplore/search/FileIndexSynchronizerTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/search/FileIndexSynchronizerTest.kt
 // [Penjelasan]: Unit test untuk FileIndexSynchronizer dalam menyinkronkan penambahan, pembaruan, dan penghapusan entitas indeks FileIndexRepository.
 package com.wakwau.xplore.search
 
@@ -55,7 +55,7 @@ class FileIndexSynchronizerTest {
             )
         )
 
-        // [Jalur Class/Modul]: search/src/test/kotlin/com/wakwau/xplore/search/FileIndexSynchronizerTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/search/FileIndexSynchronizerTest.kt
         // [Penjelasan]: Menguji bahwa syncBatch memproses dan menyimpan daftar FileItem secara bersamaan.
         synchronizer.syncBatch(items)
 
@@ -91,7 +91,7 @@ class FileIndexSynchronizerTest {
         synchronizer.syncBatch(items)
         assertEquals(3, fakeRepository.indexMap.size)
 
-        // [Jalur Class/Modul]: search/src/test/kotlin/com/wakwau/xplore/search/FileIndexSynchronizerTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/search/FileIndexSynchronizerTest.kt
         // [Penjelasan]: Menguji penghapusan hierarki prefix sehingga hanya item di luar prefix yang tersisa.
         synchronizer.removeByPrefix("/storage/emulated/0/folder")
 

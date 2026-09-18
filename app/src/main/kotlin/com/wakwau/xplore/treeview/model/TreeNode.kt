@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: treeview/src/main/java/com/wakwau/xplore/treeview/model/TreeNode.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/treeview/model/TreeNode.kt
 // [Penjelasan]: Model node tree generik beserta relasi parent-child dan status ekspansinya.
 package com.wakwau.xplore.treeview.model
 

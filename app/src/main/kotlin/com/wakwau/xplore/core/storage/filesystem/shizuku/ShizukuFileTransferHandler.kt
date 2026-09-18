@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/shizuku/ShizukuFileTransferHandler.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/shizuku/ShizukuFileTransferHandler.kt
 // [Penjelasan]: Mengelola operasi streaming byte untuk copy dan move lintas/dalam Shizuku filesystem, mem-bypass limit IPC dengan ParcelFileDescriptor, mencegah TransactionTooLargeException.
 package com.wakwau.xplore.core.storage.filesystem.shizuku
 

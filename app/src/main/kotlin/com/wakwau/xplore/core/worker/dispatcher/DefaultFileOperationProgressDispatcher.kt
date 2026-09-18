@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-worker/src/main/kotlin/com/wakwau/xplore/core/worker/dispatcher/DefaultFileOperationProgressDispatcher.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/worker/dispatcher/DefaultFileOperationProgressDispatcher.kt
 // [Penjelasan]: Implementasi konkret FileOperationProgressDispatcher menggunakan MutableSharedFlow terisolasi di modul :core-worker.
 package com.wakwau.xplore.core.worker.dispatcher
 

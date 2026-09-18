@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/model/StorageFailure.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/model/StorageFailure.kt
 // [Penjelasan]: Hierarki exception sealed class untuk kegagalan operasi sistem penyimpanan.
 package com.wakwau.xplore.core.storage.model
 

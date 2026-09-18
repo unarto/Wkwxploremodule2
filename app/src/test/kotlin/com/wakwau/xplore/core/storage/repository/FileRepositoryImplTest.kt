@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/FileRepositoryImplTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/core/storage/repository/FileRepositoryImplTest.kt
 // [Penjelasan]: Unit test untuk FileRepositoryImpl dengan LocalFileSystem dan test fixture contracts mandiri pada modul file-system.
 package com.wakwau.xplore.core.storage.repository
 

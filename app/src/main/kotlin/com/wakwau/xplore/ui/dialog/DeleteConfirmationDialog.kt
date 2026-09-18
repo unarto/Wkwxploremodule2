@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations-ui/src/main/kotlin/com/wakwau/xplore/fileoperations/ui/dialog/DeleteConfirmationDialog.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/dialog/DeleteConfirmationDialog.kt
 // [Penjelasan]: Dialog komponen untuk konfirmasi penghapusan file atau folder tunggal maupun jamak dalam sub-paket dialog.
 package com.wakwau.xplore.ui.dialog
 

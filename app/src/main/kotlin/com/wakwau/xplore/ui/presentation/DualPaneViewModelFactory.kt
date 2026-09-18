@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/presentation/DualPaneViewModelFactory.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/presentation/DualPaneViewModelFactory.kt
 // [Penjelasan]: Factory penyedia ViewModel yang menginstansiasi adapter DualPaneViewModel dengan menyuntikkan factory DualPaneStateHolder murni dan dependensi presentasi.
 package com.wakwau.xplore.ui.presentation
 

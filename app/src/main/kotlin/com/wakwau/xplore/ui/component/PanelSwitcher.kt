@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/component/PanelSwitcher.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/component/PanelSwitcher.kt
 // [Penjelasan]: Implementasi komponen logika & presentasi antar muka.
 package com.wakwau.xplore.ui.component
 

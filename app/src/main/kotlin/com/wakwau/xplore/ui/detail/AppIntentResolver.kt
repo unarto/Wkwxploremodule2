@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/detail/AppIntentResolver.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/detail/AppIntentResolver.kt
 // [Penjelasan]: Utilitas penyelesai intent Android di modul filemanager-ui untuk membuka berkas dengan Android system chooser secara aman tanpa memerlukan kueri manual daftar aplikasi atau izin package visibility.
 package com.wakwau.xplore.ui.detail
 

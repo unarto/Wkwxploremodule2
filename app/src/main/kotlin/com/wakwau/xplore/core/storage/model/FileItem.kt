@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/model/FileItem.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/model/FileItem.kt
 // [Penjelasan]: Model data immutable representasi entitas berkas atau folder dalam sistem penyimpanan.
 package com.wakwau.xplore.core.storage.model
 

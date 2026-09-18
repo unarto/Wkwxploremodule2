@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/shizuku/ShizukuBundleMapper.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/shizuku/ShizukuBundleMapper.kt
 // [Penjelasan]: Helper terisolasi untuk membongkar Bundle data/metadata IPC Shizuku AIDL (IPrivilegedFileService) menjadi entitas domain (FileItem).
 package com.wakwau.xplore.core.storage.filesystem.shizuku
 

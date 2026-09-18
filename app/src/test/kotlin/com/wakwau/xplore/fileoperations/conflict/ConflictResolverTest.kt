@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ConflictResolverTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ConflictResolverTest.kt
 // [Penjelasan]: Unit test untuk memverifikasi fungsionalitas ConflictResolver pada modul file-operations untuk resolusi benturan berkas dan folder (SKIP, OVERWRITE, RENAME, multiple conflict).
 package com.wakwau.xplore.fileoperations.conflict
 

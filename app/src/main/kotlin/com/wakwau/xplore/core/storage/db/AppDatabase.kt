@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage/src/main/kotlin/com/wakwau/xplore/core/storage/db/AppDatabase.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/db/AppDatabase.kt
 // [Penjelasan]: Room Database utama penyimpan skema FileIndexEntity.
 package com.wakwau.xplore.core.storage.db
 

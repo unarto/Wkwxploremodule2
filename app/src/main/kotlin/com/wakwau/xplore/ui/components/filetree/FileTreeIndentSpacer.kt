@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/components/filetree/FileTreeIndentSpacer.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/components/filetree/FileTreeIndentSpacer.kt
 // [Penjelasan]: Komponen pengatur garis dan spasi indentasi visual hierarki folder untuk node pohon berkas.
 package com.wakwau.xplore.ui.components.filetree
 

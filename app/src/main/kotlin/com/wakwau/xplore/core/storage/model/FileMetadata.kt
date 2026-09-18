@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/model/FileMetadata.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/model/FileMetadata.kt
 // [Penjelasan]: Model data immutable untuk metadata berkas (ukuran, timestamp modifikasi/pembuatan, dan hak akses izin).
 package com.wakwau.xplore.core.storage.model
 

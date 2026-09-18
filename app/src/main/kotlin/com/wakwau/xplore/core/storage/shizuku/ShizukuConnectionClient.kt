@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/shizuku/ShizukuConnectionClient.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/shizuku/ShizukuConnectionClient.kt
 // [Penjelasan]: Klien untuk mengelola siklus hidup koneksi IPC Shizuku (linkToDeath, re-connect otomatis, synchronization, timeout) tanpa pola Manager.
 package com.wakwau.xplore.core.storage.shizuku
 

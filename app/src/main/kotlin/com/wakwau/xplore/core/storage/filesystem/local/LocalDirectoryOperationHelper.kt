@@ -1,4 +1,4 @@
-// [Modul: :file-system] [Jalur Class]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/local/LocalDirectoryOperationHelper.kt
+// [Modul: :file-system] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/local/LocalDirectoryOperationHelper.kt
 // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API
 package com.wakwau.xplore.core.storage.filesystem.local
 
@@ -44,7 +44,7 @@ class LocalDirectoryOperationHelper(
         if (dir.exists()) {
             throw IOException("Directory already exists: $trimmedName")
         }
-        // [Modul: :file-system] [Jalur Class]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/local/LocalDirectoryOperationHelper.kt
+        // [Modul: :file-system] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/local/LocalDirectoryOperationHelper.kt
         // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API (hindari canWrite() prematur, eksekusi mkdir/mkdirs aman)
         val created = try {
             dir.mkdir() || dir.mkdirs()
@@ -53,7 +53,7 @@ class LocalDirectoryOperationHelper(
             throw IOException("Failed to create directory: $trimmedName", e)
         }
         if (!created && !dir.exists()) {
-            // [Modul: :file-system] [Jalur Class]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/local/LocalDirectoryOperationHelper.kt
+            // [Modul: :file-system] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/local/LocalDirectoryOperationHelper.kt
             // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API (evaluasi izin penyimpanan vs I/O error fisik riil)
             val hasStorageAccess = storagePermissionChecker?.hasAllFilesAccess() ?: try {
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.R) {

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/DirectoryRepositoryImplTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/core/storage/repository/DirectoryRepositoryImplTest.kt
 // [Penjelasan]: Unit test untuk DirectoryRepositoryImpl dengan LocalFileSystem pada modul file-system.
 package com.wakwau.xplore.core.storage.repository
 
@@ -69,7 +69,7 @@ class DirectoryRepositoryImplTest {
         val file = File(tempDir, TEST_FILE_NAME)
         file.createNewFile()
         
-        // [Jalur Class/Modul]: file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/DirectoryRepositoryImplTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/core/storage/repository/DirectoryRepositoryImplTest.kt
         // [Penjelasan]: Menyesuaikan pemanggilan repository.list dengan menyertakan parameter showHidden sesuai kontrak DirectoryRepository terkini.
         val result = repository.list(StorageLocation(tempDir.absolutePath), showHidden = false)
         
@@ -81,7 +81,7 @@ class DirectoryRepositoryImplTest {
 
     @Test
     fun list_nonexistentDirectory_returnsFailure() = runTest {
-        // [Jalur Class/Modul]: file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/DirectoryRepositoryImplTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/core/storage/repository/DirectoryRepositoryImplTest.kt
         // [Penjelasan]: Menyesuaikan pemanggilan repository.list dengan menyertakan parameter showHidden sesuai kontrak DirectoryRepository terkini.
         val result = repository.list(StorageLocation("${tempDir.absolutePath}/$TEST_NONEXISTENT_DIR"), showHidden = false)
         

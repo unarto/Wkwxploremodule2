@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/test/kotlin/com/wakwau/xplore/core/storage/metadata/FileMetadataReaderTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/core/storage/metadata/FileMetadataReaderTest.kt
 // [Penjelasan]: Unit test untuk FileMetadataReader pada modul file-system.
 package com.wakwau.xplore.core.storage.metadata
 

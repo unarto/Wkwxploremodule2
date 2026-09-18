@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/factory/FileTreeItemFactory.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/factory/FileTreeItemFactory.kt
 // [Penjelasan]: Factory domain untuk menciptakan entitas FileItem, root volume, dan virtual search node dengan format nama hasil pencarian berbasis StorageConstants.
 package com.wakwau.xplore.filemanager.factory
 

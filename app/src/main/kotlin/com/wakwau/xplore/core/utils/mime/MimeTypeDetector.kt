@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-utils/src/main/java/com/wakwau/xplore/core/utils/mime/MimeTypeDetector.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/utils/mime/MimeTypeDetector.kt
 // [Penjelasan]: Utilitas deteksi MIME type berdasarkan ekstensi berkas dan pemetaan tipe media.
 package com.wakwau.xplore.core.utils.mime
 

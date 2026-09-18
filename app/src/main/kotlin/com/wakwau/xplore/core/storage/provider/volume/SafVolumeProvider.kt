@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/provider/volume/SafVolumeProvider.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/provider/volume/SafVolumeProvider.kt
 // [Penjelasan]: Provider khusus untuk mendeteksi dan menyediakan volume dari URI SAF yang memiliki persisted permission dari ContentResolver.
 package com.wakwau.xplore.core.storage.provider.volume
 

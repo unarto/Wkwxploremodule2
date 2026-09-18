@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/operation/FileOperationProgressDispatcher.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/operation/FileOperationProgressDispatcher.kt
 // [Penjelasan]: Antarmuka penyalur progres operasi berkas latar belakang ke subscriber tanpa state mutable global.
 package com.wakwau.xplore.core.storage.operation
 

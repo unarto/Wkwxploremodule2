@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/components/filetree/TreeNodeSorter.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/components/filetree/TreeNodeSorter.kt
 // [Penjelasan]: Helper penentu komparator penyortiran node pohon berkas berdasarkan preferensi pengguna (nama, tanggal, ukuran, tipe, asc/desc, dan direktori duluan).
 package com.wakwau.xplore.ui.tree
 

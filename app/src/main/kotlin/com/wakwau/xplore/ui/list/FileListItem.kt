@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/list/FileListItem.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/list/FileListItem.kt
 // [Penjelasan]: Komponen perender baris berkas individual yang bersih dengan mengomposisikan FileListItemThumbnail, FileListItemMetadata, dan FileListItemActionMenu tanpa God Class.
 package com.wakwau.xplore.ui.list
 

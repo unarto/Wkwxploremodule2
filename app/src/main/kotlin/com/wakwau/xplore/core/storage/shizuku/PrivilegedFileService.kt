@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/shizuku/PrivilegedFileService.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/shizuku/PrivilegedFileService.kt
 // [Penjelasan]: Layanan IPC Shizuku privileged untuk operasi berkas dengan resolusi path fisik multi-user Android (/storage/emulated/<user> -> /data/media/<user>) dan fallback ke path asli jika hasil transformasi tidak ada atau tidak dapat diakses.
 package com.wakwau.xplore.core.storage.shizuku
 

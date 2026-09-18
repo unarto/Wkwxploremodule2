@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: treeview/src/main/java/com/wakwau/xplore/treeview/component/TreeExpandToggle.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/treeview/component/TreeExpandToggle.kt
 // [Penjelasan]: Komponen toggle perluas/ciutkan panah pohon hierarki dengan animasi rotasi sudut halus dan aksesibilitas terpusat.
 package com.wakwau.xplore.treeview.component
 

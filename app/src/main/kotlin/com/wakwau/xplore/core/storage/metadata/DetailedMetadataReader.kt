@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/metadata/DetailedMetadataReader.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/metadata/DetailedMetadataReader.kt
 // [Penjelasan]: Kontrak interface domain untuk mengekstrak informasi metadata berkas secara lengkap dan mendalam.
 package com.wakwau.xplore.core.storage.metadata
 

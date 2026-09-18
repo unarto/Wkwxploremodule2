@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/component/FileManagerStorageHeader.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/component/FileManagerStorageHeader.kt
 // [Penjelasan]: Komponen UI deklaratif murni untuk menampilkan header informasi storage dan kapasitas disk berdasarkan data state/model domain (StorageSpaceInfo/StorageVolumeItem/totalBytes/freeBytes) tanpa pemanggilan langsung StatFs atau Environment OS storage API di UI layer sesuai ownership.md.
 package com.wakwau.xplore.ui.component
 

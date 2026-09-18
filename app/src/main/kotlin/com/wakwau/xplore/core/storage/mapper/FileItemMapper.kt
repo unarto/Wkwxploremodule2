@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/mapper/FileItemMapper.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/mapper/FileItemMapper.kt
 // [Penjelasan]: Mapper utilitas untuk mengonversi data raw filesystem menjadi model immutable FileItem yang terstandarisasi.
 package com.wakwau.xplore.core.storage.mapper
 

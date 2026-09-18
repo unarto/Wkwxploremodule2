@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage/src/main/kotlin/com/wakwau/xplore/core/storage/db/dao/FileIndexDao.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/db/dao/FileIndexDao.kt
 // [Penjelasan]: Data Access Object (DAO) untuk query Room tabel file_index dengan dukungan sanitasi escape wildcard SQL, batch query, dan transaksi atomik.
 package com.wakwau.xplore.core.storage.db.dao
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCaseTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCaseTest.kt
 // [Penjelasan]: Unit test untuk memverifikasi ResolveTransferUseCase dalam menentukan tipe berkas vs direktori secara akurat melalui DetailedMetadataReader murni (bukan heuristik string '.'), mencakup berkas tanpa ekstensi (Makefile), folder bertitik (.gradle, v1.0.0), berkas normal, direktori normal, dan penyimpanan SAF / SD Card.
 package com.wakwau.xplore.fileoperations.conflict
 
@@ -77,7 +77,7 @@ class ResolveTransferUseCaseTest {
 
     @Test
     fun resolve_fileWithoutExtension_suchAsMakefile_isResolvedAsFile() = runTest {
-        // [Jalur Class/Modul]: file-operations/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCaseTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCaseTest.kt
         // [Penjelasan]: Verifikasi berkas tanpa ekstensi seperti 'Makefile' diidentifikasi sebagai FILE (isDirectory = false) menggunakan DetailedMetadataReader, bukan direktori akibat heuristik lama.
         val source = StorageLocation("/project/Makefile", "local")
         val dest = StorageLocation("/dest", "local")
@@ -98,7 +98,7 @@ class ResolveTransferUseCaseTest {
 
     @Test
     fun resolve_hiddenFolderWithDotPrefix_suchAsDotGradle_isResolvedAsDirectory() = runTest {
-        // [Jalur Class/Modul]: file-operations/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCaseTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCaseTest.kt
         // [Penjelasan]: Verifikasi folder berawalan titik seperti '.gradle' diidentifikasi sebagai DIREKTORI (isDirectory = true), tidak keliru dianggap berkas ber-ekstensi.
         val source = StorageLocation("/project/.gradle", "local")
         val dest = StorageLocation("/dest", "local")
@@ -118,7 +118,7 @@ class ResolveTransferUseCaseTest {
 
     @Test
     fun resolve_folderWithDotInMiddle_suchAsVersionFolder_isResolvedAsDirectory() = runTest {
-        // [Jalur Class/Modul]: file-operations/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCaseTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCaseTest.kt
         // [Penjelasan]: Verifikasi folder yang memiliki titik di tengah nama seperti 'release-v1.0.0' diidentifikasi sebagai DIREKTORI (isDirectory = true).
         val source = StorageLocation("/project/release-v1.0.0", "local")
         val dest = StorageLocation("/dest", "local")
@@ -138,7 +138,7 @@ class ResolveTransferUseCaseTest {
 
     @Test
     fun resolve_fileWithNormalExtension_suchAsReportPdf_isResolvedAsFile() = runTest {
-        // [Jalur Class/Modul]: file-operations/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCaseTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCaseTest.kt
         // [Penjelasan]: Verifikasi berkas dengan ekstensi standar seperti 'report.pdf' diidentifikasi sebagai FILE (isDirectory = false).
         val source = StorageLocation("/documents/report.pdf", "local")
         val dest = StorageLocation("/dest", "local")
@@ -158,7 +158,7 @@ class ResolveTransferUseCaseTest {
 
     @Test
     fun resolve_normalDirectory_suchAsDocuments_isResolvedAsDirectory() = runTest {
-        // [Jalur Class/Modul]: file-operations/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCaseTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCaseTest.kt
         // [Penjelasan]: Verifikasi direktori normal tanpa titik seperti 'Documents' diidentifikasi sebagai DIREKTORI (isDirectory = true).
         val source = StorageLocation("/storage/Documents", "local")
         val dest = StorageLocation("/dest", "local")
@@ -178,7 +178,7 @@ class ResolveTransferUseCaseTest {
 
     @Test
     fun resolve_safSourceOnSdCardOrOtg_usesMetadataContractCorrectly() = runTest {
-        // [Jalur Class/Modul]: file-operations/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCaseTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCaseTest.kt
         // [Penjelasan]: Verifikasi bahwa berkas dan folder pada SAF / SD Card dengan ID URI buram dan nama ber-titik diproses secara tepat berdasarkan kontrak DetailedMetadataReader.
         val safFileSource = StorageLocation("content://com.android.externalstorage.documents/document/0000-0000%3A1111", "saf_sdcard")
         val safDirSource = StorageLocation("content://com.android.externalstorage.documents/tree/0000-0000%3A/document/0000-0000%3A2222", "saf_sdcard")
@@ -203,7 +203,7 @@ class ResolveTransferUseCaseTest {
 
     @Test
     fun resolve_whenConflictExists_usesConflictDecisionAndPreservesIsDirectory() = runTest {
-        // [Jalur Class/Modul]: file-operations/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCaseTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/ResolveTransferUseCaseTest.kt
         // [Penjelasan]: Verifikasi saat terjadi konflik, resolusi mengikuti keputusan user (misal RENAME) dan menjaga nilai isDirectory yang berasal dari FileConflict.
         val source = StorageLocation("/source/data.zip", "local")
         val dest = StorageLocation("/dest", "local")

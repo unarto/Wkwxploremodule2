@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/reducer/DualPaneReducer.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/reducer/DualPaneReducer.kt
 // [Penjelasan]: Reducer domain murni untuk mengolah transisi status immutable panel ganda, dialog input berkas (buat folder, ganti nama, konfirmasi hapus), rincian metadata, dan perizinan.
 package com.wakwau.xplore.filemanager.reducer
 

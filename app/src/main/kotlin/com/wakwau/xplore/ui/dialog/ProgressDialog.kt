@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations-ui/src/main/kotlin/com/wakwau/xplore/fileoperations/ui/dialog/ProgressDialog.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/dialog/ProgressDialog.kt
 // [Penjelasan]: Dialog kemajuan operasi berkas (salin, pindah, hapus) yang menampilkan indikator persentase dan rincian transfer byte dipindahkan ke modul file-operations-ui sub-paket dialog.
 package com.wakwau.xplore.ui.dialog
 

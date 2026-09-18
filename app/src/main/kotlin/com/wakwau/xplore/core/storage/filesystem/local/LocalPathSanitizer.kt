@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/local/LocalPathSanitizer.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/local/LocalPathSanitizer.kt
 // [Penjelasan]: Helper terisolasi untuk memeriksa dan memvalidasi path terlindungi serta mencegah path traversal pada sistem berkas lokal.
 package com.wakwau.xplore.core.storage.filesystem.local
 

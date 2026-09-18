@@ -1,4 +1,4 @@
-// [Modul: :filemanager] [Jalur Class]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/action/CreateDirectoryOperationHandler.kt
+// [Modul: :filemanager] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/filemanager/action/CreateDirectoryOperationHandler.kt
 // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API
 package com.wakwau.xplore.filemanager.action
 
@@ -41,7 +41,7 @@ class CreateDirectoryOperationHandler(
             dispatch(DualPaneEvent.OperationCancelled)
             throw e
         } catch (e: Exception) {
-            // [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/action/CreateDirectoryOperationHandler.kt
+            // [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/action/CreateDirectoryOperationHandler.kt
             // [Penjelasan]: Hindari hardcoded string pada fallback exception dengan merujuk ke FileOperationError.UNKNOWN.name.
             dispatch(DualPaneEvent.OperationFailed(e.message ?: com.wakwau.xplore.core.storage.operation.FileOperationError.UNKNOWN.name))
         }

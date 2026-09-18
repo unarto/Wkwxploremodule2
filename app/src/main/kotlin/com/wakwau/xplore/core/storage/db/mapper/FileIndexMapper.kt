@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage/src/main/kotlin/com/wakwau/xplore/core/storage/db/mapper/FileIndexMapper.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/db/mapper/FileIndexMapper.kt
 // [Penjelasan]: Mapper dua arah antara Room FileIndexEntity dan domain model FileIndexItem.
 package com.wakwau.xplore.core.storage.db.mapper
 

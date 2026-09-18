@@ -1,4 +1,4 @@
-// [Modul: :file-system] [Jalur Class]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/repository/FileRepositoryImpl.kt
+// [Modul: :file-system] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/core/storage/repository/FileRepositoryImpl.kt
 // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API
 package com.wakwau.xplore.core.storage.repository
 
@@ -36,7 +36,7 @@ class FileRepositoryImpl(
     private val ioDispatcher: CoroutineDispatcher = Dispatchers.IO
 ) : FileRepository {
 
-    // [Modul: :file-system] [Jalur Class]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/repository/FileRepositoryImpl.kt
+    // [Modul: :file-system] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/core/storage/repository/FileRepositoryImpl.kt
     // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API
     override suspend fun createDirectory(location: StorageLocation, name: String): FileOperationResult<FileItem> = withContext(ioDispatcher) {
         try {

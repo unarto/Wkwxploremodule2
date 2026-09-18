@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations/src/main/kotlin/com/wakwau/xplore/fileoperations/move/MoveFilesUseCase.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/fileoperations/move/MoveFilesUseCase.kt
 // [Penjelasan]: UseCase operasi pemindahan berkas di modul file-operations dalam package khusus move sesuai ownership.md yang bergantung pada kontrak BackgroundOperationClient di domain :file-operations sesuai DIP.
 package com.wakwau.xplore.fileoperations.move
 

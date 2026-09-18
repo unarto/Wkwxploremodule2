@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/FileRepositoryCrossBridgeTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/core/storage/repository/FileRepositoryCrossBridgeTest.kt
 // [Penjelasan]: Unit test untuk verifikasi Cross-Filesystem Copy/Move Bridge, StorageBackendClassifier, proteksi sumber pada kegagalan salin/pindah, dan penanganan Cancellation pada modul file-system.
 package com.wakwau.xplore.core.storage.repository
 
@@ -50,7 +50,7 @@ class FileRepositoryCrossBridgeTest {
 
     @Test
     fun classifier_correctlyIdentifiesBackendTypes() {
-        // [Jalur Class/Modul]: file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/FileRepositoryCrossBridgeTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/core/storage/repository/FileRepositoryCrossBridgeTest.kt
         // [Penjelasan]: Memastikan klasifikasi tipe backend tepat untuk Local, SAF, Shizuku, dan Root.
         val testClassifier = StorageBackendClassifier(
             isSuAvailable = { false },
@@ -167,7 +167,7 @@ class FileRepositoryCrossBridgeTest {
 
         assertTrue(results.isNotEmpty())
         assertTrue(results.last() is FileOperationResult.Failure)
-        // [Jalur Class/Modul]: file-system/src/test/kotlin/com/wakwau/xplore/core/storage/repository/FileRepositoryCrossBridgeTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/core/storage/repository/FileRepositoryCrossBridgeTest.kt
         // [Penjelasan]: Memverifikasi bahwa sumber tidak pernah dihapus jika transfer pemindahan gagal.
         assertTrue(srcFile.exists())
         assertEquals("critical user data", srcFile.readText())

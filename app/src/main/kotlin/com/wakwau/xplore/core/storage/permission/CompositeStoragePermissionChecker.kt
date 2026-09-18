@@ -1,4 +1,4 @@
-// [Modul: :file-system] [Jalur Class]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/permission/CompositeStoragePermissionChecker.kt
+// [Modul: :file-system] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/core/storage/permission/CompositeStoragePermissionChecker.kt
 // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API
 package com.wakwau.xplore.core.storage.permission
 

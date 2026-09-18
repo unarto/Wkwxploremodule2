@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-utils/src/test/java/com/wakwau/xplore/core/utils/formatter/ByteFormatterTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/core/utils/formatter/ByteFormatterTest.kt
 // [Penjelasan]: Unit test untuk memvalidasi pemformatan ukuran byte ke satuan B, KB, MB, GB, dan format detail.
 package com.wakwau.xplore.core.utils.formatter
 

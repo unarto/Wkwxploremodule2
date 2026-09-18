@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager/src/test/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolderTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/filemanager/state/DualPaneStateHolderTest.kt
 // [Penjelasan]: Pengujian unit pure JVM untuk DualPaneStateHolder tanpa ketergantungan framework AndroidX, UI, fileoperations, atau search.
 package com.wakwau.xplore.filemanager.state
 

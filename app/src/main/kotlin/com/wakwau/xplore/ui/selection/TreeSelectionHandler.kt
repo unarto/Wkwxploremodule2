@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/selection/TreeSelectionHandler.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/selection/TreeSelectionHandler.kt
 // [Penjelasan]: Mengelola evaluasi status penandaan ceklis dengan Strict Path Isolation & Multi-Select Anak.
 package com.wakwau.xplore.ui.selection
 

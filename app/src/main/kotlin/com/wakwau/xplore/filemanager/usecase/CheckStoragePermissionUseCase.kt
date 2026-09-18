@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/usecase/CheckStoragePermissionUseCase.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/usecase/CheckStoragePermissionUseCase.kt
 // [Penjelasan]: Use case domain untuk mengecek status perizinan dan tipe izin yang dibutuhkan secara murni tanpa dependensi framework Android.
 package com.wakwau.xplore.filemanager.usecase
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/detail/FileDetailChecksumTab.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/detail/FileDetailChecksumTab.kt
 // [Penjelasan]: Tab komputasi checksum kriptografis berkas yang menampilkan hash MD5, SHA-1, dan SHA-256 secara otomatis saat tab dibuka beserta tombol penyalinan cepat.
 package com.wakwau.xplore.ui.detail
 

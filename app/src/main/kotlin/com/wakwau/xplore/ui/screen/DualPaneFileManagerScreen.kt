@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/screen/DualPaneFileManagerScreen.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/screen/DualPaneFileManagerScreen.kt
 // [Penjelasan]: Menggunakan TreeNavigationAdapter untuk menginisialisasi storage volume roots dan menyinkronkan lokasi awal panel ke ViewModel.
 package com.wakwau.xplore.ui.screen
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/DefaultConflictDetectorTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/DefaultConflictDetectorTest.kt
 // [Penjelasan]: Unit test untuk memverifikasi DefaultConflictDetector di modul file-operations menggunakan abstraksi DirectoryRepository dan DetailedMetadataReader dari core-storage-api.
 package com.wakwau.xplore.fileoperations.conflict
 
@@ -159,7 +159,7 @@ class DefaultConflictDetectorTest {
 
     @Test
     fun detectConflicts_whenDirectoryIntoSelfOrSubdirectory_skipsConflict() = runTest {
-        // [Jalur Class/Modul]: file-operations/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/DefaultConflictDetectorTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/DefaultConflictDetectorTest.kt
         // [Penjelasan]: Verifikasi bahwa pemindahan direktori ke dirinya sendiri atau subfolder diabaikan tanpa error I/O.
         val sourceDir = StorageLocation("/source/MyFolder", "root1")
         metadataMap[sourceDir.path] = FileDetailedMetadata(
@@ -188,7 +188,7 @@ class DefaultConflictDetectorTest {
 
     @Test
     fun detectConflicts_whenSafSourceFileHasConflict_extractsNameFromMetadataAndDetectsConflict() = runTest {
-        // [Jalur Class/Modul]: file-operations/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/DefaultConflictDetectorTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/DefaultConflictDetectorTest.kt
         // [Penjelasan]: Verifikasi bahwa berkas SAF dengan ID buram URI (misal /12345) mengekstrak nama berkas riil dari DetailedMetadataReader dan mendeteksi konflik dengan benar.
         val destDir = StorageLocation("content://com.android.externalstorage.documents/tree/primary%3ADownload/document/primary%3ADownload", "saf")
         directoryContents[destDir.path] = listOf(
@@ -230,7 +230,7 @@ class DefaultConflictDetectorTest {
 
     @Test
     fun detectConflicts_whenSafSourceDirectoryOnSdCardHasConflict_extractsDirectoryMetadataAndDetectsConflict() = runTest {
-        // [Jalur Class/Modul]: file-operations/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/DefaultConflictDetectorTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/DefaultConflictDetectorTest.kt
         // [Penjelasan]: Verifikasi bahwa direktori SAF pada volume sekunder (SD Card / OTG) dengan ID buram mendeteksi konflik direktori menggunakan metadata riil.
         val destDir = StorageLocation("content://com.android.externalstorage.documents/tree/0000-0000%3A/document/0000-0000%3A", "saf_sdcard")
         directoryContents[destDir.path] = listOf(
@@ -270,7 +270,7 @@ class DefaultConflictDetectorTest {
 
     @Test
     fun detectConflicts_whenSafSourceHasNoConflict_returnsEmpty() = runTest {
-        // [Jalur Class/Modul]: file-operations/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/DefaultConflictDetectorTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/fileoperations/conflict/DefaultConflictDetectorTest.kt
         // [Penjelasan]: Verifikasi bahwa item SAF tanpa benturan nama tidak dilaporkan sebagai konflik.
         val destDir = StorageLocation("content://com.android.externalstorage.documents/tree/primary%3APictures/document/primary%3APictures", "saf")
         directoryContents[destDir.path] = listOf(

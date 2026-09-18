@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage/src/test/kotlin/com/wakwau/xplore/core/storage/db/dao/FileIndexDaoEscapeTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/core/storage/db/dao/FileIndexDaoEscapeTest.kt
 // [Penjelasan]: Unit test untuk memverifikasi fungsi escapeSqlLikeWildcards dalam menangani karakter wildcard SQL LIKE ('\', '%', '_').
 package com.wakwau.xplore.core.storage.db.dao
 

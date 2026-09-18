@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations/src/main/kotlin/com/wakwau/xplore/fileoperations/conflict/DefaultConflictResolver.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/fileoperations/conflict/DefaultConflictResolver.kt
 // [Penjelasan]: Implementasi murni ConflictResolver di modul file-operations untuk memproses strategi penanganan konflik SKIP, OVERWRITE, dan pembentukan nama unik RENAME ("file (1).ext" atau "folder (1)") mengikuti standar XFiles tanpa magic string.
 package com.wakwau.xplore.fileoperations.conflict
 

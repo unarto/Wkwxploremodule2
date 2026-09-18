@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/preferences/SettingsState.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/preferences/SettingsState.kt
 // [Penjelasan]: Model data immutable preferensi aplikasi (tema, bahasa, mode akses sistem berkas, dan flag root read-only).
 package com.wakwau.xplore.core.storage.preferences
 

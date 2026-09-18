@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/test/kotlin/com/wakwau/xplore/core/storage/mapper/FileItemMapperTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/core/storage/mapper/FileItemMapperTest.kt
 // [Penjelasan]: Unit test untuk FileItemMapper pada modul file-system.
 package com.wakwau.xplore.core.storage.mapper
 

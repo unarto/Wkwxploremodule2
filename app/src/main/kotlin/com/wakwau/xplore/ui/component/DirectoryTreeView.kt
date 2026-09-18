@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/component/DirectoryTreeView.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/component/DirectoryTreeView.kt
 // [Penjelasan]: Composable wrapper terisolasi untuk merender tampilan pohon berkas (file tree), menyinkronkan StorageLocation saat navigasi, dan menangani empty state murni di layer UI tanpa menyuntikkan placeholder ke data domain tree.
 package com.wakwau.xplore.ui.component
 

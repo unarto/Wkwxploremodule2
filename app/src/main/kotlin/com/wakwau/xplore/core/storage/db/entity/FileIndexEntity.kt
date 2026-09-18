@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage/src/main/kotlin/com/wakwau/xplore/core/storage/db/entity/FileIndexEntity.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/db/entity/FileIndexEntity.kt
 // [Penjelasan]: Entity Room untuk indeks metadata berkas dengan index eksplisit guna mempercepat operasi pencarian, filter ekstensi, filter modifikasi, dan pengelompokan kategori.
 package com.wakwau.xplore.core.storage.db.entity
 

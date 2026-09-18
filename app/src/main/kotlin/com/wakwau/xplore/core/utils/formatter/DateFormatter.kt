@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-utils/src/main/java/com/wakwau/xplore/core/utils/formatter/DateFormatter.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/utils/formatter/DateFormatter.kt
 // [Penjelasan]: Utilitas pemformat tanggal dan waktu untuk konversi timestamp ke format tampilan pengguna dengan caching ThreadLocal untuk efisiensi alokasi memori dan thread-safety.
 package com.wakwau.xplore.core.utils.formatter
 

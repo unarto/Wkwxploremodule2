@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/component/ActivePanelContent.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/component/ActivePanelContent.kt
 // [Penjelasan]: Menampilkan konten panel aktif dengan mendelegasikan perenderan file tree ke DirectoryTreeView terisolasi beserta callback klik ikon berkas.
 package com.wakwau.xplore.ui.component
 

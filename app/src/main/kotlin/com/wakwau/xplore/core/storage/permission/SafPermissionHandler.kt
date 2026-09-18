@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/permission/SafPermissionHandler.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/permission/SafPermissionHandler.kt
 // [Penjelasan]: Interface untuk mengelola (add/remove/check) persistable URI permission SAF secara dinamis.
 package com.wakwau.xplore.core.storage.permission
 

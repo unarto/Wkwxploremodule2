@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/usecase/ComputeFileChecksumUseCase.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/usecase/ComputeFileChecksumUseCase.kt
 // [Penjelasan]: UseCase operasi kalkulasi checksum berkas read-only dipindahkan ke modul filemanager sesuai ownership.md.
 package com.wakwau.xplore.filemanager.usecase
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/action/FileDetailHandler.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/action/FileDetailHandler.kt
 // [Penjelasan]: Domain Action Handler untuk membaca metadata berkas dan mengoordinasikan kalkulasi checksum via ComputeFileChecksumUseCase tanpa direct UI coupling.
 package com.wakwau.xplore.filemanager.action
 

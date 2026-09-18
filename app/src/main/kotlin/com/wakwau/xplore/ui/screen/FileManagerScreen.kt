@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/screen/FileManagerScreen.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/screen/FileManagerScreen.kt
 // [Penjelasan]: Menangani navigasi kembali dengan mendispatch DualPaneEvent.NavigateUp tanpa manipulasi java.io.File langsung di UI layer.
 package com.wakwau.xplore.ui.screen
 

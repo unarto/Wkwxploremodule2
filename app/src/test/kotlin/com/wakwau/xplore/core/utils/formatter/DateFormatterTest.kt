@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-utils/src/test/java/com/wakwau/xplore/core/utils/formatter/DateFormatterTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/core/utils/formatter/DateFormatterTest.kt
 // [Penjelasan]: Unit test untuk memverifikasi performa dan keakuratan pemformatan tanggal pada DateFormatter.
 package com.wakwau.xplore.core.utils.formatter
 

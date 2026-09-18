@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/icon/StorageIconMapper.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/icon/StorageIconMapper.kt
 // [Penjelasan]: Menentukan apakah suatu item berkas merupakan root internal storage menggunakan informasi tipe/identitas storage dari domain contract (StorageConstants dan atribut FileItem) tanpa bergantung langsung pada Android Environment API di UI layer sesuai ownership.md.
 package com.wakwau.xplore.ui.icon
 

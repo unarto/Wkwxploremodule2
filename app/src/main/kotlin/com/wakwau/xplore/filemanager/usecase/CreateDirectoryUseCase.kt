@@ -1,4 +1,4 @@
-// [Modul: :filemanager] [Jalur Class]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/usecase/CreateDirectoryUseCase.kt
+// [Modul: :filemanager] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/filemanager/usecase/CreateDirectoryUseCase.kt
 // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API
 package com.wakwau.xplore.filemanager.usecase
 
@@ -12,7 +12,7 @@ import kotlinx.coroutines.flow.Flow
 
 class CreateDirectoryUseCase(private val fileRepository: FileRepository) {
 
-    // [Modul: :filemanager] [Jalur Class]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/usecase/CreateDirectoryUseCase.kt
+    // [Modul: :filemanager] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/filemanager/usecase/CreateDirectoryUseCase.kt
     // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API (konstruktor sekunder kompatibilitas)
     constructor(directoryRepository: DirectoryRepository) : this(
         object : FileRepository {

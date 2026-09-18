@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/preferences/AppPreferencesRepository.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/preferences/AppPreferencesRepository.kt
 // [Penjelasan]: Antarmuka kontrak repository untuk membaca dan menyimpan preferensi aplikasi via MMKV.
 package com.wakwau.xplore.core.storage.preferences
 

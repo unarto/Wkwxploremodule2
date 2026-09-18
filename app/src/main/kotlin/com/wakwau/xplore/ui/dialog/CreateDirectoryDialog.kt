@@ -1,4 +1,4 @@
-// [Modul: :filemanager-ui] [Jalur Class]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/dialog/CreateDirectoryDialog.kt
+// [Modul: :filemanager-ui] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/ui/dialog/CreateDirectoryDialog.kt
 // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API
 package com.wakwau.xplore.ui.dialog
 

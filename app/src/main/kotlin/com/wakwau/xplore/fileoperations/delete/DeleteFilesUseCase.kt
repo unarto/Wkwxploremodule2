@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations/src/main/kotlin/com/wakwau/xplore/fileoperations/delete/DeleteFilesUseCase.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/fileoperations/delete/DeleteFilesUseCase.kt
 // [Penjelasan]: UseCase operasi penghapusan berkas di modul file-operations dalam package khusus delete sesuai ownership.md yang bergantung pada kontrak BackgroundOperationClient di domain :file-operations sesuai DIP.
 package com.wakwau.xplore.fileoperations.delete
 

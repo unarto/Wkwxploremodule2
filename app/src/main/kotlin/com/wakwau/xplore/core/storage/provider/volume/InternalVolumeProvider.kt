@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/provider/volume/InternalVolumeProvider.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/provider/volume/InternalVolumeProvider.kt
 // [Penjelasan]: Provider khusus untuk mendeteksi dan menyediakan volume Internal Storage utama beserta kapasitas ruang penyimpanannya.
 package com.wakwau.xplore.core.storage.provider.volume
 

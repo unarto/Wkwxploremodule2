@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/action/PanelNavigationHandler.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/action/PanelNavigationHandler.kt
 // [Penjelasan]: Menangani aksi navigasi naik satu level direktori (Up Dir) dengan mendelegasikan navigasi ke TreeNavigationAdapter dan menyinkronkan StorageLocation ke ViewModel melalui DualPaneEvent.OpenLocation tanpa manipulasi path java.io langsung di presentation layer.
 package com.wakwau.xplore.ui.action
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage/src/main/kotlin/com/wakwau/xplore/core/storage/preferences/AppPreferences.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/preferences/AppPreferences.kt
 // [Penjelasan]: Helper/Class pengelolaan MMKV untuk menyimpan dan membaca preferensi sort order, layout mode, pengaturan tema, dan riwayat pencarian dengan penulisan terproteksi Dispatchers.IO.
 package com.wakwau.xplore.core.storage.preferences
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations/src/main/kotlin/com/wakwau/xplore/fileoperations/conflict/DefaultConflictDetector.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/fileoperations/conflict/DefaultConflictDetector.kt
 // [Penjelasan]: Implementasi ConflictDetector untuk mendeteksi potensi konflik nama berkas dan folder di direktori tujuan, berkomunikasi murni melalui abstraksi DirectoryRepository dan DetailedMetadataReader dari core-storage-api tanpa menyentuh implementasi filesystem konkret.
 package com.wakwau.xplore.fileoperations.conflict
 

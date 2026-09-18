@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/permission/PermissionIntentHelper.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/permission/PermissionIntentHelper.kt
 // [Penjelasan]: Helper class UI untuk menghasilkan intent dan parameter perizinan standar Android. Menghindari duplikasi kode intent di layer ViewModel maupun module storage.
 package com.wakwau.xplore.ui.permission
 

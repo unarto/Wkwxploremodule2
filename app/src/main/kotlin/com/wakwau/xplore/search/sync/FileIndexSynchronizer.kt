@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: search/src/main/kotlin/com/wakwau/xplore/search/sync/FileIndexSynchronizer.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/search/sync/FileIndexSynchronizer.kt
 // [Penjelasan]: Komponen sinkronisasi data index repository dengan dukungan batching bulk operation dan transaksi atomik untuk mencegah I/O thrashing saat mass operations.
 package com.wakwau.xplore.search.sync
 

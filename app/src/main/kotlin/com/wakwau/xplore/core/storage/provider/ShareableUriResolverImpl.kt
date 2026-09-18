@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/provider/ShareableUriResolverImpl.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/provider/ShareableUriResolverImpl.kt
 // [Penjelasan]: Implementasi ShareableUriResolver berbasis Android FileProvider dan pengecekan keberadaan fisik berkas java.io.File di layer infrastructure file-system.
 package com.wakwau.xplore.core.storage.provider
 

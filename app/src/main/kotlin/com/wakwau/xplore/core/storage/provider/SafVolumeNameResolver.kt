@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/provider/SafVolumeNameResolver.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/provider/SafVolumeNameResolver.kt
 // [Penjelasan]: Mengurai nama volume dinamis dari URI SAF berdasarkan nama aplikasi provider dan label document folder tanpa hardcoded string.
 package com.wakwau.xplore.core.storage.provider
 

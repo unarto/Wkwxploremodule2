@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/component/SideActionBar.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/component/SideActionBar.kt
 // [Penjelasan]: Menambahkan aksi NEW_FOLDER ("Folder Baru") dan RENAME ("Ubah Nama") pada side action bar untuk memicu dialog pembuatan folder baru dan ganti nama berkas/direktori.
 package com.wakwau.xplore.ui.component
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage/src/main/kotlin/com/wakwau/xplore/core/storage/db/repository/FileIndexRepositoryImpl.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/db/repository/FileIndexRepositoryImpl.kt
 // [Penjelasan]: Implementasi FileIndexRepository yang mengeksekusi query pencarian dan transaksi indeks berkas via FileIndexDao dengan pemetaan model domain FileIndexItem dan dukungan atomisitas Room.
 package com.wakwau.xplore.core.storage.db.repository
 

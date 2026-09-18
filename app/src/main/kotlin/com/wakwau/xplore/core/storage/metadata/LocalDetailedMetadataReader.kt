@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/metadata/LocalDetailedMetadataReader.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/metadata/LocalDetailedMetadataReader.kt
 // [Penjelasan]: Membaca rincian metadata lengkap berkas dari sistem berkas lokal maupun SAF Content URI seperti path lengkap, ukuran byte, timestamp, izin POSIX, dan MIME type secara aktual dengan mendelegasikan ekstraksi atribut dasar java.io.File ke FileMetadataReader.
 package com.wakwau.xplore.core.storage.metadata
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/tree/TreeNavigationAdapter.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/tree/TreeNavigationAdapter.kt
 // [Penjelasan]: Abstraksi delegasi handler yang mengelola operasi tree (expand, collapse, load child nodes, set roots, re-sort, refresh, dan Up Dir) untuk panel kiri dan kanan tanpa mengekspos FileTreeEngine ke ViewModel atau Screen UI.
 package com.wakwau.xplore.ui.tree
 

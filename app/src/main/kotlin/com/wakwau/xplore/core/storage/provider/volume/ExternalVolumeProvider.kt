@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/provider/volume/ExternalVolumeProvider.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/provider/volume/ExternalVolumeProvider.kt
 // [Penjelasan]: Provider khusus untuk mendeteksi volume eksternal sekunder (SD Card dan USB OTG) melalui ContextCompat dan StorageManager tanpa hardcoding.
 package com.wakwau.xplore.core.storage.provider.volume
 

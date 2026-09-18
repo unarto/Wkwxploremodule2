@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/usecase/GetFileDetailedMetadataUseCase.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/usecase/GetFileDetailedMetadataUseCase.kt
 // [Penjelasan]: Use case domain untuk mengekstrak seluruh rincian metadata berkas yang dipilih secara asinkron.
 package com.wakwau.xplore.filemanager.usecase
 

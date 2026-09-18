@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations/src/main/kotlin/com/wakwau/xplore/fileoperations/client/BackgroundOperationClient.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/fileoperations/client/BackgroundOperationClient.kt
 // [Penjelasan]: Kontrak antarmuka operasi latar belakang di domain :file-operations yang mendefinisikan abstraksi eksekusi mutasi (Copy, Move, Delete, Cancel) sesuai Dependency Inversion Principle (DIP).
 package com.wakwau.xplore.fileoperations.client
 

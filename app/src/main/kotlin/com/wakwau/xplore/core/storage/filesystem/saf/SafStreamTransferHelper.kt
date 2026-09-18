@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/saf/SafStreamTransferHelper.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/saf/SafStreamTransferHelper.kt
 // [Penjelasan]: Helper terisolasi untuk menangani transfer I/O streaming DocumentFile SAF, pembuatan direktori rekursif, kalkulasi ukuran direktori SAF, dan deteksi pembatalan coroutine.
 package com.wakwau.xplore.core.storage.filesystem.saf
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/components/filetree/FileTreeNodeItem.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/components/filetree/FileTreeNodeItem.kt
 // [Penjelasan]: Komponen composable untuk me-render baris item pohon berkas lengkap dengan indentasi, panah ekspansi, dan konten node.
 package com.wakwau.xplore.ui.components.filetree
 

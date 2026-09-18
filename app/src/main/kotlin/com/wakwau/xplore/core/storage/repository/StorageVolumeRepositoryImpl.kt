@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImpl.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/repository/StorageVolumeRepositoryImpl.kt
 // [Penjelasan]: Repository volume application-scoped dengan receiver aktif hanya ketika flow memiliki collector.
 package com.wakwau.xplore.core.storage.repository
 

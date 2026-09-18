@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations/src/main/kotlin/com/wakwau/xplore/fileoperations/conflict/ConflictResolver.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/fileoperations/conflict/ConflictResolver.kt
 // [Penjelasan]: Kontrak antarmuka untuk menyelesaikan benturan nama (SKIP, OVERWRITE, RENAME) dan menghasilkan nama unik tanpa bentrok.
 package com.wakwau.xplore.fileoperations.conflict
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: search/src/main/kotlin/com/wakwau/xplore/search/engine/FileSearchServiceImpl.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/search/engine/FileSearchServiceImpl.kt
 // [Penjelasan]: Implementasi domain FileSearchService terkoordinasi yang mendelegasikan traversal ke FileSystemSearchTraversal dan sinkronisasi indeks ke FileIndexSynchronizer tanpa unconfined background scope.
 package com.wakwau.xplore.search.engine
 

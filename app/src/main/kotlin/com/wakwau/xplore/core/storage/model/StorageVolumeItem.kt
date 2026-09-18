@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/model/StorageVolumeItem.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/model/StorageVolumeItem.kt
 // [Penjelasan]: Model data immutable representasi volume penyimpanan fisik atau virtual (internal, SD card, OTG, root).
 package com.wakwau.xplore.core.storage.model
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/components/fileitem/FileListItemMetadata.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/components/fileitem/FileListItemMetadata.kt
 // [Penjelasan]: Komponen composable untuk menampilkan info teks berkas (nama berkas, path induk hasil pencarian, tanggal modifikasi, dan ukuran berkas).
 package com.wakwau.xplore.ui.components.fileitem
 

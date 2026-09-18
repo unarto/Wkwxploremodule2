@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations/src/main/kotlin/com/wakwau/xplore/fileoperations/cancel/CancelOperationUseCase.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/fileoperations/cancel/CancelOperationUseCase.kt
 // [Penjelasan]: UseCase pembatalan operasi berkas yang sedang berjalan di modul file-operations via BackgroundOperationClient dalam package cancel sesuai ownership.md yang bergantung pada kontrak BackgroundOperationClient di domain :file-operations sesuai DIP.
 package com.wakwau.xplore.fileoperations.cancel
 

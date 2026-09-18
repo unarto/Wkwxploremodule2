@@ -99,7 +99,7 @@ class TreeStateTest {
         assertEquals(1, treeState.visibleNodes.value.size)
     }
 
-    // [Jalur Class/Modul]: treeview/src/test/java/com/wakwau/xplore/treeview/state/TreeStateTest.kt
+    // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/treeview/state/TreeStateTest.kt
     // [Penjelasan]: Memverifikasi bahwa collapseRecursively menutup node beserta seluruh descendantnya sehingga saat root di-expand ulang, descendant tetap tertutup.
     @Test
     fun testCollapseRecursively() {

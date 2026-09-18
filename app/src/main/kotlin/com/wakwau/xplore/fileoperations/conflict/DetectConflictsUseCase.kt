@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations/src/main/kotlin/com/wakwau/xplore/fileoperations/conflict/DetectConflictsUseCase.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/fileoperations/conflict/DetectConflictsUseCase.kt
 // [Penjelasan]: UseCase pendeteksian benturan nama/direktori pada lokasi target di modul file-operations dalam package khusus conflict sesuai ownership.md.
 package com.wakwau.xplore.fileoperations.conflict
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/metadata/FileMetadataReader.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/metadata/FileMetadataReader.kt
 // [Penjelasan]: Single source of truth untuk ekstraksi atribut dasar metadata berkas fisik (java.io.File) seperti ukuran byte, timestamp modifikasi, permission flag, dan hidden status.
 package com.wakwau.xplore.core.storage.metadata
 

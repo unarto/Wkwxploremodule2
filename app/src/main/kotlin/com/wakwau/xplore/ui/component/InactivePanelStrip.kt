@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/component/InactivePanelStrip.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/component/InactivePanelStrip.kt
 // [Penjelasan]: Menampilkan strip samping panel tidak aktif dengan ikon dan label dinamis berbasis StorageConstants dan string resource tanpa hardcoding.
 package com.wakwau.xplore.ui.component
 

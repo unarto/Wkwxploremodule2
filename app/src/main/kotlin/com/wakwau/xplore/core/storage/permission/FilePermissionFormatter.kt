@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/permission/FilePermissionFormatter.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/permission/FilePermissionFormatter.kt
 // [Penjelasan]: Membaca dan memformat status perizinan berkas (read, write, execute) ke format standar POSIX 3-karakter (misalnya rwx atau rw-).
 package com.wakwau.xplore.core.storage.permission
 

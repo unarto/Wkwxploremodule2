@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations-ui/src/main/kotlin/com/wakwau/xplore/fileoperations/ui/state/OperationUiState.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/state/OperationUiState.kt
 // [Penjelasan]: Status UI untuk operasi berkas termasuk konfirmasi awal, dialog resolusi konflik berkas/folder ganda, progres berjalan, sukses, gagal, dan dibatalkan dipindahkan ke sub-paket state.
 package com.wakwau.xplore.ui.state
 

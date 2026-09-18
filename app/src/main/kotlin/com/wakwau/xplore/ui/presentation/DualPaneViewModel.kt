@@ -1,4 +1,4 @@
-// [Modul: :filemanager-ui] [Jalur Class]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/presentation/DualPaneViewModel.kt
+// [Modul: :filemanager-ui] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/ui/presentation/DualPaneViewModel.kt
 // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API
 package com.wakwau.xplore.ui.presentation
 
@@ -87,7 +87,7 @@ class DualPaneViewModel(
                 is DualPaneEvent.OperationFailed,
                 is DualPaneEvent.OperationCancelled,
                 is DualPaneEvent.ClearOperationState -> {
-                    // [Modul: :filemanager-ui] [Jalur Class]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/presentation/DualPaneViewModel.kt
+                    // [Modul: :filemanager-ui] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/ui/presentation/DualPaneViewModel.kt
                     // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API
                     actionDelegate?.dispatchEvent(event)
                     
@@ -97,7 +97,7 @@ class DualPaneViewModel(
                     }
                     
                     if (event is DualPaneEvent.OperationSuccess) {
-                        // [Modul: :filemanager-ui] [Jalur Class]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/presentation/DualPaneViewModel.kt
+                        // [Modul: :filemanager-ui] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/ui/presentation/DualPaneViewModel.kt
                         // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API
                         dispatch(DualPaneEvent.Refresh(stateHolder.state.value.activePanelId))
                     }

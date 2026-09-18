@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/search/FileSearchService.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/search/FileSearchService.kt
 // [Penjelasan]: Antarmuka kontrak service pencarian berkas dan manajemen indeks lokal.
 package com.wakwau.xplore.core.storage.search
 

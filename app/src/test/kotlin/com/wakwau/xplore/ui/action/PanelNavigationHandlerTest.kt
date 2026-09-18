@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/test/kotlin/com/wakwau/xplore/filemanager/ui/action/PanelNavigationHandlerTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/ui/action/PanelNavigationHandlerTest.kt
 // [Penjelasan]: Unit test untuk PanelNavigationHandler yang memverifikasi alur Up Dir dari subfolder ke parent, batas root volume, dan independensi panel kiri-kanan.
 package com.wakwau.xplore.ui.action
 

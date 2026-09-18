@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/test/kotlin/com/wakwau/xplore/core/storage/shizuku/PrivilegedFileServicePathResolutionTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/core/storage/shizuku/PrivilegedFileServicePathResolutionTest.kt
 // [Penjelasan]: Unit test untuk verifikasi resolusi path fisik Shizuku pada PrivilegedFileService (heuristic match, fallback saat tidak ada/tidak dapat diakses, dan un-matched path).
 package com.wakwau.xplore.core.storage.shizuku
 

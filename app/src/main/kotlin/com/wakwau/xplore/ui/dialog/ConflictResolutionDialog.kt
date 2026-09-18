@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations-ui/src/main/kotlin/com/wakwau/xplore/fileoperations/ui/dialog/ConflictResolutionDialog.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/dialog/ConflictResolutionDialog.kt
 // [Penjelasan]: Dialog UI resolusi konflik nama berkas/folder ganda dengan pilihan SKIP, OVERWRITE, RENAME, serta opsi Terapkan ke Semua dipindahkan ke modul file-operations-ui sub-paket dialog.
 package com.wakwau.xplore.ui.dialog
 

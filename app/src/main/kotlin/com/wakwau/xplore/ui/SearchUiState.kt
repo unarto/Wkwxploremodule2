@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: search/src/main/kotlin/com/wakwau/xplore/search/SearchUiState.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/search/SearchUiState.kt
 // [Penjelasan]: State UI pencarian berkas yang menampung visibilitas dialog, status pencarian, pesan galat, riwayat pencarian, dan daftar hasil pencarian.
 package com.wakwau.xplore.ui
 

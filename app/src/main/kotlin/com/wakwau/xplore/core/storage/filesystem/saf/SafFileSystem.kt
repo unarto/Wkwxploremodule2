@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/saf/SafFileSystem.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/saf/SafFileSystem.kt
 // [Penjelasan]: Implementasi fasad sistem berkas Storage Access Framework (SAF) yang mendelegasikan resolusi DocumentFile ke SafUriResolver dan transfer I/O ke SafStreamTransferHelper (< 250 LOC).
 package com.wakwau.xplore.core.storage.filesystem.saf
 

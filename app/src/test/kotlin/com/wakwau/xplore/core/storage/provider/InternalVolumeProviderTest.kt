@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/test/kotlin/com/wakwau/xplore/core/storage/provider/InternalVolumeProviderTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/core/storage/provider/InternalVolumeProviderTest.kt
 // [Penjelasan]: Unit test untuk InternalVolumeProvider memverifikasi resolusi volume penyimpanan internal pada modul file-system.
 package com.wakwau.xplore.core.storage.provider
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/repository/DirectoryRepositoryImpl.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/repository/DirectoryRepositoryImpl.kt
 // [Penjelasan]: Implementasi DirectoryRepository dengan delegasi ke physical filesystem berdasarkan StorageBackendClassifier tanpa menyamarkan error.
 package com.wakwau.xplore.core.storage.repository
 

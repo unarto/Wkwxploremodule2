@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/event/DualPaneEvent.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/event/DualPaneEvent.kt
 // [Penjelasan]: Menambahkan event ShowCreateDirectoryDialog, ShowRenameDialog, ShowDeleteConfirmationDialog, dan DismissInputDialog untuk intent dialog UI.
 package com.wakwau.xplore.filemanager.event
 

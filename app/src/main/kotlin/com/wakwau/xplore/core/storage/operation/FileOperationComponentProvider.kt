@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/operation/FileOperationComponentProvider.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/operation/FileOperationComponentProvider.kt
 // [Penjelasan]: Antarmuka penyedia dependensi operasi berkas bagi Android Service (seperti FileCopyService) tanpa Service Locator atau mutable global state.
 package com.wakwau.xplore.core.storage.operation
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/test/kotlin/com/wakwau/xplore/core/storage/metadata/LocalDetailedMetadataReaderTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/core/storage/metadata/LocalDetailedMetadataReaderTest.kt
 // [Penjelasan]: Unit test untuk LocalDetailedMetadataReader memastikan integrasi delegasi ekstraksi atribut java.io.File ke FileMetadataReader.
 package com.wakwau.xplore.core.storage.metadata
 

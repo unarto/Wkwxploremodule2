@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations-ui/src/main/kotlin/com/wakwau/xplore/fileoperations/ui/dialog/RenameDialog.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/dialog/RenameDialog.kt
 // [Penjelasan]: Dialog komponen untuk operasi penggantian nama (rename) file atau folder dalam sub-paket dialog.
 package com.wakwau.xplore.ui.dialog
 

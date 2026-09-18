@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-operations/src/main/kotlin/com/wakwau/xplore/fileoperations/rename/RenameFileUseCase.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/fileoperations/rename/RenameFileUseCase.kt
 // [Penjelasan]: UseCase operasi penggantian nama berkas di modul file-operations dalam package khusus rename sesuai ownership.md.
 package com.wakwau.xplore.fileoperations.rename
 

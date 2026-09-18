@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager-ui/src/main/kotlin/com/wakwau/xplore/filemanager/ui/tree/TreeUpDirNavigationHandler.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/tree/TreeUpDirNavigationHandler.kt
 // [Penjelasan]: Helper state holder dan pengelola navigasi hierarki (findNode, navigateUp dengan collapse rekursif) untuk FileTreeEngine.
 package com.wakwau.xplore.ui.tree
 

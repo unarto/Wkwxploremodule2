@@ -3,7 +3,7 @@ package com.wakwau.xplore.filemanager.state
 import com.wakwau.xplore.core.storage.model.StorageVolumeItem
 import com.wakwau.xplore.core.storage.permission.StoragePermissionType
 
-// [Jalur Class/Modul]: filemanager/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneState.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/filemanager/state/DualPaneState.kt
 // [Penjelasan]: State domain immutable panel ganda dengan integrasi state rincian metadata berkas, dialog input berkas, perizinan penyimpanan, dan storage volumes tanpa horizontal coupling ke :file-operations-ui atau :search.
 data class DualPaneState(
     val leftPanel: PanelState = PanelState(id = PanelId.LEFT),

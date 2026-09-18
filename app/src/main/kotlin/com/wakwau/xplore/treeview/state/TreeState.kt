@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: treeview/src/main/java/com/wakwau/xplore/treeview/state/TreeState.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/treeview/state/TreeState.kt
 // [Penjelasan]: Implementasi state container TreeView.
 package com.wakwau.xplore.treeview.state
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/provider/volume/StorageVolumeBroadcastReceiver.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/provider/volume/StorageVolumeBroadcastReceiver.kt
 // [Penjelasan]: BroadcastReceiver terisolasi untuk mendengarkan perubahan status media penyimpanan sistem (mount, unmount, eject) dan memicu callback penyegaran volume.
 package com.wakwau.xplore.core.storage.provider.volume
 

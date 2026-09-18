@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/checksum/LocalFileChecksumCalculator.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/checksum/LocalFileChecksumCalculator.kt
 // [Penjelasan]: Menghitung hash kriptografis nyata (MD5, SHA-1, SHA-256) langsung dari berkas lokal atau SAF content URI menggunakan MessageDigest dan stream I/O nyata.
 package com.wakwau.xplore.core.storage.checksum
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/provider/StorageSpaceReader.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/provider/StorageSpaceReader.kt
 // [Penjelasan]: Pembaca kapasitas ruang penyimpanan file system menggunakan StatFs dengan penanganan error yang aman.
 package com.wakwau.xplore.core.storage.provider
 

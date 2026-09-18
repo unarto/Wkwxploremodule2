@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager/src/test/kotlin/com/wakwau/xplore/filemanager/usecase/LinkStorageUseCaseTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/filemanager/usecase/LinkStorageUseCaseTest.kt
 // [Penjelasan]: Unit test untuk LinkStorageUseCase dengan implementasi mock SafPermissionHandler lengkap.
 package com.wakwau.xplore.filemanager.usecase
 

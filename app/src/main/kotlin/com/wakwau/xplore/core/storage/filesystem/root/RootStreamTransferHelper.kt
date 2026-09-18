@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/root/RootStreamTransferHelper.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/root/RootStreamTransferHelper.kt
 // [Penjelasan]: Helper terisolasi untuk menangani transfer streaming berkas root dengan SuFileInputStream / SuFileOutputStream, deteksi pembatalan coroutine, dan proteksi partial copy.
 package com.wakwau.xplore.core.storage.filesystem.root
 

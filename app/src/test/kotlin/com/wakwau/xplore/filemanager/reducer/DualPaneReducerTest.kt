@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: filemanager/src/test/kotlin/com/wakwau/xplore/filemanager/reducer/DualPaneReducerTest.kt
+// [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/filemanager/reducer/DualPaneReducerTest.kt
 // [Penjelasan]: Pengujian unit untuk DualPaneReducer di modul domain :filemanager mencakup peralihan panel aktif, seleksi independen antar panel, dan transisi status operasi berkas.
 package com.wakwau.xplore.filemanager.reducer
 
@@ -74,7 +74,7 @@ class DualPaneReducerTest {
                 )
             )
         )
-        // [Jalur Class/Modul]: filemanager/src/test/kotlin/com/wakwau/xplore/filemanager/reducer/DualPaneReducerTest.kt
+        // [Jalur Class/Modul]: app/src/test/kotlin/com/wakwau/xplore/filemanager/reducer/DualPaneReducerTest.kt
         // [Penjelasan]: Menyesuaikan parameter DirectoryLoaded dengan menambahkan location sesuai kontrak event terkini.
         val location = StorageLocation("/test", "root1")
         val updated = reducer.reduce(initial, DualPaneEvent.DirectoryLoaded(PanelId.LEFT, location, items))

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/operation/FileOperationProgress.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/operation/FileOperationProgress.kt
 // [Penjelasan]: Model progress untuk operasi file secara real-time yang mencakup jumlah byte tertulis, total byte, dan nama file yang sedang diproses.
 package com.wakwau.xplore.core.storage.operation
 

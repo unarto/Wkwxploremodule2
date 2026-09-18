@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/saf/SafUriResolver.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/saf/SafUriResolver.kt
 // [Penjelasan]: Helper terisolasi untuk resolusi DocumentFile secara aman dari Uri (tree Uri maupun single Uri) dengan penanganan eksplisit IllegalArgumentException.
 package com.wakwau.xplore.core.storage.filesystem.saf
 

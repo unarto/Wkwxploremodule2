@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/root/RootFileSystem.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/root/RootFileSystem.kt
 // [Penjelasan]: Implementasi fasad sistem berkas berbasis Root Superuser (SU) menggunakan API resmi libsu (Topjohnwu) yang mendelegasikan listing, transfer, dan operasi direktori ke helper khusus (< 250 LOC).
 package com.wakwau.xplore.core.storage.filesystem.root
 

@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: file-system/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/bridge/CrossFilesystemDirectoryTransferHelper.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/filesystem/bridge/CrossFilesystemDirectoryTransferHelper.kt
 // [Penjelasan]: Helper terisolasi untuk menangani resolusi pembuatan direktori tujuan, listing anak direktori sumber, validasi integritas transfer move, dan rollback jika terjadi kegagalan/pembatalan.
 package com.wakwau.xplore.core.storage.filesystem.bridge
 

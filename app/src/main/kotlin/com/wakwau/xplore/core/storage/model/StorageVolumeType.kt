@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/model/StorageVolumeType.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/model/StorageVolumeType.kt
 // [Penjelasan]: Enum representasi tipe storage volume (internal, sdcard, usb otg, root, saf).
 package com.wakwau.xplore.core.storage.model
 

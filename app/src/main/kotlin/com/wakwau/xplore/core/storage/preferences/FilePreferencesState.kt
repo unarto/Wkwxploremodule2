@@ -1,4 +1,4 @@
-// [Jalur Class/Modul]: core-storage-api/src/main/kotlin/com/wakwau/xplore/core/storage/preferences/FilePreferencesState.kt
+// [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/core/storage/preferences/FilePreferencesState.kt
 // [Penjelasan]: Data class immutable yang merepresentasikan state preferensi aplikasi file manager.
 package com.wakwau.xplore.core.storage.preferences
 
