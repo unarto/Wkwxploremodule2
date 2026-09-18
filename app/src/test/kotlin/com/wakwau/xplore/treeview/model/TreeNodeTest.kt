@@ -1,4 +1,4 @@
-package com.wakwau.xplore.model
+package com.wakwau.xplore.treeview.model
 
 import org.junit.Assert.*
 import org.junit.Test

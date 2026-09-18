@@ -1,4 +1,4 @@
-package com.wakwau.xplore.model
+package com.wakwau.xplore.treeview.model
 
 import com.wakwau.xplore.treeview.state.TreeState
 import org.junit.Assert.assertEquals
