@@ -102,12 +102,6 @@ class DualPaneViewModel(
                         dispatch(DualPaneEvent.Refresh(stateHolder.state.value.activePanelId))
                     }
                 }
-                is DualPaneEvent.OperationStarted,
-                is DualPaneEvent.OperationSuccess,
-                is DualPaneEvent.OperationFailed,
-                is DualPaneEvent.OperationCancelled -> {
-                    actionDelegate?.dispatchEvent(event)
-                }
                 else -> {}
             }
         }

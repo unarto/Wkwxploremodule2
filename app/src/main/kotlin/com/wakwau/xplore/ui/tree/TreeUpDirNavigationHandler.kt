@@ -47,8 +47,18 @@ class TreeUpDirNavigationHandler(
                 return currentNode.data.location
             }
         } else {
-            val rootId = treeState.roots.firstOrNull()?.data?.location?.rootId ?: StorageConstants.UNKNOWN_ROOT_ID
-            val parentLocation = getParentLocationUseCase(StorageLocation(currentPath, rootId))
+            // Cari root yang path-nya merupakan prefix dari currentPath agar rootId cocok dengan volume yang benar.
+            // Fallback ke root pertama jika tidak ditemukan (single-volume atau path di luar semua root).
+            val matchedRootId = treeState.roots
+                .filter { root ->
+                    val rootPath = root.data.location.path
+                    currentPath == rootPath || currentPath.startsWith(rootPath.trimEnd('/') + "/")
+                }
+                .maxByOrNull { it.data.location.path.length }
+                ?.data?.location?.rootId
+                ?: treeState.roots.firstOrNull()?.data?.location?.rootId
+                ?: StorageConstants.UNKNOWN_ROOT_ID
+            val parentLocation = getParentLocationUseCase(StorageLocation(currentPath, matchedRootId))
             if (parentLocation != null) {
                 val parentNode = findNodeByPath(parentLocation.path)
                 if (parentNode != null) {
