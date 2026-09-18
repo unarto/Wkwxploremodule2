@@ -1,0 +1,4 @@
+./app/src/main/kotlin/com/wakwau/xplore/component
+./app/src/main/kotlin/com/wakwau/xplore/interaction
+./app/src/main/kotlin/com/wakwau/xplore/model
+./app/src/main/kotlin/com/wakwau/xplore/state
