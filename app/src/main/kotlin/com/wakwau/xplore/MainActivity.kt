@@ -12,8 +12,8 @@ import androidx.compose.runtime.getValue
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.wakwau.xplore.core.storage.preferences.AppThemeMode
-import com.wakwau.xplore.core.utils.ui.theme.WKWXploreTheme
-import com.wakwau.xplore.settings.ui.engine.SettingsViewModel
+import com.wakwau.xplore.ui.theme.WKWXploreTheme
+import com.wakwau.xplore.ui.engine.SettingsViewModel
 import com.wakwau.xplore.ui.XploreRoot
 
 class MainActivity : ComponentActivity() {

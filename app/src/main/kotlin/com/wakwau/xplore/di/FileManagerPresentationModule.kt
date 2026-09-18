@@ -11,10 +11,10 @@ import com.wakwau.xplore.filemanager.action.FileDetailHandler
 import com.wakwau.xplore.filemanager.action.PanelRefreshHandler
 import com.wakwau.xplore.filemanager.event.DualPaneEvent
 import com.wakwau.xplore.filemanager.reducer.DualPaneReducer
-import com.wakwau.xplore.filemanager.ui.action.PanelNavigationHandler
-import com.wakwau.xplore.filemanager.ui.presentation.DualPaneViewModel
-import com.wakwau.xplore.filemanager.ui.presentation.DualPaneViewModelFactory
-import com.wakwau.xplore.filemanager.ui.tree.TreeNavigationAdapter
+import com.wakwau.xplore.ui.action.PanelNavigationHandler
+import com.wakwau.xplore.ui.presentation.DualPaneViewModel
+import com.wakwau.xplore.ui.presentation.DualPaneViewModelFactory
+import com.wakwau.xplore.ui.tree.TreeNavigationAdapter
 import com.wakwau.xplore.fileoperations.client.BackgroundOperationClient
 import com.wakwau.xplore.orchestrator.AppOrchestratorViewModel
 

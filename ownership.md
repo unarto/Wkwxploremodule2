@@ -953,7 +953,7 @@ com.wakwau.xplore.fileoperations.batch
 
 ":file-operations-ui"
 
-com.wakwau.xplore.fileoperations.ui
+com.wakwau.xplore.ui
 
 ":file-operations-bridge"
 

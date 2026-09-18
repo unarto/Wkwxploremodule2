@@ -4,7 +4,7 @@
 package com.wakwau.xplore.di
 
 import androidx.lifecycle.ViewModelProvider
-import com.wakwau.xplore.filemanager.ui.tree.TreeNavigationAdapter
+import com.wakwau.xplore.ui.tree.TreeNavigationAdapter
 import com.wakwau.xplore.orchestrator.AppOrchestratorViewModel
 
 val AppCompositionRoot.fileManagerUseCaseModule: FileManagerUseCaseModule

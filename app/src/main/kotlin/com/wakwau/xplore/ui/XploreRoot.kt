@@ -15,24 +15,24 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.wakwau.xplore.XploreApplication
-import com.wakwau.xplore.core.utils.ui.components.AppDialog
+import com.wakwau.xplore.ui.components.AppDialog
 import com.wakwau.xplore.di.appOrchestrator
 import com.wakwau.xplore.di.dualPaneViewModelFactory
 import com.wakwau.xplore.di.treeNavigationAdapter
 import com.wakwau.xplore.filemanager.event.DualPaneEvent
-import com.wakwau.xplore.filemanager.ui.presentation.DualPaneViewModel
-import com.wakwau.xplore.filemanager.ui.screen.DualPaneFileManagerScreen
-import com.wakwau.xplore.filemanager.ui.state.FileDialogUiState
-import com.wakwau.xplore.fileoperations.ui.dialog.ConflictResolutionDialog
-import com.wakwau.xplore.fileoperations.ui.dialog.DeleteConfirmationDialog
-import com.wakwau.xplore.fileoperations.ui.dialog.ProgressDialog
-import com.wakwau.xplore.fileoperations.ui.dialog.RenameDialog
-import com.wakwau.xplore.fileoperations.ui.state.OperationUiState
+import com.wakwau.xplore.ui.presentation.DualPaneViewModel
+import com.wakwau.xplore.ui.screen.DualPaneFileManagerScreen
+import com.wakwau.xplore.ui.state.FileDialogUiState
+import com.wakwau.xplore.ui.dialog.ConflictResolutionDialog
+import com.wakwau.xplore.ui.dialog.DeleteConfirmationDialog
+import com.wakwau.xplore.ui.dialog.ProgressDialog
+import com.wakwau.xplore.ui.dialog.RenameDialog
+import com.wakwau.xplore.ui.state.OperationUiState
 import com.wakwau.xplore.navigation.AppRoute
 import com.wakwau.xplore.orchestrator.AppOrchestratorViewModel
-import com.wakwau.xplore.search.ui.FileSearchDialog
-import com.wakwau.xplore.settings.ui.engine.SettingsViewModel
-import com.wakwau.xplore.settings.ui.screen.SettingsTreeScreen
+import com.wakwau.xplore.ui.FileSearchDialog
+import com.wakwau.xplore.ui.engine.SettingsViewModel
+import com.wakwau.xplore.ui.screen.SettingsTreeScreen
 
 @Composable
 fun XploreRoot(
@@ -85,13 +85,13 @@ fun XploreRoot(
             }
             is OperationUiState.Failure -> {
                 val errorMsg = when (state.errorMessage) {
-                    com.wakwau.xplore.core.storage.operation.FileOperationError.ACCESS_DENIED.name -> context.getString(com.wakwau.xplore.filemanager.ui.R.string.err_access_denied)
-                    com.wakwau.xplore.core.storage.operation.FileOperationError.NOT_FOUND.name -> context.getString(com.wakwau.xplore.filemanager.ui.R.string.err_not_found)
-                    com.wakwau.xplore.core.storage.operation.FileOperationError.ALREADY_EXISTS.name -> context.getString(com.wakwau.xplore.filemanager.ui.R.string.err_already_exists)
-                    com.wakwau.xplore.core.storage.operation.FileOperationError.INVALID_NAME.name -> context.getString(com.wakwau.xplore.filemanager.ui.R.string.err_invalid_name)
-                    com.wakwau.xplore.core.storage.operation.FileOperationError.INVALID_LOCATION.name -> context.getString(com.wakwau.xplore.filemanager.ui.R.string.err_invalid_location)
-                    com.wakwau.xplore.core.storage.operation.FileOperationError.IO_ERROR.name -> context.getString(com.wakwau.xplore.filemanager.ui.R.string.err_io_error)
-                    com.wakwau.xplore.core.storage.operation.FileOperationError.NOT_SUPPORTED.name -> context.getString(com.wakwau.xplore.filemanager.ui.R.string.err_not_supported)
+                    com.wakwau.xplore.core.storage.operation.FileOperationError.ACCESS_DENIED.name -> context.getString(com.wakwau.xplore.R.string.err_access_denied)
+                    com.wakwau.xplore.core.storage.operation.FileOperationError.NOT_FOUND.name -> context.getString(com.wakwau.xplore.R.string.err_not_found)
+                    com.wakwau.xplore.core.storage.operation.FileOperationError.ALREADY_EXISTS.name -> context.getString(com.wakwau.xplore.R.string.err_already_exists)
+                    com.wakwau.xplore.core.storage.operation.FileOperationError.INVALID_NAME.name -> context.getString(com.wakwau.xplore.R.string.err_invalid_name)
+                    com.wakwau.xplore.core.storage.operation.FileOperationError.INVALID_LOCATION.name -> context.getString(com.wakwau.xplore.R.string.err_invalid_location)
+                    com.wakwau.xplore.core.storage.operation.FileOperationError.IO_ERROR.name -> context.getString(com.wakwau.xplore.R.string.err_io_error)
+                    com.wakwau.xplore.core.storage.operation.FileOperationError.NOT_SUPPORTED.name -> context.getString(com.wakwau.xplore.R.string.err_not_supported)
                     else -> state.errorMessage
                 }
                 android.widget.Toast.makeText(context, errorMsg, android.widget.Toast.LENGTH_SHORT).show()
@@ -108,9 +108,9 @@ fun XploreRoot(
             // [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/XploreRoot.kt
             // [Penjelasan]: Perbaikan alur pemicu izin berdasarkan izinpenyimpanan.md, menampilkan PermissionScreen jika hasPermission == false
             if (!dualPaneState.hasPermission) {
-                com.wakwau.xplore.filemanager.ui.screen.PermissionScreen(
+                com.wakwau.xplore.ui.screen.PermissionScreen(
                     onRequestPermission = {
-                        com.wakwau.xplore.filemanager.ui.permission.PermissionIntentHelper.requestStorageAccess(
+                        com.wakwau.xplore.ui.permission.PermissionIntentHelper.requestStorageAccess(
                             context = context,
                             onLaunchLegacy = { permissions ->
                                 permissionLauncher.launch(permissions)
@@ -176,13 +176,13 @@ fun XploreRoot(
                         is OperationUiState.Confirming -> {
                             val isMove = currentOpState.isMove
                             val opName = if (isMove) {
-                                stringResource(com.wakwau.xplore.filemanager.ui.R.string.label_move)
+                                stringResource(com.wakwau.xplore.R.string.label_move)
                             } else {
-                                stringResource(com.wakwau.xplore.filemanager.ui.R.string.cd_copy)
+                                stringResource(com.wakwau.xplore.R.string.cd_copy)
                             }
 
                             AppDialog(
-                                title = stringResource(com.wakwau.xplore.filemanager.ui.R.string.title_operation_items, opName),
+                                title = stringResource(com.wakwau.xplore.R.string.title_operation_items, opName),
                                 confirmButtonText = opName,
                                 onConfirm = {
                                     if (isMove) {
@@ -195,7 +195,7 @@ fun XploreRoot(
                             ) {
                                 Text(
                                     text = stringResource(
-                                        com.wakwau.xplore.filemanager.ui.R.string.msg_operation_confirmation,
+                                        com.wakwau.xplore.R.string.msg_operation_confirmation,
                                         opName, currentOpState.items.size, currentOpState.targetPath
                                     ),
                                     style = MaterialTheme.typography.bodyMedium,
@@ -207,29 +207,29 @@ fun XploreRoot(
                             // [Modul: :app] [Jalur Class]: app/src/main/kotlin/com/wakwau/xplore/ui/XploreRoot.kt
                             // [Penjelasan]: Penyesuaian lokasi modul dan implementasi kontrak API
                             val errorText = when (currentOpState.errorMessage) {
-                                com.wakwau.xplore.core.storage.operation.FileOperationError.ACCESS_DENIED.name -> stringResource(com.wakwau.xplore.filemanager.ui.R.string.err_access_denied)
-                                com.wakwau.xplore.core.storage.operation.FileOperationError.NOT_FOUND.name -> stringResource(com.wakwau.xplore.filemanager.ui.R.string.err_not_found)
-                                com.wakwau.xplore.core.storage.operation.FileOperationError.ALREADY_EXISTS.name -> stringResource(com.wakwau.xplore.filemanager.ui.R.string.err_already_exists)
-                                com.wakwau.xplore.core.storage.operation.FileOperationError.INVALID_NAME.name -> stringResource(com.wakwau.xplore.filemanager.ui.R.string.err_invalid_name)
-                                com.wakwau.xplore.core.storage.operation.FileOperationError.INVALID_LOCATION.name -> stringResource(com.wakwau.xplore.filemanager.ui.R.string.err_invalid_location)
-                                com.wakwau.xplore.core.storage.operation.FileOperationError.IO_ERROR.name -> stringResource(com.wakwau.xplore.filemanager.ui.R.string.err_io_error)
-                                com.wakwau.xplore.core.storage.operation.FileOperationError.NOT_SUPPORTED.name -> stringResource(com.wakwau.xplore.filemanager.ui.R.string.err_not_supported)
+                                com.wakwau.xplore.core.storage.operation.FileOperationError.ACCESS_DENIED.name -> stringResource(com.wakwau.xplore.R.string.err_access_denied)
+                                com.wakwau.xplore.core.storage.operation.FileOperationError.NOT_FOUND.name -> stringResource(com.wakwau.xplore.R.string.err_not_found)
+                                com.wakwau.xplore.core.storage.operation.FileOperationError.ALREADY_EXISTS.name -> stringResource(com.wakwau.xplore.R.string.err_already_exists)
+                                com.wakwau.xplore.core.storage.operation.FileOperationError.INVALID_NAME.name -> stringResource(com.wakwau.xplore.R.string.err_invalid_name)
+                                com.wakwau.xplore.core.storage.operation.FileOperationError.INVALID_LOCATION.name -> stringResource(com.wakwau.xplore.R.string.err_invalid_location)
+                                com.wakwau.xplore.core.storage.operation.FileOperationError.IO_ERROR.name -> stringResource(com.wakwau.xplore.R.string.err_io_error)
+                                com.wakwau.xplore.core.storage.operation.FileOperationError.NOT_SUPPORTED.name -> stringResource(com.wakwau.xplore.R.string.err_not_supported)
                                 else -> currentOpState.errorMessage
                             }
                             if (currentOpState.errorMessage == com.wakwau.xplore.core.storage.operation.FileOperationError.ACCESS_DENIED.name) {
                                 AppDialog(
-                                    title = stringResource(com.wakwau.xplore.filemanager.ui.R.string.title_processing_operation),
-                                    confirmButtonText = stringResource(com.wakwau.xplore.filemanager.ui.R.string.btn_grant_permission),
+                                    title = stringResource(com.wakwau.xplore.R.string.title_processing_operation),
+                                    confirmButtonText = stringResource(com.wakwau.xplore.R.string.btn_grant_permission),
                                     onConfirm = {
                                         dualPaneViewModel.dispatch(DualPaneEvent.ClearOperationState)
-                                        com.wakwau.xplore.filemanager.ui.permission.PermissionIntentHelper.requestStorageAccess(
+                                        com.wakwau.xplore.ui.permission.PermissionIntentHelper.requestStorageAccess(
                                             context = context,
                                             onLaunchLegacy = { permissions ->
                                                 permissionLauncher.launch(permissions)
                                             }
                                         )
                                     },
-                                    dismissButtonText = stringResource(com.wakwau.xplore.filemanager.ui.R.string.cd_close),
+                                    dismissButtonText = stringResource(com.wakwau.xplore.R.string.cd_close),
                                     onDismissRequest = { dualPaneViewModel.dispatch(DualPaneEvent.ClearOperationState) }
                                 ) {
                                     Text(
@@ -240,8 +240,8 @@ fun XploreRoot(
                                 }
                             } else {
                                 AppDialog(
-                                    title = stringResource(com.wakwau.xplore.filemanager.ui.R.string.title_processing_operation),
-                                    confirmButtonText = stringResource(com.wakwau.xplore.filemanager.ui.R.string.cd_close),
+                                    title = stringResource(com.wakwau.xplore.R.string.title_processing_operation),
+                                    confirmButtonText = stringResource(com.wakwau.xplore.R.string.cd_close),
                                     onConfirm = { dualPaneViewModel.dispatch(DualPaneEvent.ClearOperationState) },
                                     dismissButtonText = null,
                                     onDismissRequest = { dualPaneViewModel.dispatch(DualPaneEvent.ClearOperationState) }

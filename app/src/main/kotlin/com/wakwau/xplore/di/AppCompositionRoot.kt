@@ -10,7 +10,7 @@ import com.wakwau.xplore.core.worker.client.FileCopyServiceClient
 import com.wakwau.xplore.core.worker.dispatcher.DefaultFileOperationProgressDispatcher
 import com.wakwau.xplore.fileoperations.client.BackgroundOperationClient
 import com.wakwau.xplore.orchestrator.AppOrchestratorViewModel
-import com.wakwau.xplore.settings.ui.engine.SettingsViewModel
+import com.wakwau.xplore.ui.engine.SettingsViewModel
 
 class AppCompositionRoot(val applicationContext: Context) {
     val storageModule: StorageModule by lazy {

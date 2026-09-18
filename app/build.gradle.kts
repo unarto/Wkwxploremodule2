@@ -1,16 +1,19 @@
 plugins {
   alias(libs.plugins.android.application)
   alias(libs.plugins.kotlin.compose)
+  alias(libs.plugins.google.devtools.ksp)
   alias(libs.plugins.secrets)
 }
 
 android {
   namespace = "com.wakwau.xplore"
-  compileSdk { version = release(36) { minorApiLevel = 1 } }
+  compileSdk {
+    version = release(36) {
+      minorApiLevel = 1
+    }
+  }
 
   defaultConfig {
-    // [Jalur Class/Modul]: /app/build.gradle.kts
-    // [Penjelasan]: Mengubah applicationId dari com.wakwau.wenxej ke com.wakwau.xplore sesuai instruksi pengguna.
     applicationId = "com.wakwau.xplore"
     minSdk = 24
     targetSdk = 36
@@ -22,12 +25,15 @@ android {
 
   signingConfigs {
     create("release") {
-      val keystorePath = System.getenv("KEYSTORE_PATH") ?: "${rootDir}/my-upload-key.jks"
+      val keystorePath =
+        System.getenv("KEYSTORE_PATH") ?: "${rootDir}/my-upload-key.jks"
+
       storeFile = file(keystorePath)
       storePassword = System.getenv("STORE_PASSWORD")
       keyAlias = "upload"
       keyPassword = System.getenv("KEY_PASSWORD")
     }
+
     create("debugConfig") {
       storeFile = file("${rootDir}/debug.keystore")
       storePassword = "android"
@@ -40,22 +46,38 @@ android {
     release {
       isCrunchPngs = false
       isMinifyEnabled = false
-      proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+
+      proguardFiles(
+        getDefaultProguardFile("proguard-android-optimize.txt"),
+        "proguard-rules.pro"
+      )
+
       signingConfig = signingConfigs.getByName("release")
     }
-    debug { signingConfig = signingConfigs.getByName("debugConfig") }
+
+    debug {
+      signingConfig = signingConfigs.getByName("debugConfig")
+    }
   }
+
   compileOptions {
     sourceCompatibility = JavaVersion.VERSION_11
     targetCompatibility = JavaVersion.VERSION_11
   }
+
   buildFeatures {
     compose = true
     buildConfig = true
+
+    // AIDL dari storage/filesystem sekarang berada langsung di :app.
+    aidl = true
   }
-  testOptions { unitTests { isIncludeAndroidResources = true } }
 
-
+  testOptions {
+    unitTests {
+      isIncludeAndroidResources = true
+    }
+  }
 
   dependenciesInfo {
     includeInApk = false
@@ -63,7 +85,7 @@ android {
   }
 }
 
-// Configure the Secrets Gradle Plugin to use .env and .env.example files
+// Secrets Gradle Plugin.
 secrets {
   propertiesFileName = ".env"
   defaultPropertiesFileName = ".env.example"
@@ -71,22 +93,7 @@ secrets {
 }
 
 dependencies {
-  // [Jalur Class/Modul]: app/build.gradle.kts
-  // [Penjelasan]: Menghapus dependensi :core-utils dan :treeview karena tidak digunakan oleh :app (UI treeview ditangani via :filemanager-ui).
-  implementation(project(":core-worker"))
-  implementation(project(":core-storage-api"))
-  implementation(project(":core-storage"))
-  implementation(project(":file-system"))
-  implementation(project(":file-operations"))
-  implementation(project(":file-operations-ui"))
-  implementation(project(":file-operations-bridge"))
-  implementation(project(":core-utils-ui"))
-  implementation(project(":filemanager"))
-  implementation(project(":filemanager-ui"))
-  implementation(project(":settings-ui"))
-  implementation(project(":search"))
-  implementation(project(":search-ui"))
-
+  // Jetpack Compose
   implementation(platform(libs.androidx.compose.bom))
   implementation(libs.androidx.activity.compose)
   implementation(libs.androidx.compose.material.icons.core)
@@ -95,23 +102,53 @@ dependencies {
   implementation(libs.androidx.compose.ui)
   implementation(libs.androidx.compose.ui.graphics)
   implementation(libs.androidx.compose.ui.tooling.preview)
+
+  // AndroidX
   implementation(libs.androidx.core.ktx)
+  implementation(libs.androidx.documentfile)
+  implementation(libs.androidx.navigation.compose)
+
+  // Lifecycle
   implementation(libs.androidx.lifecycle.runtime.compose)
   implementation(libs.androidx.lifecycle.runtime.ktx)
   implementation(libs.androidx.lifecycle.viewmodel.compose)
-  implementation(libs.androidx.navigation.compose)
-  implementation(libs.androidx.work.runtime.ktx)
-  implementation(libs.kotlinx.coroutines.android)
-  implementation(libs.kotlinx.coroutines.core)
 
+  // WorkManager
+  implementation(libs.androidx.work.runtime.ktx)
+
+  // Coroutines
+  implementation(libs.kotlinx.coroutines.core)
+  implementation(libs.kotlinx.coroutines.android)
+
+  // Room
+  implementation(libs.androidx.room.runtime)
+  implementation(libs.androidx.room.ktx)
+  ksp(libs.androidx.room.compiler)
+
+  // MMKV
+  implementation(libs.mmkv)
+
+  // Shizuku
+  implementation(libs.shizuku.api)
+  implementation(libs.shizuku.provider)
+
+  // libsu
+  implementation(libs.libsu.core)
+  implementation(libs.libsu.io)
+  implementation(libs.libsu.nio)
+
+  // Unit tests
   testImplementation(libs.junit)
   testImplementation(libs.kotlinx.coroutines.test)
+
+  // Instrumentation tests
   androidTestImplementation(platform(libs.androidx.compose.bom))
   androidTestImplementation(libs.androidx.compose.ui.test.junit4)
   androidTestImplementation(libs.androidx.espresso.core)
   androidTestImplementation(libs.androidx.junit)
   androidTestImplementation(libs.androidx.runner)
+
+  // Debug
   debugImplementation(libs.androidx.compose.ui.test.manifest)
   debugImplementation(libs.androidx.compose.ui.tooling)
 }
-

@@ -13,18 +13,18 @@ import com.wakwau.xplore.di.FileManagerUseCaseModule
 import com.wakwau.xplore.filemanager.constant.FileOperationConstants
 import com.wakwau.xplore.filemanager.event.DualPaneEvent
 import com.wakwau.xplore.filemanager.state.DualPaneState
-import com.wakwau.xplore.filemanager.ui.action.FileOperationActionDelegate
+import com.wakwau.xplore.ui.action.FileOperationActionDelegate
 import com.wakwau.xplore.fileoperations.conflict.ConflictChoice
 import com.wakwau.xplore.fileoperations.conflict.FileConflict
 import com.wakwau.xplore.fileoperations.conflict.ResolvedTransferItem
 import com.wakwau.xplore.search.sync.FileIndexSynchronizer
-import com.wakwau.xplore.fileoperations.ui.state.OperationUiState
+import com.wakwau.xplore.ui.state.OperationUiState
 import com.wakwau.xplore.orchestrator.fileops.CopyOperationOrchestrator
 import com.wakwau.xplore.orchestrator.fileops.DeleteOperationOrchestrator
 import com.wakwau.xplore.orchestrator.fileops.MoveOperationOrchestrator
 import com.wakwau.xplore.orchestrator.fileops.RenameOperationOrchestrator
 import com.wakwau.xplore.orchestrator.search.SearchOperationOrchestrator
-import com.wakwau.xplore.search.ui.SearchUiState
+import com.wakwau.xplore.ui.SearchUiState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update
@@ -188,11 +188,11 @@ class AppOrchestratorViewModel(
         when (event) {
             is DualPaneEvent.OperationStarted -> {
                 val nameRes = when (event.operationNameRes) {
-                    FileOperationConstants.OPERATION_COPY -> com.wakwau.xplore.filemanager.ui.R.string.op_copy_started
-                    FileOperationConstants.OPERATION_MOVE -> com.wakwau.xplore.filemanager.ui.R.string.op_move_started
-                    FileOperationConstants.OPERATION_DELETE -> com.wakwau.xplore.filemanager.ui.R.string.op_delete_started
-                    FileOperationConstants.OPERATION_RENAME -> com.wakwau.xplore.filemanager.ui.R.string.op_rename_started
-                    FileOperationConstants.OPERATION_CREATE_DIR -> com.wakwau.xplore.filemanager.ui.R.string.op_create_dir_started
+                    FileOperationConstants.OPERATION_COPY -> com.wakwau.xplore.R.string.op_copy_started
+                    FileOperationConstants.OPERATION_MOVE -> com.wakwau.xplore.R.string.op_move_started
+                    FileOperationConstants.OPERATION_DELETE -> com.wakwau.xplore.R.string.op_delete_started
+                    FileOperationConstants.OPERATION_RENAME -> com.wakwau.xplore.R.string.op_rename_started
+                    FileOperationConstants.OPERATION_CREATE_DIR -> com.wakwau.xplore.R.string.op_create_dir_started
                     else -> event.operationNameRes
                 }
                 _operationState.value = OperationUiState.Running(nameRes)
@@ -205,11 +205,11 @@ class AppOrchestratorViewModel(
             }
             is DualPaneEvent.OperationSuccess -> {
                 val successRes = when (event.messageRes) {
-                    FileOperationConstants.SUCCESS_COPY -> com.wakwau.xplore.filemanager.ui.R.string.op_copy_completed
-                    FileOperationConstants.SUCCESS_MOVE -> com.wakwau.xplore.filemanager.ui.R.string.op_move_completed
-                    FileOperationConstants.SUCCESS_DELETE -> com.wakwau.xplore.filemanager.ui.R.string.op_delete_completed
-                    FileOperationConstants.SUCCESS_RENAME -> com.wakwau.xplore.filemanager.ui.R.string.op_rename_completed
-                    FileOperationConstants.SUCCESS_CREATE_DIR -> com.wakwau.xplore.filemanager.ui.R.string.op_create_dir_completed
+                    FileOperationConstants.SUCCESS_COPY -> com.wakwau.xplore.R.string.op_copy_completed
+                    FileOperationConstants.SUCCESS_MOVE -> com.wakwau.xplore.R.string.op_move_completed
+                    FileOperationConstants.SUCCESS_DELETE -> com.wakwau.xplore.R.string.op_delete_completed
+                    FileOperationConstants.SUCCESS_RENAME -> com.wakwau.xplore.R.string.op_rename_completed
+                    FileOperationConstants.SUCCESS_CREATE_DIR -> com.wakwau.xplore.R.string.op_create_dir_completed
                     else -> event.messageRes
                 }
                 _operationState.value = OperationUiState.Success(successRes)
