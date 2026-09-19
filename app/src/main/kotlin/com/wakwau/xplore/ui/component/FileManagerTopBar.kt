@@ -60,7 +60,7 @@ fun FileManagerTopBar(
                         border = BorderStroke(1.dp, colors.badgeBorder)
                     ) {
                         Text(
-                            text = "✓ $selectedCount",
+                            text = stringResource(R.string.label_selected_count, selectedCount),
                             color = colors.badgeText,
                             fontSize = 12.sp,
                             fontWeight = FontWeight.Bold,

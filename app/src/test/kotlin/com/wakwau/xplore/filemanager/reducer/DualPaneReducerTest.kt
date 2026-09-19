@@ -29,7 +29,7 @@ class DualPaneReducerTest {
     @Test
     fun `test selection LEFT does not affect RIGHT`() {
         val initial = DualPaneState()
-        val updated = reducer.reduce(initial, DualPaneEvent.ToggleSelection(PanelId.LEFT, "file1"))
+        val updated = reducer.reduce(initial, DualPaneEvent.SetSelectedItems(PanelId.LEFT, setOf("file1")))
         
         assertTrue(updated.leftPanel.selectedItemIds.contains("file1"))
         assertTrue(updated.rightPanel.selectedItemIds.isEmpty())
@@ -38,7 +38,7 @@ class DualPaneReducerTest {
     @Test
     fun `test selection RIGHT does not affect LEFT`() {
         val initial = DualPaneState()
-        val updated = reducer.reduce(initial, DualPaneEvent.ToggleSelection(PanelId.RIGHT, "file2"))
+        val updated = reducer.reduce(initial, DualPaneEvent.SetSelectedItems(PanelId.RIGHT, setOf("file2")))
         
         assertTrue(updated.rightPanel.selectedItemIds.contains("file2"))
         assertTrue(updated.leftPanel.selectedItemIds.isEmpty())
@@ -87,7 +87,7 @@ class DualPaneReducerTest {
     @Test
     fun `test clear selection resets selected ids`() {
         val initial = DualPaneState()
-        val selected = reducer.reduce(initial, DualPaneEvent.ToggleSelection(PanelId.LEFT, "file1"))
+        val selected = reducer.reduce(initial, DualPaneEvent.SetSelectedItems(PanelId.LEFT, setOf("file1")))
         val cleared = reducer.reduce(selected, DualPaneEvent.ClearSelection(PanelId.LEFT))
         
         assertTrue(cleared.leftPanel.selectedItemIds.isEmpty())

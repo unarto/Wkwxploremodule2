@@ -24,13 +24,36 @@ class TreeSelectionHandler {
         node: TreeNode<FileItem>,
         selectedIds: Set<String>
     ): FolderCheckCycleState {
+        val path = node.data.location.path
+        val prefix = if (path.endsWith("/")) path else "$path/"
+
+        // [Jalur Class/Modul]: app/src/main/kotlin/com/wakwau/xplore/ui/selection/TreeSelectionHandler.kt
+        // [Penjelasan]: Storage root tidak boleh berstatus CHECKED; jika descendant terpilih,
+        // tampilkan PARTIAL agar status Mark anak tetap terlihat tanpa menandai storage root.
         if ((node.isRoot || node.parent == null) && node.data.type == FileType.DIRECTORY) {
-            return FolderCheckCycleState.UNCHECKED
+            val hasSelectedDescendant = selectedIds.any { selectedPath ->
+                selectedPath != path && selectedPath.startsWith(prefix)
+            }
+
+            return if (hasSelectedDescendant) {
+                FolderCheckCycleState.PARTIAL
+            } else {
+                FolderCheckCycleState.UNCHECKED
+            }
         }
 
-        val path = node.data.location.path
         if (selectedIds.contains(path)) {
             return FolderCheckCycleState.CHECKED
+        }
+
+        if (node.data.type == FileType.DIRECTORY) {
+            val hasSelectedDescendant = selectedIds.any { selectedPath ->
+                selectedPath != path && selectedPath.startsWith(prefix)
+            }
+
+            if (hasSelectedDescendant) {
+                return FolderCheckCycleState.PARTIAL
+            }
         }
 
         return FolderCheckCycleState.UNCHECKED

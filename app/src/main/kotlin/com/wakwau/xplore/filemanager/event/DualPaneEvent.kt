@@ -15,7 +15,6 @@ sealed class DualPaneEvent {
     data class SetActivePanel(val panelId: PanelId) : DualPaneEvent()
     
     // Selection
-    data class ToggleSelection(val panelId: PanelId, val itemId: String) : DualPaneEvent()
     data class SetSelectedItems(val panelId: PanelId, val itemIds: Set<String>) : DualPaneEvent()
     data class ClearSelection(val panelId: PanelId) : DualPaneEvent()
     

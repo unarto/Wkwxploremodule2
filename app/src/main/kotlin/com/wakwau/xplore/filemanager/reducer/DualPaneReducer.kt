@@ -43,16 +43,6 @@ class DualPaneReducer {
                     it.copy(isLoading = false, error = event.error)
                 }
             }
-            is DualPaneEvent.ToggleSelection -> {
-                updatePanel(state, event.panelId) {
-                    val newSelection = if (it.selectedItemIds.contains(event.itemId)) {
-                        it.selectedItemIds - event.itemId
-                    } else {
-                        it.selectedItemIds + event.itemId
-                    }
-                    it.copy(selectedItemIds = newSelection)
-                }
-            }
             is DualPaneEvent.SetSelectedItems -> {
                 updatePanel(state, event.panelId) {
                     it.copy(selectedItemIds = event.itemIds)

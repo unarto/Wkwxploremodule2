@@ -35,6 +35,10 @@ fun DirectoryTreeView(
     modifier: Modifier = Modifier
 ) {
     val coroutineScope = rememberCoroutineScope()
+    // [Jalur Class]: com.wakwau.xplore.ui.component.DirectoryTreeView
+    // [Penjelasan]: Menyediakan selection terbaru setelah proses load child yang suspend.
+    val latestSelectedIds =
+        androidx.compose.runtime.rememberUpdatedState(panelState.selectedItemIds)
     val engine = treeAdapter.getEngine(panelState.id)
     val errorState by engine.errorState.collectAsStateWithLifecycle()
     val selectedPath by engine.selectedPath.collectAsStateWithLifecycle()
@@ -91,7 +95,6 @@ fun DirectoryTreeView(
             val selectionState = treeSelectionHandler.getSelectionState(node, panelState.selectedItemIds)
             FileListItem(
                 item = node.data,
-                isSelected = panelState.selectedItemIds.contains(node.data.location.path),
                 borderPosition = borderPosition,
                 selectionState = selectionState,
                 onClick = {
@@ -111,18 +114,51 @@ fun DirectoryTreeView(
                     onItemLongClick(node.data)
                 },
                 onCheckToggle = {
-                    var shouldExpand = false
-                    val newSelection = treeSelectionHandler.nextSelection(node, panelState.selectedItemIds) {
-                        if (!engine.treeState.isExpanded(node)) {
-                            shouldExpand = true
-                        }
-                    }
-                    // [FileManagerUI]: Penyelarasan identitas seleksi path dan pemicuan atomik onSelectionChange berdasarkan Mark.MD
-                    onSelectionChange(newSelection)
-                    
-                    if (shouldExpand) {
+                    val nodePath = node.data.location.path
+                    val currentSelection = latestSelectedIds.value
+
+                    val needsChildrenBeforeSelection =
+                        node.data.type == FileType.DIRECTORY &&
+                            node.children.isEmpty() &&
+                            !engine.treeState.isExpanded(node) &&
+                            (
+                                node.isRoot ||
+                                    node.parent == null ||
+                                    currentSelection.contains(nodePath)
+                            )
+
+                    if (needsChildrenBeforeSelection) {
                         coroutineScope.launch {
+                            // [Jalur Class]: com.wakwau.xplore.ui.component.DirectoryTreeView
+                            // [Penjelasan]: Muat child sebelum menjalankan siklus Mark Children.
                             treeAdapter.expandNode(panelState.id, node)
+
+                            if (engine.treeState.isExpanded(node)) {
+                                val newSelection = treeSelectionHandler.nextSelection(
+                                    node = node,
+                                    currentSelection = latestSelectedIds.value
+                                )
+                                onSelectionChange(newSelection)
+                            }
+                        }
+                    } else {
+                        var shouldExpand = false
+
+                        val newSelection = treeSelectionHandler.nextSelection(
+                            node = node,
+                            currentSelection = currentSelection
+                        ) {
+                            if (!engine.treeState.isExpanded(node)) {
+                                shouldExpand = true
+                            }
+                        }
+
+                        onSelectionChange(newSelection)
+
+                        if (shouldExpand) {
+                            coroutineScope.launch {
+                                treeAdapter.expandNode(panelState.id, node)
+                            }
                         }
                     }
                 },

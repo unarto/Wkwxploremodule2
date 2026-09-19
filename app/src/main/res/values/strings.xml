@@ -87,6 +87,7 @@
     <string name="label_copy_count">Salin (%1$d)</string>
     <string name="label_move_count">Pindah (%1$d)</string>
     <string name="label_delete_count">Hapus (%1$d)</string>
+    <string name="label_selected_count">✓ %1$d</string>
     <string name="msg_empty_directory">Folder ini kosong</string>
     <string name="msg_error_loading">Gagal memuat isi folder</string>
     <string name="msg_loading_directory">Memuat isi folder...</string>

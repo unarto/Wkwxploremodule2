@@ -9,9 +9,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
-import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import com.wakwau.xplore.core.storage.constant.StorageConstants
 import com.wakwau.xplore.core.storage.model.FileType
@@ -51,13 +48,10 @@ fun FileManagerContent(
     val inactivePanel = if (isLeftActive) state.rightPanel else state.leftPanel
     
     val activeEngine = treeAdapter.getEngine(activePanel.id)
-    val visibleNodes by activeEngine.treeState.visibleNodes.collectAsStateWithLifecycle()
-    val treeSelectionHandler = remember { com.wakwau.xplore.ui.selection.TreeSelectionHandler() }
-    val selectedCount = remember(visibleNodes, activePanel.selectedItemIds) {
-        visibleNodes.count { 
-            treeSelectionHandler.getSelectionState(it.node, activePanel.selectedItemIds) == com.wakwau.xplore.ui.selection.FolderCheckCycleState.CHECKED 
-        }
-    }
+    // [Jalur Class]: com.wakwau.xplore.ui.screen.FileManagerContent
+    // [Penjelasan]: selectedItemIds menjadi single source of truth jumlah Mark,
+    // termasuk item yang tidak visible karena folder sedang collapse.
+    val selectedCount = activePanel.selectedItemIds.size
 
     val invalidLocationMsg = stringResource(id = com.wakwau.xplore.R.string.err_invalid_location)
 

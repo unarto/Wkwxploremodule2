@@ -61,7 +61,7 @@ class TreeSelectionHandlerTest {
 
         // Storage node must NEVER be checked (orange icon prohibited on storage row)
         assertEquals(FolderCheckCycleState.UNCHECKED, handler.getSelectionState(storageNode, emptySet()))
-        assertEquals(FolderCheckCycleState.UNCHECKED, handler.getSelectionState(storageNode, setOf(storageItem.id, androidItem.id)))
+        assertEquals(FolderCheckCycleState.PARTIAL, handler.getSelectionState(storageNode, setOf(storageItem.id, androidItem.id)))
 
         // Klik 1 pada Storage: HANYA memberikan ceklis oranye ke direct children langsung
         val sel1 = handler.nextSelection(storageNode, emptySet())
@@ -71,7 +71,7 @@ class TreeSelectionHandlerTest {
         assertTrue(sel1.contains(docItem.id))
         assertEquals(3, sel1.size)
 
-        assertEquals(FolderCheckCycleState.UNCHECKED, handler.getSelectionState(storageNode, sel1))
+        assertEquals(FolderCheckCycleState.PARTIAL, handler.getSelectionState(storageNode, sel1))
         assertEquals(FolderCheckCycleState.CHECKED, handler.getSelectionState(androidNode, sel1))
         assertEquals(FolderCheckCycleState.CHECKED, handler.getSelectionState(dcimNode, sel1))
         assertEquals(FolderCheckCycleState.CHECKED, handler.getSelectionState(docNode, sel1))
@@ -142,7 +142,7 @@ class TreeSelectionHandlerTest {
         assertTrue(selection.contains(obbItem.id))
         assertEquals(3, selection.size)
 
-        assertEquals(FolderCheckCycleState.UNCHECKED, handler.getSelectionState(androidNode, selection))
+        assertEquals(FolderCheckCycleState.PARTIAL, handler.getSelectionState(androidNode, selection))
         assertEquals(FolderCheckCycleState.CHECKED, handler.getSelectionState(dataNode, selection))
         assertEquals(FolderCheckCycleState.CHECKED, handler.getSelectionState(mediaNode, selection))
         assertEquals(FolderCheckCycleState.CHECKED, handler.getSelectionState(obbNode, selection))
@@ -208,7 +208,7 @@ class TreeSelectionHandlerTest {
         assertTrue(sel2.contains(dataItem.id))
         assertFalse(sel2.contains(dcimItem.id)) // DCIM dibersihkan karena di luar folder Android
         assertFalse(sel2.contains(alarmsItem.id))
-        assertEquals(FolderCheckCycleState.UNCHECKED, handler.getSelectionState(androidNode, sel2))
+        assertEquals(FolderCheckCycleState.PARTIAL, handler.getSelectionState(androidNode, sel2))
         assertEquals(FolderCheckCycleState.CHECKED, handler.getSelectionState(dataNode, sel2))
 
         // Klik 3 pada Android (Unmark All Android & children)

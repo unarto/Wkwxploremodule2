@@ -57,7 +57,6 @@ object FileListItemDefaults {
 @Composable
 fun FileListItem(
     item: FileItem,
-    isSelected: Boolean,
     onClick: () -> Unit,
     onLongClick: () -> Unit,
     onCheckToggle: () -> Unit,
@@ -66,7 +65,9 @@ fun FileListItem(
     borderPosition: BorderPosition = BorderPosition.NONE,
     isPathSelected: Boolean = borderPosition != BorderPosition.NONE,
     showExpandArrow: Boolean = true,
-    selectionState: FolderCheckCycleState = if (isSelected) FolderCheckCycleState.CHECKED else FolderCheckCycleState.UNCHECKED
+    // [Jalur Class]: com.wakwau.xplore.ui.list.FileListItem
+    // [Penjelasan]: selectionState menjadi satu-satunya sumber status Mark/Unmark; isSelected redundant dihapus.
+    selectionState: FolderCheckCycleState
 ) {
     val colors = XPloreTheme.colors
     val isDir = item.type == FileType.DIRECTORY
